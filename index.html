@@ -33,43 +33,43 @@
         }
     </style>
 </head>
-<body class="h-screen w-full flex flex-col relative p-6 md:p-12">
+<body class="h-screen w-full relative">
 
     <!-- Top Left Header/Logo Box -->
-    <div class="absolute top-8 left-8 md:top-12 md:left-12 border border-white/50 px-6 py-3 text-xs md:text-sm tracking-widest uppercase flex items-center gap-3">
+    <div class="absolute top-8 left-8 md:top-12 md:left-12 border border-white/50 px-6 py-3 text-xs md:text-sm tracking-widest uppercase flex items-center gap-3 z-30 bg-[#1920A6]">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 12h-5m20 0h-5m-10 0v5m0-10v-5m-4 5h14a2 2 0 012 2v14a2 2 0 01-2 2H3.5a2 2 0 01-2-2V8.5a2 2 0 012-2z" />
         </svg>
         KU Leuven Student Guide
     </div>
 
-    <!-- Main Grid System -->
-    <div class="grid grid-cols-1 lg:grid-cols-4 h-full pt-32 lg:pt-0 relative z-10">
+    <!-- Main Grid System (Set to cover the whole screen for full-height lines) -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 absolute inset-0 z-20 pointer-events-none">
         
-        <div class="hidden lg:block relative"></div>
+        <!-- Column 1: Empty -->
+        <div class="hidden lg:block relative h-full"></div>
 
-        <!-- Button 1 (Food) -->
-        <div class="relative pt-24 pl-8 lg:pl-12">
-            <div class="bg-white/40 w-px absolute left-0 top-0 h-[70%] hidden lg:block"></div>
-            <a href="#food" class="nav-btn block border border-white px-8 py-4 w-max text-sm uppercase tracking-widest mb-8 lg:mb-0">
-                01. Food
+        <!-- Column 2: Button 1 (Food) -->
+        <div class="relative pt-32 lg:pt-40 pl-8 lg:pl-12 h-full pointer-events-auto border-l border-white/30">
+            <!-- Increased padding and text-xl for larger buttons -->
+            <a href="#food" class="nav-btn inline-block border border-white px-12 py-5 text-xl font-semibold uppercase tracking-widest mt-4">
+                FOOD
             </a>
         </div>
 
-        <!-- Button 2 (Housing) -->
-        <div class="relative pt-24 pl-8 lg:pl-12">
-            <div class="bg-white/40 w-px absolute left-0 top-0 h-[60%] hidden lg:block"></div>
-            <a href="#housing" class="nav-btn block border border-white px-8 py-4 w-max text-sm uppercase tracking-widest mb-8 lg:mb-0">
-                02. Housing
+        <!-- Column 3: Button 2 (Housing) -->
+        <div class="relative pt-32 lg:pt-40 pl-8 lg:pl-12 h-full pointer-events-auto border-l border-white/30">
+            <a href="#housing" class="nav-btn inline-block border border-white px-12 py-5 text-xl font-semibold uppercase tracking-widest mt-4">
+                HOUSING
             </a>
         </div>
 
-        <!-- Button 3 (Transport) & Tagline -->
-        <div class="relative pt-24 pl-8 lg:pl-12 flex flex-col h-full">
-            <div class="bg-white/40 w-px absolute left-0 top-0 h-[80%] hidden lg:block"></div>
-            <a href="#transport" class="nav-btn block border border-white px-8 py-4 w-max text-sm uppercase tracking-widest mb-16">
-                03. Transport
+        <!-- Column 4: Button 3 (Transport) & Tagline -->
+        <div class="relative pt-32 lg:pt-40 pl-8 lg:pl-12 h-full pointer-events-auto flex flex-col border-l border-white/30">
+            <a href="#transport" class="nav-btn inline-block border border-white px-12 py-5 text-xl font-semibold uppercase tracking-widest mt-4 w-max">
+                TRANSPORT
             </a>
+            
             <div class="mt-auto mb-48 lg:mb-64">
                 <p class="text-2xl md:text-3xl leading-tight font-light max-w-xs">
                     Your digital starting<br>
@@ -81,7 +81,7 @@
     </div>
 
     <!-- Giant Typography -->
-    <div class="absolute bottom-4 left-6 md:bottom-8 md:left-12 z-0 pointer-events-none">
+    <div class="absolute bottom-4 left-6 md:bottom-8 md:left-12 z-10 pointer-events-none">
         <h1 class="giant-title">Leuven<br>Life.</h1>
     </div>
 
