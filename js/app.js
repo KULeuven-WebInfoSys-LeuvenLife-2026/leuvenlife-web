@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentLang = 'EN';
   let isTranslating = false;
 
-  // store data
   let menuData = [];
+
+  const DATA_URL = "https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/alma_encyclopedia_dish_soup.json";
 
   // UI dictionary
   const UI_TEXT = {
@@ -43,40 +44,44 @@ document.addEventListener("DOMContentLoaded", () => {
     title: document.querySelector('h1')
   };
 
-  // open language menu
+  // 打开语言菜单
   translateBtn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
   });
 
-  // ✅ FIXED URL（你之前拼错了 encyclopedia）
-  const DATA_URL = "https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/alma_encyclopedia_dish_soup.json";
-
+  // ✅ 加载 JSON（最终稳定版）
   fetch(DATA_URL)
     .then(res => {
-      if (!res.ok) {
-        throw new Error("❌ JSON not found (check URL)");
-      }
+      if (!res.ok) throw new Error("JSON load failed");
       return res.json();
     })
     .then(data => {
 
-      // support multiple formats
+      console.log("RAW DATA:", data);
+
+      // 🔥 关键：兼容所有结构
       if (Array.isArray(data)) {
         menuData = data;
-      } else if (data.days) {
-        menuData = data.days.flatMap(day => day.meals || []);
+      } else if (data && typeof data === 'object') {
+        menuData = Object.values(data);
       } else {
         menuData = [];
       }
 
-      console.log("✅ Menu loaded:", menuData.length);
+      console.log("MENU LENGTH:", menuData.length);
+
+      if (menuData.length === 0) {
+        throw new Error("Empty menu");
+      }
+
       renderMenu('EN');
     })
     .catch(err => {
-      console.error("❌ Failed to load menu:", err);
-      uiElements.loader.innerText = "Failed to load data";
+      console.error("❌ Load error:", err);
+      uiElements.loader.innerText = "Failed to load menu";
     });
 
+  // 渲染菜单
   function renderMenu(lang) {
     const grid = document.getElementById('menu-grid');
     grid.innerHTML = '';
@@ -108,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('menu-grid').classList.remove('hidden');
   }
 
-  // language switch
+  // 语言切换
   options.forEach(option => {
     option.addEventListener('click', async () => {
 
@@ -117,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (targetLang === currentLang) return;
 
-      // update UI
+      // UI文字切换（不走API）
       Object.keys(uiElements).forEach(key => {
         if (uiElements[key] && UI_TEXT[targetLang][key]) {
           uiElements[key].innerText = UI_TEXT[targetLang][key];
@@ -138,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // ZH (DeepL)
+      // ZH（调用你的 Render API）
       if (targetLang === 'ZH') {
 
         if (isTranslating) return;
@@ -146,7 +151,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         translateBtn.innerText = "Translating...";
 
-        // ✅ 加上介绍文本一起翻译
         const elements = document.querySelectorAll('h2, #menu-grid h3, #menu-grid p, section p');
 
         const texts = [];
