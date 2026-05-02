@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // store data
   let menuData = [];
 
-  // UI dictionary (no API required)
+  // UI dictionary
   const UI_TEXT = {
     EN: {
       title: "A Taste of Alma",
@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // UI elements
   const uiElements = {
     all: document.querySelector('[data-filter="all"]'),
     warm: document.querySelector('[data-filter="warm"]'),
@@ -49,28 +48,35 @@ document.addEventListener("DOMContentLoaded", () => {
     menu.classList.toggle('hidden');
   });
 
-  // ✅ FIXED: load local JSON from GitHub repo
-  fetch('https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/alma_enclyclopedia_dish_soup.json')
-    .then(res => res.json())
+  // ✅ FIXED URL（你之前拼错了 encyclopedia）
+  const DATA_URL = "https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/alma_encyclopedia_dish_soup.json";
+
+  fetch(DATA_URL)
+    .then(res => {
+      if (!res.ok) {
+        throw new Error("❌ JSON not found (check URL)");
+      }
+      return res.json();
+    })
     .then(data => {
 
-      // 👉 if JSON is array
+      // support multiple formats
       if (Array.isArray(data)) {
         menuData = data;
       } else if (data.days) {
-        // 👉 if nested structure (KU Leuven style)
         menuData = data.days.flatMap(day => day.meals || []);
       } else {
         menuData = [];
       }
 
+      console.log("✅ Menu loaded:", menuData.length);
       renderMenu('EN');
     })
     .catch(err => {
-      console.error("Failed to load menu:", err);
+      console.error("❌ Failed to load menu:", err);
+      uiElements.loader.innerText = "Failed to load data";
     });
 
-  // render menu based on language
   function renderMenu(lang) {
     const grid = document.getElementById('menu-grid');
     grid.innerHTML = '';
@@ -80,14 +86,10 @@ document.addEventListener("DOMContentLoaded", () => {
       let title = '';
       let desc = '';
 
-      // Dutch from data
       if (lang === 'NL') {
         title = item.name_nl || item.name?.nl || item.name_en || "";
         desc = item.description_nl || item.description?.nl || item.description_en || "";
-      }
-
-      // English from data
-      else {
+      } else {
         title = item.name_en || item.name?.en || item.name_nl || "";
         desc = item.description_en || item.description?.en || item.description_nl || "";
       }
@@ -102,8 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
       grid.innerHTML += card;
     });
 
-    // show grid and hide loader
-    document.getElementById('loader').classList.add('hidden');
+    uiElements.loader.classList.add('hidden');
     document.getElementById('menu-grid').classList.remove('hidden');
   }
 
@@ -116,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (targetLang === currentLang) return;
 
-      // update UI text (no API)
+      // update UI
       Object.keys(uiElements).forEach(key => {
         if (uiElements[key] && UI_TEXT[targetLang][key]) {
           uiElements[key].innerText = UI_TEXT[targetLang][key];
@@ -137,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // ZH → DeepL
+      // ZH (DeepL)
       if (targetLang === 'ZH') {
 
         if (isTranslating) return;
@@ -145,13 +146,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         translateBtn.innerText = "Translating...";
 
-        const elements = document.querySelectorAll('#menu-grid h3, #menu-grid p');
+        // ✅ 加上介绍文本一起翻译
+        const elements = document.querySelectorAll('h2, #menu-grid h3, #menu-grid p, section p');
 
         const texts = [];
         elements.forEach(el => texts.push(el.innerText));
 
         try {
-          const res = await fetch('http://localhost:3000/translate', {
+          const res = await fetch('https://alma-translate.onrender.com/translate', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -171,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
           currentLang = 'ZH';
 
         } catch (err) {
-          console.error(err);
+          console.error("❌ Translation error:", err);
         }
 
         translateBtn.innerText = "🌐";

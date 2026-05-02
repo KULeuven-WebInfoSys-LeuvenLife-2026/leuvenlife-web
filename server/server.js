@@ -9,12 +9,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = 3000;
+// ✅ IMPORTANT: Render needs dynamic port
+const PORT = process.env.PORT || 3000;
+
+// ✅ DEBUG: check env (very important for Render)
+console.log("DEEPL KEY:", process.env.DEEPL_API_KEY);
 
 // 👉 read cache
 let cache = {};
 if (fs.existsSync('translations.json')) {
-  cache = JSON.parse(fs.readFileSync('translations.json', 'utf-8'));
+  try {
+    cache = JSON.parse(fs.readFileSync('translations.json', 'utf-8'));
+  } catch (e) {
+    cache = {};
+  }
 }
 
 // 👉 normalize text
@@ -25,6 +33,11 @@ function normalize(text) {
 // 🚀 FAST TRANSLATE (batch + cache)
 app.post('/translate', async (req, res) => {
   const { text, targetLang } = req.body;
+
+  // ❗ basic validation
+  if (!text || !Array.isArray(text)) {
+    return res.status(400).send('Invalid text input');
+  }
 
   try {
     // 1️⃣ find out content requiring translation
@@ -40,20 +53,26 @@ app.post('/translate', async (req, res) => {
       }
     });
 
-    // 2️⃣ call API for one time, key optimization
     let translatedResults = [];
 
+    // 2️⃣ call DeepL only if needed
     if (textsToTranslate.length > 0) {
+
+      if (!process.env.DEEPL_API_KEY) {
+        console.error("❌ Missing DEEPL_API_KEY");
+        return res.status(500).send("Missing API key");
+      }
+
       const response = await axios.post(
         'https://api-free.deepl.com/v2/translate',
-        {
-          text: textsToTranslate,
-          target_lang: targetLang
-        },
+        new URLSearchParams({
+          target_lang: targetLang,
+          text: textsToTranslate
+        }),
         {
           headers: {
             'Authorization': `DeepL-Auth-Key ${process.env.DEEPL_API_KEY}`,
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/x-www-form-urlencoded'
           }
         }
       );
@@ -61,20 +80,17 @@ app.post('/translate', async (req, res) => {
       translatedResults = response.data.translations;
     }
 
-    // 3️⃣ final combinatikon
+    // 3️⃣ combine results
     const finalResults = [];
-
     let newIndex = 0;
 
-    text.forEach((t, i) => {
+    text.forEach((t) => {
       const key = normalize(t);
 
-      // cached already
       if (cache[key] && cache[key][targetLang]) {
         finalResults.push({ text: cache[key][targetLang] });
       } else {
-        // new translation
-        const translated = translatedResults[newIndex].text;
+        const translated = translatedResults[newIndex]?.text || t;
         newIndex++;
 
         if (!cache[key]) cache[key] = {};
@@ -84,17 +100,22 @@ app.post('/translate', async (req, res) => {
       }
     });
 
-    // 4️⃣ write into cache file
+    // 4️⃣ save cache
     fs.writeFileSync('translations.json', JSON.stringify(cache, null, 2));
 
     res.json({ translations: finalResults });
 
   } catch (error) {
-    console.error(error.response?.data || error.message);
+    console.error("❌ DeepL ERROR:", error.response?.data || error.message);
     res.status(500).send('Translation error');
   }
 });
 
+// ✅ health check (optional but useful)
+app.get('/', (req, res) => {
+  res.send('Server is running');
+});
+
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
