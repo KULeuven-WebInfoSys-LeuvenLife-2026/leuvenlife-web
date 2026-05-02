@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeuvenLife | A Taste of Alma</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#1a2421',
+              text: '#d8cbb8',
+              accent: '#c4a678',
+              border: '#33423d',
+              muted: '#9baea6'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Jost"', 'sans-serif'],
+            script: ['"Great Vibes"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background-color: #1a2421; color: #d8cbb8; }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #1a2421; }
+    ::-webkit-scrollbar-thumb { background: #33423d; }
+    ::-webkit-scrollbar-thumb:hover { background: #c4a678; }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+
+<body class="font-sans antialiased min-h-screen flex flex-col">
+
+<!-- Navigation Bar -->
+<nav class="border-b border-brand-border py-6 px-6 md:px-12 flex justify-between items-center w-full relative z-20">
+
+  <!-- Logo -->
+  <div class="font-serif text-2xl tracking-widest uppercase">LEUVENLIFE</div>
+
+  <!-- Right Side Controls -->
+  <div class="flex items-center gap-4">
+
+    <!-- Preferences Button -->
+    <button id="btn-preferences"
+            class="font-sans text-[11px] uppercase tracking-[0.2em] border-b border-transparent hover:border-brand-accent transition-all duration-300 pb-1">
+      Dietary Preferences
+    </button>
+
+    <!-- Language Dropdown -->
+    <div class="relative">
+      <button id="btn-translate"
+              class="text-sm border border-brand-accent px-3 py-1 uppercase tracking-widest hover:bg-brand-accent hover:text-black transition">
+        🌐
+      </button>
+
+      <div id="lang-menu"
+           class="hidden absolute right-0 mt-2 bg-brand-bg border border-brand-border rounded shadow-lg z-50">
+
+        <div class="lang-option px-4 py-2 cursor-pointer hover:bg-brand-border"
+             data-lang="EN">English</div>
+
+        <div class="lang-option px-4 py-2 cursor-pointer hover:bg-brand-border"
+             data-lang="ZH">中文</div>
+
+        <div class="lang-option px-4 py-2 cursor-pointer hover:bg-brand-border"
+             data-lang="NL">Nederlands</div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative w-full h-[40vh] md:h-[65vh] flex flex-col md:flex-row overflow-hidden">
+
+  <!-- Left Image -->
+  <div class="w-full md:w-1/2 h-1/2 md:h-full">
+    <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=1200&auto=format&fit=crop"
+         alt="Gourmet Pastry"
+         class="w-full h-full object-cover">
+  </div>
+
+  <!-- Right Image -->
+  <div class="w-full md:w-1/2 h-1/2 md:h-full">
+    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1200&auto=format&fit=crop"
+         alt="Dining Experience"
+         class="w-full h-full object-cover">
+  </div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <!-- Title -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+    <div class="border border-white/60 rounded-full px-6 py-1 mb-6 backdrop-blur-sm">
+      <span class="font-sans text-[10px] tracking-[0.3em] text-white/90">20 / 26</span>
+    </div>
+
+    <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl uppercase tracking-widest drop-shadow-lg">
+      A Taste of Alma
+    </h1>
+  </div>
+</header>
+
+<!-- Introduction Section -->
+<section class="py-16 text-center border-b border-brand-border px-6">
+
+  <h2 class="font-sans text-xl md:text-2xl tracking-[0.3em] uppercase text-brand-text mb-4">
+    Alma Menu
+  </h2>
+
+  <p class="font-sans font-light text-brand-muted text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+    Discover the culinary offerings across our campuses. From traditional comfort food to vibrant vegan bowls, explore the encyclopedia of Belgian student life.
+  </p>
+
+</section>
+
+<!-- Filter Bar -->
+<section class="border-b border-brand-border py-8 w-full px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+
+  <!-- Status -->
+  <div id="stats-display"
+       class="font-sans text-brand-muted text-sm tracking-wider uppercase text-center md:text-left">
+    Loading database...
+  </div>
+
+  <!-- Filters -->
+  <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 font-sans text-xs uppercase tracking-[0.2em]">
+
+    <button class="filter-btn text-brand-accent border-b border-brand-accent pb-1"
+            data-filter="all">
+      All Items
+    </button>
+
+    <button class="filter-btn text-brand-muted hover:text-brand-text transition-colors pb-1"
+            data-filter="warm">
+      Warm Dishes
+    </button>
+
+    <button class="filter-btn text-brand-muted hover:text-brand-text transition-colors pb-1"
+            data-filter="soup">
+      Soups
+    </button>
+
+  </div>
+</section>
+
+<!-- Menu Section -->
+<main class="w-full flex-grow">
+
+  <!-- Loader -->
+  <div id="loader"
+       class="text-center font-serif text-2xl italic text-brand-accent animate-pulse py-32">
+    Curating the menu...
+  </div>
+
+  <!-- Grid -->
+  <div id="menu-grid"
+       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[1px] bg-brand-border hidden border-b border-brand-border">
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="py-12 text-center mt-auto w-full px-6 bg-brand-bg">
+  <p class="font-sans text-[10px] text-brand-muted uppercase tracking-[0.3em]">
+    © 2026 KU Leuven WIS Project
+  </p>
+</footer>
+
+<!-- App Script -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
