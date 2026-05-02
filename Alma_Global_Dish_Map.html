@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Culinary Heritage Map - Alma Menu</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <style>
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f0f2f5; }
+        #map { height: 100vh; width: 100%; }
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            max-width: 400px;
+            border-top: 5px solid #e67e22;
+        }
+        h1 { margin: 0 0 8px 0; font-size: 24px; color: #333; }
+        p { margin: 0; font-size: 14px; color: #555; line-height: 1.5; }
+        .stat-box { margin-top: 10px; font-weight: bold; color: #e67e22; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Global Dish Heritage Map</h1>
+    <p>Mapping the cultural origins of unique dishes found in the Alma database using culinary keywords and geographical associations.</p>
+    <div class="stat-box">Total dishes mapped: 75</div>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+    // Initial map focus on Europe/North Africa
+    var map = L.map('map').setView([30, 15], 3);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var dishes = [{"name": "Alma puebla bohemian Burger", "origin": "Mexico", "coords": [19.334600000000002, -99.1232]}, {"name": "Alma puebla burger van de grill", "origin": "Mexico", "coords": [19.3886, -99.1272]}, {"name": "Alma's traditional comfort food mash bowl", "origin": "Belgium (Alma Local)", "coords": [50.7103, 3.9217]}, {"name": "Alma's traditional mashed patato bowl", "origin": "Belgium (Alma Local)", "coords": [51.1203, 4.8517]}, {"name": "Andalusian tomato soup", "origin": "Belgium (Alma Local)", "coords": [51.3403, 3.5617]}, {"name": "Angelo's loaded patatoes", "origin": "Belgium (Alma Local)", "coords": [51.400299999999994, 4.1417]}, {"name": "Asparagus soup", "origin": "Belgium (Alma Local)", "coords": [50.2103, 4.9217]}, {"name": "Broccoli soup", "origin": "Belgium (Alma Local)", "coords": [50.570299999999996, 5.2517000000000005]}, {"name": "Burrito with nachos and salsa", "origin": "Mexico", "coords": [23.5485, -102.5108]}, {"name": "Cauliflower soup", "origin": "Belgium (Alma Local)", "coords": [51.3103, 4.8517]}, {"name": "Cheese croquettes with salad", "origin": "Belgium (Alma Local)", "coords": [50.1003, 4.8017]}, {"name": "Chervil cream soup", "origin": "Belgium (Alma Local)", "coords": [51.5203, 5.1117]}, {"name": "Chervil soup", "origin": "Belgium (Alma Local)", "coords": [50.5603, 4.4917]}, {"name": "Chicken Fajita", "origin": "Mexico", "coords": [23.7125, -102.6288]}, {"name": "Chicken leg with curry sauce, rice and vegetables", "origin": "India", "coords": [20.5617, 78.9589]}, {"name": "Chicken stew with salad and french fries", "origin": "Belgium (Alma Local)", "coords": [51.3503, 4.8617]}, {"name": "Chicken stew with salad and mashed potatoes", "origin": "Belgium (Alma Local)", "coords": [50.570299999999996, 4.0617]}, {"name": "Cod tempura with spinach, cream, and mashed potatoes", "origin": "Belgium (Alma Local)", "coords": [51.430299999999995, 4.8317]}, {"name": "Cordon bleu with baked cauliflower, mushroom sauce and potatoes", "origin": "Belgium (Alma Local)", "coords": [51.110299999999995, 4.8217]}, {"name": "Creamy chicory soup", "origin": "Belgium (Alma Local)", "coords": [50.2703, 3.8217]}, {"name": "Creamy tomato soup", "origin": "Belgium (Alma Local)", "coords": [50.4903, 5.2917000000000005]}, {"name": "Crispy chicken fillet with peas, carrots and  potatoes", "origin": "Belgium (Alma Local)", "coords": [51.0903, 3.9017]}, {"name": "Famous Alma Burger with potatoes wedges", "origin": "USA", "coords": [37.1422, -95.6589]}, {"name": "Famous Alma vegetable burger with potatoes wedges", "origin": "USA", "coords": [37.1222, -95.7549]}, {"name": "Fish and chips", "origin": "Belgium (Alma Local)", "coords": [51.2403, 3.7217000000000002]}, {"name": "Fish stick with remoulade sauce, salad and mashed potatoes", "origin": "Belgium (Alma Local)", "coords": [50.570299999999996, 3.8617]}, {"name": "Gehakte steak pepersaus prinsessenbonen puree", "origin": "Belgium (Alma Local)", "coords": [49.9803, 5.2217]}, {"name": "Gyros with Basmati rice", "origin": "Belgium (Alma Local)", "coords": [50.7003, 4.8817]}, {"name": "Homemade pork stew", "origin": "Belgium (Alma Local)", "coords": [51.470299999999995, 4.3417]}, {"name": "Italian chicken breast with broccoli", "origin": "Belgium (Alma Local)", "coords": [50.0203, 4.7317]}, {"name": "Lasagne", "origin": "Belgium (Alma Local)", "coords": [50.6003, 4.3217]}, {"name": "Leek soup", "origin": "Belgium (Alma Local)", "coords": [50.6603, 4.621700000000001]}, {"name": "Meatballs in tomato sauce, green veggies and creamy mash", "origin": "Belgium (Alma Local)", "coords": [50.720299999999995, 3.7317]}, {"name": "Meatballs in tomato sauce,broken string beans and mashed potatoes", "origin": "Belgium (Alma Local)", "coords": [50.220299999999995, 5.0217]}, {"name": "Meatballs with tomato sauce, broccoli and mashed potatoes", "origin": "Belgium (Alma Local)", "coords": [50.7703, 4.6417]}, {"name": "Meatballs, green pepper sauce, beans and mashed potatoes", "origin": "Belgium (Alma Local)", "coords": [50.6703, 3.6017]}, {"name": "Mince roll with beans and potatoes", "origin": "Belgium (Alma Local)", "coords": [51.4503, 4.9817]}, {"name": "Minced meat roll with spinach and mashed potatoes", "origin": "Belgium (Alma Local)", "coords": [51.5203, 4.4717]}, {"name": "Minced meat roll, red cabbage and spuds", "origin": "Belgium (Alma Local)", "coords": [50.260299999999994, 4.9617]}, {"name": "Minestrone", "origin": "Belgium (Alma Local)", "coords": [51.830299999999994, 4.9117]}, {"name": "Mushroom soup", "origin": "Belgium (Alma Local)", "coords": [51.540299999999995, 4.8417]}, {"name": "Oven-baked spring roll with vegetable rice and sweet-and-sour pineapple sauce", "origin": "Belgium (Alma Local)", "coords": [51.180299999999995, 4.2817]}, {"name": "Pangasius with broccoli, Hollandaise sauce and potatoes", "origin": "Belgium (Alma Local)", "coords": [50.610299999999995, 5.2317]}, {"name": "Paprika soup", "origin": "Belgium (Alma Local)", "coords": [51.470299999999995, 5.0817]}, {"name": "Patatas nachos with chicken and chimichurri dressing", "origin": "Belgium (Alma Local)", "coords": [50.720299999999995, 4.2217]}, {"name": "Philips pizza", "origin": "Belgium (Alma Local)", "coords": [51.430299999999995, 4.4917]}, {"name": "Pita with garlic sauce, salad and potatoe wedges", "origin": "Belgium (Alma Local)", "coords": [50.890299999999996, 4.1417]}, {"name": "Plant-based seastick with whole grain penne and vegetable sauce", "origin": "Belgium (Alma Local)", "coords": [51.8403, 4.4617]}, {"name": "Poke bowl with falafel", "origin": "Belgium (Alma Local)", "coords": [50.8503, 5.2917000000000005]}, {"name": "Potato leek soup", "origin": "Belgium (Alma Local)", "coords": [51.6603, 4.5917]}, {"name": "Provencal chicken burger with mini tomatoes and baby potatoes", "origin": "USA", "coords": [37.1222, -95.7489]}, {"name": "Pumpkin soup", "origin": "Belgium (Alma Local)", "coords": [50.5503, 4.1817]}, {"name": "Quorn burger with broccoli and pasta in tomato sauce", "origin": "Italy", "coords": [41.899899999999995, 12.655399999999998]}, {"name": "Quornburger with kohlrabi and mashed pot", "origin": "USA", "coords": [37.062200000000004, -95.64890000000001]}, {"name": "Scampi curry with vegetable rice", "origin": "India", "coords": [20.4957, 78.9169]}, {"name": "Scampi in tomato garlic sauce with broccoli and penne", "origin": "Belgium (Alma Local)", "coords": [50.070299999999996, 4.9217]}, {"name": "Spaghetti Aglio Olio", "origin": "Italy", "coords": [41.9439, 12.507399999999999]}, {"name": "Spaghetti Aglio Olio with bacon strips", "origin": "Italy", "coords": [41.859899999999996, 12.6334]}, {"name": "Spaghetti Caponata Veggy", "origin": "Italy", "coords": [41.963899999999995, 12.651399999999999]}, {"name": "Spaghetti Caponata with pork strips", "origin": "Italy", "coords": [41.9559, 12.657399999999999]}, {"name": "Spaghetti bolognese", "origin": "Italy", "coords": [41.7799, 12.607399999999998]}, {"name": "Spaghetti meatballs", "origin": "Italy", "coords": [41.817899999999995, 12.5954]}, {"name": "Spaghetti with mushrooms", "origin": "Italy", "coords": [41.9559, 12.565399999999999]}, {"name": "Stoofvlees op Vlaamse wijze met slaatje en tarwe", "origin": "Belgium", "coords": [50.936299999999996, 4.3837]}, {"name": "Taco shell with chili sin carne and fresh Mexican salad", "origin": "Mexico/USA", "coords": [31.868599999999997, -99.93979999999999]}, {"name": "Tex Mex Summer", "origin": "Belgium (Alma Local)", "coords": [50.830299999999994, 4.8317]}, {"name": "Thaise zoete aardappelcurry", "origin": "India", "coords": [20.5737, 78.94890000000001]}, {"name": "Tomato and goat cheese pie with fried potatoes and salad", "origin": "Belgium (Alma Local)", "coords": [50.360299999999995, 4.3817]}, {"name": "Tomato mascarpone soup", "origin": "Belgium (Alma Local)", "coords": [50.2703, 4.5917]}, {"name": "Vegan gyros with pilaf rice", "origin": "Belgium (Alma Local)", "coords": [50.3403, 4.8817]}, {"name": "Vegetable lasagna with piccolo", "origin": "Italy", "coords": [41.9359, 12.5414]}, {"name": "Vegetable soup", "origin": "Belgium (Alma Local)", "coords": [50.790299999999995, 3.8717]}, {"name": "Vegetable spring rolls with curry sauce and vegetable rice", "origin": "India", "coords": [20.627699999999997, 79.0229]}, {"name": "Vegetarian Hungarian goulash with rice", "origin": "Belgium (Alma Local)", "coords": [50.6203, 5.2917000000000005]}, {"name": "Veggie pita with garlic sauce and baked potatoes", "origin": "Belgium (Alma Local)", "coords": [49.970299999999995, 3.5517000000000003]}];
+    var markers = L.markerClusterGroup({
+        showCoverageOnHover: false,
+        maxClusterRadius: 50
+    });
+
+    dishes.forEach(function(dish) {
+        var popupContent = "<strong>" + dish.name + "</strong><br>" + 
+                           "<span style='color: #888;'>Origin: " + dish.origin + "</span>";
+        var marker = L.marker(dish.coords).bindPopup(popupContent);
+        markers.addLayer(marker);
+    });
+
+    map.addLayer(markers);
+</script>
+
+</body>
+</html>
