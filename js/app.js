@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menu.classList.toggle('hidden');
   });
 
-  // ✅ 加载 JSON（最终稳定版）
+  // ✅ 正确加载 JSON（关键修复点）
   fetch(DATA_URL)
     .then(res => {
       if (!res.ok) throw new Error("JSON load failed");
@@ -59,14 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       console.log("RAW DATA:", data);
 
-      // 🔥 关键：兼容所有结构
-      if (Array.isArray(data)) {
-        menuData = data;
-      } else if (data && typeof data === 'object') {
-        menuData = Object.values(data);
-      } else {
-        menuData = [];
-      }
+      // ✅ 正确读取 data.data
+      menuData = data.data || [];
 
       console.log("MENU LENGTH:", menuData.length);
 
@@ -81,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       uiElements.loader.innerText = "Failed to load menu";
     });
 
-  // 渲染菜单
+  // ✅ 渲染菜单（关键修复字段）
   function renderMenu(lang) {
     const grid = document.getElementById('menu-grid');
     grid.innerHTML = '';
@@ -89,20 +83,16 @@ document.addEventListener("DOMContentLoaded", () => {
     menuData.forEach(item => {
 
       let title = '';
-      let desc = '';
 
       if (lang === 'NL') {
-        title = item.name_nl || item.name?.nl || item.name_en || "";
-        desc = item.description_nl || item.description?.nl || item.description_en || "";
+        title = item.meal || "";
       } else {
-        title = item.name_en || item.name?.en || item.name_nl || "";
-        desc = item.description_en || item.description?.en || item.description_nl || "";
+        title = item.mealEn || item.meal || "";
       }
 
       const card = `
-        <div class="p-4">
-          <h3>${title}</h3>
-          <p>${desc}</p>
+        <div class="p-4 border-b border-gray-700">
+          <h3 class="text-lg">${title}</h3>
         </div>
       `;
 
@@ -122,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (targetLang === currentLang) return;
 
-      // UI文字切换（不走API）
+      // UI文字切换
       Object.keys(uiElements).forEach(key => {
         if (uiElements[key] && UI_TEXT[targetLang][key]) {
           uiElements[key].innerText = UI_TEXT[targetLang][key];
@@ -143,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // ZH（调用你的 Render API）
+      // ✅ 中文（DeepL 修复版）
       if (targetLang === 'ZH') {
 
         if (isTranslating) return;
@@ -151,18 +141,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         translateBtn.innerText = "Translating...";
 
-        const elements = document.querySelectorAll('h2, #menu-grid h3, #menu-grid p, section p');
+        const elements = document.querySelectorAll('#menu-grid h3');
 
         const texts = [];
         elements.forEach(el => texts.push(el.innerText));
 
         try {
-          const res = await fetch('https://alma-translate.onrender.com/translate', {
+          const res = await fetch('https://api-free.deepl.com/v2/translate', {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'},
+            headers: {
+              'Authorization': 'd380d287-feec-4ebf-b2b8-edfcf1d46086:fx',
+              'Content-Type': 'application/json'
+            },
             body: JSON.stringify({
               text: texts,
-              targetLang: 'ZH'
+              target_lang: 'ZH'
             })
           });
 
