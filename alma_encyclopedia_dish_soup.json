@@ -1,0 +1,6468 @@
+{
+  "data": [
+    {
+      "id": 296295,
+      "meal": "Alma puebla bohemian Burger",
+      "mealEn": "Alma puebla bohemian Burger",
+      "image": "assets/img/foods/296295.png",
+      "servingDate": "21/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1132,
+          "title": "Gerst",
+          "titleEn": "Barley",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_GERST.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_BARLEY.png"
+        },
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 767,
+          "title": "Sesam",
+          "titleEn": "Sesame",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/sesamzaad_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sesame-seed_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296293,
+      "meal": "Alma puebla burger van de grill",
+      "mealEn": "Alma puebla burger van de grill",
+      "image": "assets/img/foods/296293.png",
+      "servingDate": "21/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 767,
+          "title": "Sesam",
+          "titleEn": "Sesame",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/sesamzaad_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sesame-seed_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292643,
+      "meal": "Alma's boerenkost pureebowl",
+      "mealEn": "Alma's traditional comfort food mash bowl",
+      "image": "assets/img/foods/292643.png",
+      "servingDate": "02/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238894,
+          "title": "Varken",
+          "titleEn": "Pork",
+          "image": "https://www.alma.be/files/Iconen/varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296982,
+      "meal": "Alma's boerenkost pureebowl",
+      "mealEn": "Alma's traditional mashed patato bowl",
+      "image": "assets/img/foods/296982.png",
+      "servingDate": "30/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238894,
+          "title": "Varken",
+          "titleEn": "Pork",
+          "image": "https://www.alma.be/files/Iconen/varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1146,
+          "title": "Sulfiet",
+          "titleEn": "Sulfite",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/Sulfieten_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sulphites_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292933,
+      "meal": "Andalousische tomatensoep (G)",
+      "mealEn": "Andalusian tomato soup",
+      "image": null,
+      "servingDate": "31/03/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296321,
+      "meal": "Angelo's kapsalon",
+      "mealEn": "Angelo's loaded patatoes",
+      "image": "assets/img/foods/296321.png",
+      "servingDate": "23/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297029,
+      "meal": "Aspergesoep (K)",
+      "mealEn": "Asparagus soup",
+      "image": "assets/img/foods/297029.png",
+      "servingDate": "22/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 1.8,
+      "priceNotSubsidized": 2.05,
+      "priceIncludingVAT": 2.2,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296751,
+      "meal": "Broccolisoep (G)",
+      "mealEn": "Broccoli soup",
+      "image": "assets/img/foods/296751.png",
+      "servingDate": "20/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296309,
+      "meal": "Burrito met nacho's en salsa",
+      "mealEn": "Burrito with nachos and salsa",
+      "image": "assets/img/foods/296309.png",
+      "servingDate": "22/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1146,
+          "title": "Sulfiet",
+          "titleEn": "Sulfite",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/Sulfieten_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sulphites_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296950,
+      "meal": "Bloemkoolsoep (G)",
+      "mealEn": "Cauliflower soup",
+      "image": "assets/img/foods/296950.png",
+      "servingDate": "27/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1315,
+          "title": "Toog 3"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132960,
+          "title": "D",
+          "titleEn": "D",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 295268,
+      "meal": "Kaaskroketten met slaatje",
+      "mealEn": "Cheese croquettes with salad",
+      "image": "assets/img/foods/295268.png",
+      "servingDate": "31/03/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296496,
+      "meal": "Kervelroomsoep (G)",
+      "mealEn": "Chervil cream soup",
+      "image": "assets/img/foods/296496.png",
+      "servingDate": "28/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1315,
+          "title": "Toog 3"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297011,
+      "meal": "Kervelsoep (K)",
+      "mealEn": "Chervil soup",
+      "image": "assets/img/foods/297011.png",
+      "servingDate": "28/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 1.8,
+      "priceNotSubsidized": 2.05,
+      "priceIncludingVAT": 2.2,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "'t Academische kwartier",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297033,
+      "meal": "Chicken Fajita",
+      "mealEn": "Chicken Fajita",
+      "image": "assets/img/foods/297033.png",
+      "servingDate": "22/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma Gasthuisberg",
+      "counters": [
+        {
+          "id": 1315,
+          "title": "Toog 3"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296968,
+      "meal": "Kippenbout met currysaus, rijst en groenten",
+      "mealEn": "Chicken leg with curry sauce, rice and vegetables",
+      "image": "assets/img/foods/296968.png",
+      "servingDate": "29/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132955,
+          "title": "Hoog",
+          "titleEn": "High",
+          "image": "https://www.alma.be/uploads/4.png",
+          "imageEn": "https://www.alma.be/uploads/4.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132958,
+          "title": "B",
+          "titleEn": "B",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297332,
+      "meal": "Koninginnenhapje met slaatje en frieten",
+      "mealEn": "Chicken stew with salad and french fries",
+      "image": "assets/img/foods/297332.png",
+      "servingDate": "24/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 7.95,
+      "priceNotSubsidized": 11.2,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132954,
+          "title": "Medium",
+          "titleEn": "Medium",
+          "image": "https://www.alma.be/files/medium.png",
+          "imageEn": "https://www.alma.be/uploads/Medium.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296962,
+      "meal": "Koninginnenhapje met slaatje en puree",
+      "mealEn": "Chicken stew with salad and mashed potatoes",
+      "image": "assets/img/foods/296962.png",
+      "servingDate": "28/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 7.95,
+      "priceNotSubsidized": 11.2,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132953,
+          "title": "Laag",
+          "titleEn": "Low",
+          "image": "https://www.alma.be/files/low.png",
+          "imageEn": "https://www.alma.be/uploads/low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297031,
+      "meal": "Koolvis tempura met bladspinazie, room en puree",
+      "mealEn": "Cod tempura with spinach, cream, and mashed potatoes",
+      "image": null,
+      "servingDate": "22/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 55,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/vis-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vis-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 3431,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/vis_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/fish_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 295581,
+      "meal": "Cordon bleu gebakken bloemkool champignonsaus aardappelen",
+      "mealEn": "Cordon bleu with baked cauliflower, mushroom sauce and potatoes",
+      "image": null,
+      "servingDate": "01/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 1137,
+          "title": "Amandel",
+          "titleEn": "Almond",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/noten_allergeen_AMANDEL.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/nuts_allergeen_ALMOND.png"
+        },
+        {
+          "id": 1144,
+          "title": "Walnoot",
+          "titleEn": "Walnut",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/noten_allergeen_WAL.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/nuts_allergeen_WAL.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        },
+        {
+          "id": 1146,
+          "title": "Sulfiet",
+          "titleEn": "Sulfite",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/Sulfieten_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sulphites_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292454,
+      "meal": "Witloofroomsoep (G)",
+      "mealEn": "Creamy chicory soup",
+      "image": "assets/img/foods/292454.png",
+      "servingDate": "31/03/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1315,
+          "title": "Toog 3"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132953,
+          "title": "Laag",
+          "titleEn": "Low",
+          "image": "https://www.alma.be/files/low.png",
+          "imageEn": "https://www.alma.be/uploads/low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 167496,
+      "meal": "Romige tomatensoep (K)",
+      "mealEn": "Creamy tomato soup",
+      "image": "assets/img/foods/167496.png",
+      "servingDate": null,
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 1.8,
+      "priceNotSubsidized": 2.05,
+      "priceIncludingVAT": 2.2,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296940,
+      "meal": "Krokante kipfilet met erwten en wortelen en natuuraardappelen",
+      "mealEn": "Crispy chicken fillet with peas, carrots and  potatoes",
+      "image": "assets/img/foods/296940.png",
+      "servingDate": "27/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132953,
+          "title": "Laag",
+          "titleEn": "Low",
+          "image": "https://www.alma.be/files/low.png",
+          "imageEn": "https://www.alma.be/uploads/low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132958,
+          "title": "B",
+          "titleEn": "B",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1132,
+          "title": "Gerst",
+          "titleEn": "Barley",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_GERST.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_BARLEY.png"
+        },
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296783,
+      "meal": "Famous Almaburger met wedges",
+      "mealEn": "Famous Alma Burger with potatoes wedges",
+      "image": "assets/img/foods/296783.png",
+      "servingDate": "23/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 252802,
+          "title": "Varken en rund",
+          "titleEn": "Beef and pork",
+          "image": "https://www.alma.be/files/Iconen/runds-en-varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/beef-and-pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1132,
+          "title": "Gerst",
+          "titleEn": "Barley",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_GERST.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_BARLEY.png"
+        },
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 767,
+          "title": "Sesam",
+          "titleEn": "Sesame",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/sesamzaad_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sesame-seed_allergeen.png"
+        },
+        {
+          "id": 3431,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/vis_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/fish_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296789,
+      "meal": "Famous Alma groenteburger met wedges",
+      "mealEn": "Famous Alma vegetable burger with potatoes wedges",
+      "image": "assets/img/foods/296789.png",
+      "servingDate": "23/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 767,
+          "title": "Sesam",
+          "titleEn": "Sesame",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/sesamzaad_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sesame-seed_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292494,
+      "meal": "Fish and chips",
+      "mealEn": "Fish and chips",
+      "image": "assets/img/foods/292494.png",
+      "servingDate": "03/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132954,
+          "title": "Medium",
+          "titleEn": "Medium",
+          "image": "https://www.alma.be/files/medium.png",
+          "imageEn": "https://www.alma.be/uploads/Medium.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 55,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/vis-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vis-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 3431,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/vis_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/fish_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296429,
+      "meal": "Fish stick met remouladesaus, slaatje en puree",
+      "mealEn": "Fish stick with remoulade sauce, salad and mashed potatoes",
+      "image": "assets/img/foods/296429.png",
+      "servingDate": "30/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 55,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/vis-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vis-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 3431,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/vis_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/fish_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 295925,
+      "meal": "Gehakte steak pepersaus prinsessenbonen puree",
+      "mealEn": "Gehakte steak pepersaus prinsessenbonen puree",
+      "image": "assets/img/foods/295925.png",
+      "servingDate": "20/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 252802,
+          "title": "Varken en rund",
+          "titleEn": "Beef and pork",
+          "image": "https://www.alma.be/files/Iconen/runds-en-varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/beef-and-pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292462,
+      "meal": "Gyros met Basmatirijst",
+      "mealEn": "Gyros with Basmati rice",
+      "image": "assets/img/foods/292462.png",
+      "servingDate": "01/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 291846,
+      "meal": "Homemade varkensstoofvlees",
+      "mealEn": "Homemade pork stew",
+      "image": "assets/img/foods/291846.png",
+      "servingDate": "01/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238894,
+          "title": "Varken",
+          "titleEn": "Pork",
+          "image": "https://www.alma.be/files/Iconen/varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 295983,
+      "meal": "Italiaanse kipfilet met broccolimix",
+      "mealEn": "Italian chicken breast with broccoli",
+      "image": null,
+      "servingDate": "24/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132953,
+          "title": "Laag",
+          "titleEn": "Low",
+          "image": "https://www.alma.be/files/low.png",
+          "imageEn": "https://www.alma.be/uploads/low.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 167455,
+      "meal": "Lasagne",
+      "mealEn": "Lasagne",
+      "image": "assets/img/foods/167455.png",
+      "servingDate": null,
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132954,
+          "title": "Medium",
+          "titleEn": "Medium",
+          "image": "https://www.alma.be/files/medium.png",
+          "imageEn": "https://www.alma.be/uploads/Medium.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 238895,
+          "title": "Rund",
+          "titleEn": "Beef",
+          "image": "https://www.alma.be/files/Iconen/runds.png",
+          "imageEn": "https://www.alma.be/files/Iconen/beef.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296929,
+      "meal": "Preisoep (G)",
+      "mealEn": "Leek soup",
+      "image": "assets/img/foods/296929.png",
+      "servingDate": "20/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297492,
+      "meal": "Balletjes in tomatensaus, groene groenten en smeuige puree",
+      "mealEn": "Meatballs in tomato sauce, green veggies and creamy mash",
+      "image": "assets/img/foods/297492.png",
+      "servingDate": "25/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 252802,
+          "title": "Varken en rund",
+          "titleEn": "Beef and pork",
+          "image": "https://www.alma.be/files/Iconen/runds-en-varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/beef-and-pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1146,
+          "title": "Sulfiet",
+          "titleEn": "Sulfite",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/Sulfieten_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sulphites_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 293094,
+      "meal": "Balletjes in tomatensaus, gebroken bonen en puree",
+      "mealEn": "Meatballs in tomato sauce,broken string beans and mashed potatoes",
+      "image": "assets/img/foods/293094.png",
+      "servingDate": "31/03/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132953,
+          "title": "Laag",
+          "titleEn": "Low",
+          "image": "https://www.alma.be/files/low.png",
+          "imageEn": "https://www.alma.be/uploads/low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 252802,
+          "title": "Varken en rund",
+          "titleEn": "Beef and pork",
+          "image": "https://www.alma.be/files/Iconen/runds-en-varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/beef-and-pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292500,
+      "meal": "Balletjes in tomatensaus, broccoli en puree",
+      "mealEn": "Meatballs with tomato sauce, broccoli and mashed potatoes",
+      "image": "assets/img/foods/292500.png",
+      "servingDate": "03/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 295927,
+      "meal": "Balletjes met groene pepersaus, boontjes en puree",
+      "mealEn": "Meatballs, green pepper sauce, beans and mashed potatoes",
+      "image": "assets/img/foods/295927.jpg",
+      "servingDate": "20/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132953,
+          "title": "Laag",
+          "titleEn": "Low",
+          "image": "https://www.alma.be/files/low.png",
+          "imageEn": "https://www.alma.be/uploads/low.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 252802,
+          "title": "Varken en rund",
+          "titleEn": "Beef and pork",
+          "image": "https://www.alma.be/files/Iconen/runds-en-varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/beef-and-pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 1137,
+          "title": "Amandel",
+          "titleEn": "Almond",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/noten_allergeen_AMANDEL.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/nuts_allergeen_ALMOND.png"
+        },
+        {
+          "id": 1144,
+          "title": "Walnoot",
+          "titleEn": "Walnut",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/noten_allergeen_WAL.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/nuts_allergeen_WAL.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1146,
+          "title": "Sulfiet",
+          "titleEn": "Sulfite",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/Sulfieten_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sulphites_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297328,
+      "meal": "Boomstammetje met snijbonen en aardappelen",
+      "mealEn": "Mince roll with beans and potatoes",
+      "image": "assets/img/foods/297328.png",
+      "servingDate": "24/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132954,
+          "title": "Medium",
+          "titleEn": "Medium",
+          "image": "https://www.alma.be/files/medium.png",
+          "imageEn": "https://www.alma.be/uploads/Medium.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132958,
+          "title": "B",
+          "titleEn": "B",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296769,
+      "meal": "Boomstammetje met spinazie in room en puree",
+      "mealEn": "Minced meat roll with spinach and mashed potatoes",
+      "image": "assets/img/foods/296769.png",
+      "servingDate": "22/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 295955,
+      "meal": "Boomstammetje met rode kool en patatjes",
+      "mealEn": "Minced meat roll, red cabbage and spuds",
+      "image": "assets/img/foods/295955.png",
+      "servingDate": "22/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292941,
+      "meal": "Minestronesoep (G)",
+      "mealEn": "Minestrone",
+      "image": "assets/img/foods/292941.png",
+      "servingDate": "02/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296964,
+      "meal": "Champignonsoep (G)",
+      "mealEn": "Mushroom soup",
+      "image": "assets/img/foods/296964.png",
+      "servingDate": "28/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1315,
+          "title": "Toog 3"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132954,
+          "title": "Medium",
+          "titleEn": "Medium",
+          "image": "https://www.alma.be/files/medium.png",
+          "imageEn": "https://www.alma.be/uploads/Medium.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296415,
+      "meal": "Ovenloempia groenterijst zoetzure saus met ananas",
+      "mealEn": "Oven-baked spring roll with vegetable rice and sweet-and-sour pineapple sauce",
+      "image": "assets/img/foods/296415.png",
+      "servingDate": "29/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296733,
+      "meal": "Pangasius filet met broccoli, Hollandse saus en aard",
+      "mealEn": "Pangasius with broccoli, Hollandaise sauce and potatoes",
+      "image": "assets/img/foods/296733.png",
+      "servingDate": "21/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132955,
+          "title": "Hoog",
+          "titleEn": "High",
+          "image": "https://www.alma.be/uploads/hhigh.PNG",
+          "imageEn": "https://www.alma.be/files/hhigh.PNG"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132958,
+          "title": "B",
+          "titleEn": "B",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 55,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/vis-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vis-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 3431,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/vis_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/fish_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296763,
+      "meal": "Paprikasoep (G)",
+      "mealEn": "Paprika soup",
+      "image": "assets/img/foods/296763.png",
+      "servingDate": "23/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296516,
+      "meal": "Patatas Nachos met kip en chimichurrydressing",
+      "mealEn": "Patatas nachos with chicken and chimichurri dressing",
+      "image": null,
+      "servingDate": "28/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1130,
+          "title": "Aardnoten",
+          "titleEn": "Peanuts",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296323,
+      "meal": "Philips pizza",
+      "mealEn": "Philips pizza",
+      "image": "assets/img/foods/296323.png",
+      "servingDate": "23/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        },
+        {
+          "id": 1146,
+          "title": "Sulfiet",
+          "titleEn": "Sulfite",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/Sulfieten_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sulphites_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296954,
+      "meal": "Pita met looksaus, salade en aardappelwedges",
+      "mealEn": "Pita with garlic sauce, salad and potatoe wedges",
+      "image": "assets/img/foods/296954.png",
+      "servingDate": "28/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132953,
+          "title": "Laag",
+          "titleEn": "Low",
+          "image": "https://www.alma.be/files/low.png",
+          "imageEn": "https://www.alma.be/uploads/low.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296504,
+      "meal": "Seastick met volkoren penne en groentesaus",
+      "mealEn": "Plant-based seastick with whole grain penne and vegetable sauce",
+      "image": "assets/img/foods/296504.png",
+      "servingDate": "27/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132957,
+          "title": "A",
+          "titleEn": "A",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1146,
+          "title": "Sulfiet",
+          "titleEn": "Sulfite",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/Sulfieten_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sulphites_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 291848,
+      "meal": "Poke bowl met falafel",
+      "mealEn": "Poke bowl with falafel",
+      "image": null,
+      "servingDate": "01/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296767,
+      "meal": "Aardappel preisoep (G)",
+      "mealEn": "Potato leek soup",
+      "image": "assets/img/foods/296767.png",
+      "servingDate": "24/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132960,
+          "title": "D",
+          "titleEn": "D",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296719,
+      "meal": "Provencaalse kipburger met trostomaatjes en krieltjes",
+      "mealEn": "Provencal chicken burger with mini tomatoes and baby potatoes",
+      "image": null,
+      "servingDate": "20/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238885,
+          "title": "Gevogelte",
+          "titleEn": "Poultry",
+          "image": "https://www.alma.be/files/Iconen/gevogelte.png",
+          "imageEn": "https://www.alma.be/files/Iconen/poultry.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 295680,
+      "meal": "Pompoensoep (G)",
+      "mealEn": "Pumpkin soup",
+      "image": "assets/img/foods/295680.png",
+      "servingDate": "03/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297794,
+      "meal": "Quornburger met broccoli en pasta in tomatensaus",
+      "mealEn": "Quorn burger with broccoli and pasta in tomato sauce",
+      "image": null,
+      "servingDate": "30/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292482,
+      "meal": "Quornburger met koolrabi en puree",
+      "mealEn": "Quornburger with kohlrabi and mashed pot",
+      "image": "assets/img/foods/292482.png",
+      "servingDate": "02/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296335,
+      "meal": "Scampi curry met groenterijst",
+      "mealEn": "Scampi curry with vegetable rice",
+      "image": "assets/img/foods/296335.png",
+      "servingDate": "24/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1316,
+          "title": "Toog 4"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238896,
+          "title": "Schaal- en weekdieren",
+          "titleEn": "Shellfish and molluscs",
+          "image": "https://www.alma.be/files/Iconen/schaal-en-weekdieren.png",
+          "imageEn": "https://www.alma.be/files/Iconen/shellfish_molluscs.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 764,
+          "title": "Schaaldieren",
+          "titleEn": "Crustaceans",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/schaaldieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/shellfish_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296801,
+      "meal": "Scampi in tomatenlooksaus met broccoli en penne",
+      "mealEn": "Scampi in tomato garlic sauce with broccoli and penne",
+      "image": "assets/img/foods/296801.png",
+      "servingDate": "24/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 55,
+          "title": "Vis",
+          "titleEn": "Fish",
+          "image": "https://www.alma.be/files/vis-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vis-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 764,
+          "title": "Schaaldieren",
+          "titleEn": "Crustaceans",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/schaaldieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/shellfish_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 291852,
+      "meal": "Spaghetti Aglio Olio",
+      "mealEn": "Spaghetti Aglio Olio",
+      "image": null,
+      "servingDate": "01/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.85,
+      "priceNotSubsidized": 10.6,
+      "priceIncludingVAT": 13.5,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 7357,
+              "title": "Maaltijd II",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1133,
+          "title": "Haver",
+          "titleEn": "Oats",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_HAVER.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/gluten_allergeen_OATS.png"
+        },
+        {
+          "id": 1130,
+          "title": "Aardnoten",
+          "titleEn": "Peanuts",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 291854,
+      "meal": "Spaghetti Aglio Olio spekreepjes",
+      "mealEn": "Spaghetti Aglio Olio with bacon strips",
+      "image": null,
+      "servingDate": "01/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.85,
+      "priceNotSubsidized": 10.6,
+      "priceIncludingVAT": 13.5,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 7357,
+              "title": "Maaltijd II",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238894,
+          "title": "Varken",
+          "titleEn": "Pork",
+          "image": "https://www.alma.be/files/Iconen/varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1130,
+          "title": "Aardnoten",
+          "titleEn": "Peanuts",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296299,
+      "meal": "Spaghetti Caponata Veggy",
+      "mealEn": "Spaghetti Caponata Veggy",
+      "image": null,
+      "servingDate": "21/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.85,
+      "priceNotSubsidized": 10.6,
+      "priceIncludingVAT": 13.5,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 7357,
+              "title": "Maaltijd II",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1130,
+          "title": "Aardnoten",
+          "titleEn": "Peanuts",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296301,
+      "meal": "Spaghetti Caponata met varkensreepjes",
+      "mealEn": "Spaghetti Caponata with pork strips",
+      "image": null,
+      "servingDate": "21/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.85,
+      "priceNotSubsidized": 10.6,
+      "priceIncludingVAT": 13.5,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 2",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 7357,
+              "title": "Maaltijd II",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 238894,
+          "title": "Varken",
+          "titleEn": "Pork",
+          "image": "https://www.alma.be/files/Iconen/varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1130,
+          "title": "Aardnoten",
+          "titleEn": "Peanuts",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/peanuts_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296958,
+      "meal": "Spaghetti bolognaise.",
+      "mealEn": "Spaghetti bolognese",
+      "image": "assets/img/foods/296958.png",
+      "servingDate": "28/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.85,
+      "priceNotSubsidized": 10.6,
+      "priceIncludingVAT": 13.5,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        },
+        {
+          "id": 1146,
+          "title": "Sulfiet",
+          "titleEn": "Sulfite",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/Sulfieten_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sulphites_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292284,
+      "meal": "Spaghetti meatballs",
+      "mealEn": "Spaghetti meatballs",
+      "image": "assets/img/foods/292284.png",
+      "servingDate": "31/03/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.85,
+      "priceNotSubsidized": 10.6,
+      "priceIncludingVAT": 13.5,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma Gasthuisberg",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 7357,
+              "title": "Maaltijd II",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 252802,
+          "title": "Varken en rund",
+          "titleEn": "Beef and pork",
+          "image": "https://www.alma.be/files/Iconen/runds-en-varken.png",
+          "imageEn": "https://www.alma.be/files/Iconen/beef-and-pork.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292286,
+      "meal": "Spaghetti champignons",
+      "mealEn": "Spaghetti with mushrooms",
+      "image": "assets/img/foods/292286.png",
+      "servingDate": "31/03/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.85,
+      "priceNotSubsidized": 10.6,
+      "priceIncludingVAT": 13.5,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma Gasthuisberg",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 7357,
+              "title": "Maaltijd II",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292627,
+      "meal": "Stoofvlees op Vlaamse wijze met slaatje en tarwe",
+      "mealEn": "Stoofvlees op Vlaamse wijze met slaatje en tarwe",
+      "image": "assets/img/foods/292627.png",
+      "servingDate": "31/03/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1132,
+          "title": "Gerst",
+          "titleEn": "Barley",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_GERST.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_BARLEY.png"
+        },
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        },
+        {
+          "id": 1146,
+          "title": "Sulfiet",
+          "titleEn": "Sulfite",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/Sulfieten_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/sulphites_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296777,
+      "meal": "Tacoschelp met chili sin carne en frisse Mexicaanse salade",
+      "mealEn": "Taco shell with chili sin carne and fresh Mexican salad",
+      "image": "assets/img/foods/296777.png",
+      "servingDate": "22/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292633,
+      "meal": "Tex Mex Summer",
+      "mealEn": "Tex Mex Summer",
+      "image": "assets/img/foods/292633.png",
+      "servingDate": "01/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 3",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296725,
+      "meal": "Thai sweet potato curry",
+      "mealEn": "Thaise zoete aardappelcurry",
+      "image": "assets/img/foods/296725.png",
+      "servingDate": "20/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1138,
+          "title": "Cashew",
+          "titleEn": "Cashew",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/noten_allergeen_CASHEW.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/nuts_allergeen_CASHEW.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296974,
+      "meal": "Tomaat-geitenkaastaart met gebakken aardappelen en salade",
+      "mealEn": "Tomato and goat cheese pie with fried potatoes and salad",
+      "image": "assets/img/foods/296974.png",
+      "servingDate": "29/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297025,
+      "meal": "Tomaat mascarpone soep (K)",
+      "mealEn": "Tomato mascarpone soup",
+      "image": "assets/img/foods/297025.png",
+      "servingDate": "21/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 1.8,
+      "priceNotSubsidized": 2.05,
+      "priceIncludingVAT": 2.2,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132953,
+          "title": "Laag",
+          "titleEn": "Low",
+          "image": "https://www.alma.be/files/low.png",
+          "imageEn": "https://www.alma.be/uploads/low.png"
+        }
+      ],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297789,
+      "meal": "Gyros met Basmatirijst",
+      "mealEn": "Vegan gyros with pilaf rice",
+      "image": "assets/img/foods/297789.png",
+      "servingDate": "29/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 174107,
+      "meal": "Groente-lasagne met piccolo",
+      "mealEn": "Vegetable lasagna with piccolo",
+      "image": "assets/img/foods/174107.png",
+      "servingDate": null,
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Groep T",
+      "counters": [
+        {
+          "id": 1318,
+          "title": "SnackDD"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132953,
+          "title": "Laag",
+          "titleEn": "Low",
+          "image": "https://www.alma.be/files/low.png",
+          "imageEn": "https://www.alma.be/uploads/low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132960,
+          "title": "D",
+          "titleEn": "D",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 292470,
+      "meal": "Groentesoep (G)",
+      "mealEn": "Vegetable soup",
+      "image": "assets/img/foods/292470.png",
+      "servingDate": "01/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 2.9,
+      "priceNotSubsidized": 3.15,
+      "priceIncludingVAT": 3.45,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1315,
+          "title": "Toog 3"
+        }
+      ],
+      "categories": [
+        {
+          "id": 1848,
+          "title": "Soep",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": []
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132952,
+          "title": "Heel laag",
+          "titleEn": "Very low",
+          "image": "https://www.alma.be/uploads/Very-low.png",
+          "imageEn": "https://www.alma.be/uploads/Very-low.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 54,
+          "title": "Vegan",
+          "titleEn": "Vegan",
+          "image": "https://www.alma.be/files/vegan-label-EN-NL.png",
+          "imageEn": "https://www.alma.be/files/vegan-label-EN-NL.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 296807,
+      "meal": "Groenteloempia met currysaus en groentenrijst",
+      "mealEn": "Vegetable spring rolls with curry sauce and vegetable rice",
+      "image": "assets/img/foods/296807.png",
+      "servingDate": "24/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132954,
+          "title": "Medium",
+          "titleEn": "Medium",
+          "image": "https://www.alma.be/files/medium.png",
+          "imageEn": "https://www.alma.be/uploads/Medium.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132959,
+          "title": "C",
+          "titleEn": "C",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297488,
+      "meal": "Vegarische Hongaarse goulash met rijst",
+      "mealEn": "Vegetarian Hungarian goulash with rice",
+      "image": "assets/img/foods/297488.png",
+      "servingDate": "25/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1313,
+          "title": "Toog 1"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [
+        {
+          "id": 132954,
+          "title": "Medium",
+          "titleEn": "Medium",
+          "image": "https://www.alma.be/files/medium.png",
+          "imageEn": "https://www.alma.be/uploads/Medium.png"
+        }
+      ],
+      "healthScore": [
+        {
+          "id": 132960,
+          "title": "D",
+          "titleEn": "D",
+          "image": "",
+          "imageEn": ""
+        }
+      ],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 1132,
+          "title": "Gerst",
+          "titleEn": "Barley",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_GERST.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_BARLEY.png"
+        },
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 766,
+          "title": "Selderij",
+          "titleEn": "Celery",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/selderij_allergeen.png",
+          "imageEn": "https://www.alma.be/files/celery_allergeen.png"
+        },
+        {
+          "id": 1145,
+          "title": "Soja",
+          "titleEn": "Soy",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/soja_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/soy_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    },
+    {
+      "id": 297684,
+      "meal": "Veggie pita looksaus gebakken aardapp.",
+      "mealEn": "Veggie pita with garlic sauce and baked potatoes",
+      "image": "assets/img/foods/297684.png",
+      "servingDate": "28/04/2026",
+      "defaultPortion": true,
+      "altPortion": false,
+      "defaultPrice": 5.6,
+      "priceNotSubsidized": 10.25,
+      "priceIncludingVAT": 15,
+      "priceAlternative": null,
+      "priceAlternativeNotSubsidized": null,
+      "priceAlternativeIncludingVAT": null,
+      "location": "Alma 1",
+      "counters": [
+        {
+          "id": 1314,
+          "title": "Toog 2"
+        }
+      ],
+      "categories": [
+        {
+          "id": 13800,
+          "title": "Warm buffet",
+          "image": null,
+          "level": 1,
+          "sortOrder": null,
+          "subcategories": [
+            {
+              "id": 1847,
+              "title": "Schotel",
+              "image": null,
+              "level": 2,
+              "sortOrder": null
+            }
+          ]
+        }
+      ],
+      "ecoScore": [],
+      "healthScore": [],
+      "diets": [
+        {
+          "id": 53,
+          "title": "Vegetarisch (niet-vegan)",
+          "titleEn": "Vegetarian (non-vegan)",
+          "image": "https://www.alma.be/files/vegetarisch-label-NL.png",
+          "imageEn": "https://www.alma.be/files/vegetarisch-label-EN.png"
+        }
+      ],
+      "intolerances": [],
+      "allergies": [
+        {
+          "id": 768,
+          "title": "Tarwe",
+          "titleEn": "Wheat",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/gluten_allergeen_TARWE.png",
+          "imageEn": "https://www.alma.be/files/gluten_allergeen_WHEAT.png"
+        },
+        {
+          "id": 1131,
+          "title": "Eieren",
+          "titleEn": "Eggs",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/eieren_allergeen.png",
+          "imageEn": "https://www.alma.be/files/egg_allergeen.png"
+        },
+        {
+          "id": 1136,
+          "title": "Melk",
+          "titleEn": "Milk",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/melk_allergeen.png",
+          "imageEn": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/en/milk_allergeen.png"
+        },
+        {
+          "id": 765,
+          "title": "Mosterd",
+          "titleEn": "Mustard",
+          "image": "https://www.alma.be/files/Iconen/Allergie%C3%ABn/nl/mosterd_allergeen.png",
+          "imageEn": "https://www.alma.be/files/mustard_allergeen.png"
+        }
+      ],
+      "highlight": false,
+      "outOfStock": false
+    }
+  ]
+}
