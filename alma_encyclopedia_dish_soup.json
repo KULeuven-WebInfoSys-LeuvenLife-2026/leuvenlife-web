@@ -94,7 +94,7 @@
     {
       "id": 296293,
       "meal": "Alma puebla burger van de grill",
-      "mealEn": "Alma puebla burger van de grill",
+      "mealEn": "Alma puebla burger from the grill",
       "image": "assets/img/foods/296293.png",
       "servingDate": "21/04/2026",
       "defaultPortion": true,
@@ -2330,7 +2330,7 @@
     {
       "id": 295925,
       "meal": "Gehakte steak pepersaus prinsessenbonen puree",
-      "mealEn": "Gehakte steak pepersaus prinsessenbonen puree",
+      "mealEn": "Minced steak with pepper sauce, green beans and mashed potatoes",
       "image": "assets/img/foods/295925.png",
       "servingDate": "20/04/2026",
       "defaultPortion": true,
@@ -5424,7 +5424,7 @@
     {
       "id": 292627,
       "meal": "Stoofvlees op Vlaamse wijze met slaatje en tarwe",
-      "mealEn": "Stoofvlees op Vlaamse wijze met slaatje en tarwe",
+      "mealEn": "Flemish-style beef stew with salad and wheat",
       "image": "assets/img/foods/292627.png",
       "servingDate": "31/03/2026",
       "defaultPortion": true,
@@ -5689,8 +5689,8 @@
     },
     {
       "id": 296725,
-      "meal": "Thai sweet potato curry",
-      "mealEn": "Thaise zoete aardappelcurry",
+      "meal": "Thaise zoete aardappelcurry",
+      "mealEn": "hai sweet potato curry",
       "image": "assets/img/foods/296725.png",
       "servingDate": "20/04/2026",
       "defaultPortion": true,
