@@ -1,13 +1,11 @@
 # LeuvenLife: Digital Student Guide 
 **KU Leuven Web Information Systems [B-KUL-G0Y11A] - Group 4 (2026)**
 
-LeuvenLife is a centralized web application designed as a digital onboarding guide for international students arriving at KU Leuven. By integrating real-time web services (APIs), the platform acts as the first website a new student visits, solving concrete problems across three main pillars: **Food, Housing, and Transport**.
+LeuvenLife is a centralized web application designed as a digital onboarding guide for international students arriving at KU Leuven. While initially conceptualized to cover multiple pillars of student life, we strategically pivoted our scope to deliver a highly robust, deeply interactive experience focused entirely on campus dining.  Today, LeuvenLife serves as the ultimate **Alma Culinary Encyclopedia**, utilizing live APIs, AI cultural analysis, and 3D mapping to introduce international freshmen to Belgian campus food.
 
-🚀 **Live Demo1:** [View the Homepage Prototype Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index-demo1.html)
-
-🚀 **Live Demo2:** [View the Homepage Prototype Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index-demo2.html)
-
-🚀 **Live Demo3 (map):** [View the Homepage Prototype Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/map.html)
+🚀 **Live Demo (Classic Grid):** [View Prototype V1 Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index-demo1.html)
+✨ **Live Demo (Luxury Editorial UI):** [View Prototype V2 Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index-demo2.html)
+🌍 **Live Demo (Interactive 3D Map):** [Explore 'Taste The World' Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/map.html)
 
 ## 👥 Team Members
 * YIN Renlong
@@ -16,24 +14,24 @@ LeuvenLife is a centralized web application designed as a digital onboarding gui
 * Hou Yilin
 
 ## 📂 Repository Architecture
-This is a pure frontend web application (HTML5, CSS3, JavaScript). Please place your files in the following directories:
-* 📄 `index.html` - The main homepage/landing page.
-* 📁 `/css` - Custom CSS files (to be used alongside Tailwind/Bootstrap).
-* 📁 `/js` - JavaScript logic, API fetch calls, and DOM manipulation.
-* 📁 `/assets` - Images, logos, and UI icons.
-* 📁 `/docs` - Project proposals, Figma UI sketches, and the final PDF report.
+This is a Serverless Single Page Application (SPA) built with HTML5, Vanilla JavaScript, and Tailwind CSS.
+* 📄 `index-demo2.html` - The main luxury dashboard layout.
+* 📄 `map.html` - The interactive 3D globe MapTiler integration.
+* 💾 `alma_encyclopedia_dish_soup.json` - Our custom-consolidated, flattened database of 75 unique meals.
+* 📁 `/assets/img/foods/` - Locally hosted image assets for zero-dependency loading and 100% uptime.
+* 📁 `/js` - Modular Vanilla JavaScript logic (`app.js`, `map.js`, etc.) handling DOM manipulation and API fetching.
 
 ---
 
 ## 🎯 Project Strategy & Mentor Feedback
-Based on our mentor meeting, our team is focusing heavily on **User Experience (UX) and Design** before diving into complex API logic. 
-1. **Design First:** We are sketching the UI (Figma) before coding to ensure a unified user flow.
-2. **Scope Overload:** To avoid a cluttered design, we will carefully limit our API scope (e.g., potentially focusing purely on Alma for the Food pillar).
-3. **Robustness:** We will prioritize an error-free frontend. A backup video will be recorded for the final presentation in case of live API rate limits.
+Following our mentor meeting, our team recognized the risk of "Scope Overload." To achieve a perfect score in **Robustness** and **Design**, we made the following strategic decisions:
 
----
+1. **Focused Scope:** We abandoned the Housing and Transport modules to focus entirely on the Alma Food experience. This allowed us to build a much deeper, more creative application.
+2. **Decoupled Architecture:** To prevent the app from breaking if the Alma servers go offline during grading, we engineered a Python pipeline to download the data and images locally. The SPA loads instantly from our GitHub CDN.
+3. **API Orchestration:** By narrowing our scope, we freed up development time to creatively combine multiple complex web services: MapTiler (3D Globe), DeepL (Translations), and Azure OpenAI (Cultural Dish Explanations).
 
 ## 📝 Development & Changelog
+
 *A chronological log to track project milestones, team contributions, and design thinking.*
 
 
