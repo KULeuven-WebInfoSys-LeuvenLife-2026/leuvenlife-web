@@ -4,7 +4,9 @@
 LeuvenLife is a centralized web application designed as a digital onboarding guide for international students arriving at KU Leuven. While initially conceptualized to cover multiple pillars of student life, we strategically pivoted our scope to deliver a highly robust, deeply interactive experience focused entirely on campus dining.  Today, LeuvenLife serves as the ultimate **Alma Culinary Encyclopedia**, utilizing live APIs, AI cultural analysis, and 3D mapping to introduce international freshmen to Belgian campus food.
 
 🚀 **Live Demo (Classic Grid):** [View Prototype V1 Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index-demo1.html)
+
 ✨ **Live Demo (Luxury Editorial UI):** [View Prototype V2 Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index-demo2.html)
+
 🌍 **Live Demo (Interactive 3D Map):** [Explore 'Taste The World' Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/map.html)
 
 ## 👥 Team Members
