@@ -124,5 +124,33 @@
     </footer>
 
     <script src="js/demo2.js"></script>
+
+    <!-- AI Explanation Modal (Hidden by default) -->
+    <div id="ai-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md hidden transition-opacity duration-300">
+        <div class="bg-brand-bg border border-brand-accent p-8 md:p-12 rounded-sm shadow-2xl max-w-lg w-full mx-4 relative flex flex-col max-h-[85vh]">
+            <!-- Close Button -->
+            <button id="close-ai-modal" class="absolute top-4 right-6 text-brand-muted hover:text-brand-accent transition-colors text-3xl font-light">&times;</button>
+            
+            <!-- Header -->
+            <div class="flex-shrink-0">
+                <h3 class="font-serif text-3xl text-brand-accent mb-2 italic">Culinary Historian</h3>
+                <h4 id="ai-dish-name" class="font-sans text-[11px] tracking-[0.2em] uppercase text-brand-text mb-6 border-b border-brand-border pb-4">Loading Dish...</h4>
+            </div>
+            
+            <!-- Chat History Area (Scrollable) -->
+            <div id="ai-chat-history" class="flex-grow font-sans text-sm text-brand-text leading-relaxed font-light overflow-y-auto mb-4 pr-4 space-y-6 custom-scrollbar">
+                <!-- Chat messages will be injected here -->
+            </div>
+
+            <!-- Interactive Input Area -->
+            <div class="flex-shrink-0 flex items-center gap-4 border-t border-brand-border pt-4 mt-2">
+                <input type="text" id="ai-user-input" placeholder="Ask about ingredients, allergies, taste..." autocomplete="off" class="flex-grow bg-transparent border-b border-brand-muted text-brand-text focus:outline-none focus:border-brand-accent pb-1 text-xs md:text-sm placeholder-brand-border transition-colors">
+                <button id="ai-send-btn" class="font-sans text-[10px] tracking-[0.2em] uppercase text-brand-bg bg-brand-accent px-4 py-2 hover:bg-white transition-colors duration-300">
+                    Ask ✦
+                </button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

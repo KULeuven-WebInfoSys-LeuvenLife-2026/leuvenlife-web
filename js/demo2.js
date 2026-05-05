@@ -211,3 +211,154 @@ function setupFilters() {
 function updateStats(count, label) {
     document.getElementById('stats-display').innerHTML = `Viewing <span class="text-brand-text">${count}</span> ${label}`;
 }
+
+
+// ==========================================
+// OPENAI CULTURAL HISTORIAN (INTERACTIVE CHAT)
+// ==========================================
+
+
+// Global variable to remember the conversation context for follow-up questions!
+let currentChatHistory = []; 
+
+// 1. Listen for clicks on ANY "Ask AI" button on a food card
+document.addEventListener('click', (e) => {
+    if (e.target.closest('.explain-btn')) {
+        const btn = e.target.closest('.explain-btn');
+        const dishId = parseInt(btn.getAttribute('data-id'));
+        const dish = encyclopediaData.find(d => d.id === dishId);
+        if (dish) {
+            startAILesson(dish);
+        }
+    }
+});
+
+// 2. Modal UI controls
+document.addEventListener('click', (e) => {
+    const modal = document.getElementById('ai-modal');
+    if (e.target.id === 'close-ai-modal' || e.target === modal) {
+        modal.classList.add('hidden');
+    }
+});
+
+// 3. Start a brand new conversation about a dish
+async function startAILesson(dish) {
+    const modal = document.getElementById('ai-modal');
+    const titleEl = document.getElementById('ai-dish-name');
+    const chatEl = document.getElementById('ai-chat-history');
+    const inputEl = document.getElementById('ai-user-input');
+    
+    titleEl.innerText = dish.mealEn || dish.meal;
+    chatEl.innerHTML = '<div class="animate-pulse text-brand-muted italic">Consulting the culinary historian... ✦</div>';
+    inputEl.value = '';
+    modal.classList.remove('hidden');
+
+    const diets = dish.diets.length > 0 ? dish.diets.map(d => d.titleEn).join(', ') : 'None';
+    const allergies = dish.allergies.length > 0 ? dish.allergies.map(a => a.titleEn).join(', ') : 'None';
+
+    const systemPrompt = "You are an elegant, high-end culinary guide for international university students in Belgium. You answer questions directly, keeping responses brief, polite, and beautifully written. Tone: Welcoming, appetizing, premium.";
+    const initialUserPrompt = `Context: The student is looking at "${dish.mealEn}" (Dutch: ${dish.meal}). It has diets: ${diets}. Allergens: ${allergies}. Please give a 2-sentence explanation of its cultural origin and flavor.`;
+
+    // Reset the chat history memory
+    currentChatHistory = [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: initialUserPrompt }
+    ];
+
+    try {
+        const aiResponse = await fetchOpenAI(currentChatHistory);
+        // Save AI's response to memory
+        currentChatHistory.push({ role: "assistant", content: aiResponse });
+        // Display AI's response
+        chatEl.innerHTML = `<div class="text-brand-text mb-4 leading-relaxed">${aiResponse}</div>`;
+    } catch (error) {
+        chatEl.innerHTML = `<span class="text-red-400">The historian is resting. Please try again.</span>`;
+    }
+}
+
+// 4. Handle the user asking a follow-up question (USING EVENT DELEGATION)
+document.addEventListener('click', (e) => {
+    // If they click the button (or the star icon inside it)
+    if (e.target.closest('#ai-send-btn')) {
+        handleUserFollowUp();
+    }
+});
+
+// Listen for the "Enter" key globally, but only trigger if they are typing in our specific input box
+document.addEventListener('keypress', (e) => {
+    if (e.target.id === 'ai-user-input' && e.key === 'Enter') {
+        e.preventDefault(); // Prevent accidental form submissions
+        handleUserFollowUp();
+    }
+});
+
+async function handleUserFollowUp() {
+    const inputEl = document.getElementById('ai-user-input');
+    const chatEl = document.getElementById('ai-chat-history');
+    const text = inputEl.value.trim();
+    
+    if (!text) return; // Don't send empty messages
+
+    // 1. Add user's question to the UI (styled elegantly right-aligned in Gold)
+    chatEl.innerHTML += `
+        <div class="flex justify-end mt-4 mb-4">
+            <div class="bg-[#23312d] text-brand-accent px-4 py-3 rounded text-sm italic max-w-[85%] border border-brand-border">
+                "${text}"
+            </div>
+        </div>
+    `;
+    inputEl.value = ''; // clear box
+    
+    // Scroll to the bottom of the chat
+    chatEl.scrollTop = chatEl.scrollHeight; 
+
+    // 2. Add user question to Javascript memory
+    currentChatHistory.push({ role: "user", content: text });
+
+    // 3. Show loading UI
+    const loadingId = 'loading-' + Date.now();
+    chatEl.innerHTML += `<div id="${loadingId}" class="animate-pulse text-brand-muted italic mt-2">Thinking... ✦</div>`;
+    chatEl.scrollTop = chatEl.scrollHeight;
+
+    try {
+        // 4. Fetch AI response (sending the whole history!)
+        const aiResponse = await fetchOpenAI(currentChatHistory);
+        
+        // 5. Save and Display
+        currentChatHistory.push({ role: "assistant", content: aiResponse });
+        document.getElementById(loadingId).remove();
+        chatEl.innerHTML += `<div class="text-brand-text mt-2 leading-relaxed border-l-2 border-brand-accent pl-4">${aiResponse}</div>`;
+        chatEl.scrollTop = chatEl.scrollHeight;
+
+    } catch (error) {
+        document.getElementById(loadingId).remove();
+        chatEl.innerHTML += `<div class="text-red-400 mt-2">Sorry, connection lost.</div>`;
+    }
+}
+
+// 5. The core Fetch function to talk to your SECURE CLOUDFLARE WORKER
+async function fetchOpenAI(messagesArray) {
+    const WORKER_URL = "https://alma-ai-proxy.trarc.workers.dev";
+
+    // CORRECTED: Fetching your worker URL! No authorization header needed here!
+    const response = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            model: "gpt-4o-mini",
+            messages: messagesArray,
+            max_tokens: 150,
+            temperature: 0.7
+        })
+    });
+
+    if (!response.ok) throw new Error("API Error");
+    const data = await response.json();
+    
+    // Cloudflare returns { error: "..." } if it fails on the server side
+    if (data.error) throw new Error(data.error); 
+
+    return data.choices[0].message.content;
+}

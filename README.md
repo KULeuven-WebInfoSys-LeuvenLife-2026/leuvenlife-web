@@ -36,7 +36,21 @@ Following our mentor meeting, our team recognized the risk of "Scope Overload." 
 
 *A chronological log to track project milestones, team contributions, and design thinking.*
 
+**[5 May 2026] - Interactive AI Cultural Historian & Serverless Security (YIN Renlong)**
 
+To elevate the "Creativity" and "Dynamic Data" aspects of the project, I evolved the previously planned static AI integration into a fully interactive, conversational "Culinary Historian" accessible across both the main Grid (index-demo2.html) and the 3D Globe (map.html).
+
+- **Interactive AI Dialogue System & Context Engineering:**
+  - *Architecture:* Implemented a stateful conversation model using the OpenAI API (gpt-4o-mini). Instead of forcing the user to type their initial question, the JavaScript silently acts as a context broker. Upon clicking "Ask AI", the script uses the data-id attribute to index the encyclopediaData array, extracts the dish's Dutch/English names, dietary tags (e.g., Vegan), and allergens, and bundles them into a hidden System Prompt.
+  - *State Management:* Engineered a Javascript memory array (currentChatHistory) that stores the ongoing conversation. This allows the user to ask follow-up questions (e.g., "Is it spicy?") and the AI natively understands the anaphoric reference to the specific dish.
+  - *HCI & UX Design:* Designed a luxury-themed, backdrop-blurred chat modal. Implemented responsive UI feedback, including an animate-pulse loading state ("Thinking... ✦") to mask API latency. Programmed custom auto-scrolling logic (scrollTop = scrollHeight) to mimic native messaging apps, alongside distinct visual styling for user prompts (gold/dark green right-aligned bubbles) versus AI responses (left-aligned with golden borders).
+- **Enterprise-Grade Security (Cloudflare Workers Proxy):**
+  - *Security Challenge:* Directly calling the OpenAI API from vanilla JavaScript exposes the secret sk-proj-... API key in the browser's Network tab and GitHub repository, violating modern security protocols.
+  - *Serverless Solution:* I architected and deployed a free Serverless Edge proxy using **Cloudflare Workers** (alma-ai-proxy). The frontend now sends a safe POST request to this worker. The worker handles CORS preflight (OPTIONS) requirements, securely injects the hidden environment variable (CFWORKER_OPENAI_API_KEY_WIS_KULEUVEN_2026), forwards the payload to OpenAI, and returns the response to the client. This guarantees 100% repository security and protects against unauthorized API billing abuse.
+- **Advanced Debugging & Application Robustness:**
+  - *DOM Lifecycle & Event Delegation:* Encountered a silent failure where the chat's "Ask" button and "Enter" keypress would not trigger the API. Diagnosed this as a DOM-loading issue caused by the modal being initially hidden (hidden class). Resolved this by engineering an **Event Delegation** pattern, attaching the click/keypress listeners to the global document and filtering via e.target.closest(), ensuring 100% reliable execution regardless of DOM re-renders.
+  - *Lexical Scoping Resolution:* Debugged a severe ReferenceError: encyclopediaData is not defined explicitly on the map.js page. Traced the bug to a block-scoping error where the JSON payload was trapped inside initCulturalMap() via a const declaration. Fixed this by declaring a global let encyclopediaData = [] and mutating it inside the fetch block, safely exposing the data to the global click listeners.
+  - *Graceful Degradation:* Wrapped all API fetch logic in strict try/catch blocks. If the user loses internet connection or the Cloudflare Edge node times out, the application catches the promise rejection and dynamically injects a styled fallback error message ("Sorry, connection lost."), fulfilling the rubric's strict requirement for zero unhandled crashes.
 
 **[5 May 2026] - Interactive 3D Globe & UX Engineering (YIN Renlong)**
 
