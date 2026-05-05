@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeuvenLife | Taste The World</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- MapTiler SDK (Official v4.0.1 for 3D Globe) -->
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v4.0.1/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v4.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#1a2421',       
+                            text: '#d8cbb8',     
+                            accent: '#c4a678',   
+                            border: '#33423d',   
+                            muted: '#9baea6'     
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Jost"', 'sans-serif'],
+                        script: ['"Great Vibes"', 'cursive'] 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #1a2421; color: #d8cbb8; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #1a2421; }
+        ::-webkit-scrollbar-thumb { background: #33423d; }
+        ::-webkit-scrollbar-thumb:hover { background: #c4a678; }
+        
+        /* MapLibre custom popup overrides */
+        .maplibregl-popup-content { background-color: #1a2421 !important; padding: 0 !important; border: 1px solid #33423d; border-radius: 4px; }
+        .maplibregl-popup-tip { border-top-color: #1a2421 !important; border-bottom-color: #1a2421 !important; }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="border-b border-brand-border py-6 px-6 md:px-12 flex justify-between items-center w-full relative z-20">
+        <div class="font-serif text-2xl tracking-widest uppercase">LEUVENLIFE</div>
+        <div class="flex space-x-6">
+            <!-- Link back to the main menu -->
+            <a href="index-demo2.html" class="font-sans text-[11px] uppercase tracking-[0.2em] text-brand-muted hover:text-brand-text transition-colors duration-300">
+                ⊞ Menu
+            </a>
+            <button id="btn-preferences" class="font-sans text-[11px] uppercase tracking-[0.2em] border-b border-transparent hover:border-brand-accent transition-all duration-300 pb-1">
+                Dietary Preferences
+            </button>
+        </div>
+    </nav>
+
+    <!-- Minimalist Map Header -->
+    <header class="py-12 text-center px-6 relative border-b border-brand-border bg-brand-bg">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-sans text-[10px] md:text-xs uppercase tracking-[0.4em] text-brand-accent mb-4">
+                Global Culinary Origins
+            </h2>
+            <h1 class="font-serif text-4xl md:text-5xl mb-4 font-light italic tracking-wide">
+                Taste The World
+            </h1>
+            <p class="font-sans font-light text-brand-muted text-sm max-w-xl mx-auto leading-relaxed">
+                Explore the cultural roots of the dishes served at Alma. Click a golden pin to view the dish and ask the AI about its history.
+            </p>
+        </div>
+    </header>
+
+    <!-- Full Width Map Container -->
+    <main class="w-full flex-grow relative border-b border-brand-border h-[65vh]">
+        <div id="map-container" class="w-full h-full"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center mt-auto w-full px-6 bg-brand-bg">
+        <p class="font-sans text-[10px] text-brand-muted uppercase tracking-[0.3em]">© 2026 KU Leuven WIS Project</p>
+    </footer>
+
+    <script src="js/map.js"></script>
+</body>
+</html>
