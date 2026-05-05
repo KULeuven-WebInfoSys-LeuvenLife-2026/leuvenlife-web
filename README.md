@@ -38,19 +38,19 @@ Following our mentor meeting, our team recognized the risk of "Scope Overload." 
 
 
 
-**[5 May 2026] - Interactive 3D Globe & Azure OpenAI Integration (YIN Renlong)**
+**[5 May 2026] - Interactive 3D Globe & UX Engineering (YIN Renlong)**
 
-To fulfill the "Dynamic Data" and "Creativity" requirements of the rubric, I architected a dedicated "Taste The World" module (`map.html`) and integrated a live Large Language Model (LLM) to act as a cultural culinary historian for international students.
+To fulfill the "Dynamic Data" and "Creativity" requirements of the rubric, I architected a dedicated "Taste The World" module (`map.html`) to visualize the cultural origins of our cafeteria food for international freshmen.
 
-* **3D Interactive Cultural Map (MapTiler & MapLibre GL JS):**
-  * *Architecture:* Integrated the MapTiler SDK (v4.0.1) via CDN to generate an interactive 3D rotating globe (`projection: 'globe'`). This serves as a secondary, highly creative view of our Food Encyclopedia.
-  * *HCI & Visual Design:* Implemented the `MapStyle.WINTER` map style to create a stunning, high-contrast aesthetic against our dark forest green UI. Programmed custom DOM elements to replace default map markers with animated, glowing gold pins. Synchronized the map's popup UI to perfectly mirror the CSS styling of our main menu cards.
-  * *Algorithmic Geocoding & Debugging:* Since the Alma API lacks GPS data, I engineered a "Cultural Geocoder" dictionary in Vanilla JS that cross-references dish names (e.g., "Fajita", "Stoofvlees") and assigns them latitude/longitude coordinates (Mexico, Belgium, etc.). *Debugging Insight:* I mathematically constrained the randomization offsets for clustered pins to `0.4` degrees (~44km) to ensure pins rendered accurately on landmasses rather than spilling into the ocean.
+* **3D Interactive Cultural Map (MapTiler SDK & MapLibre):**
+  * *Architecture:* Integrated the MapTiler SDK (v4.0.1) via CDN to generate an interactive 3D rotating globe (`projection: 'globe'`). The map dynamically iterates through our pre-processed `alma_encyclopedia_dish_soup.json` file, ensuring the 3D globe renders instantly with zero API latency.
+  * *HCI & Visual Design:* Selected the `MapStyle.WINTER` map style to create a stunning, crisp aesthetic that contrasts beautifully against our dark UI. Programmed custom DOM elements to replace default map markers with animated, glowing gold pins. Synchronized the map's popup UI to perfectly mirror the CSS styling of our main menu cards.
+  * *Algorithmic Geocoding & Debugging:* Since the raw Alma API lacks GPS data, I engineered a "Cultural Geocoder" dictionary in Vanilla JS that cross-references dish names (e.g., "Fajita", "Stoofvlees") and assigns them latitude/longitude coordinates (Mexico, Belgium, etc.). *Debugging Insight:* I mathematically constrained the randomization offsets for clustered pins to `0.4` degrees (~44km) to ensure pins rendered accurately on landmasses rather than spilling into the ocean.
 
-* **Azure OpenAI Integration (Dynamic Data):**
-  * *Serverless API Connection:* Built a direct `fetch()` pipeline from the browser to our Azure OpenAI deployment. 
-  * *Prompt Engineering:* Wrote a strict system prompt instructing the AI to act as a "culinary historian" and return exactly two elegant sentences of cultural context based on the native Dutch dish name (`data-nl-name`).
-  * *UI Implementation:* Designed a seamless, backdrop-blurred modal that triggers when a user clicks the "ASK AI ✦" button. It features a pulsing loading state ("Consulting the chef...") to respect HCI principles during API latency.
+* **[IN PROGRESS] Azure OpenAI Integration (Dynamic Data):**
+  * *Current Status:* Preparing the front-end architecture to act as a "cultural culinary historian."
+  * *Planned Implementation:* Developing a Serverless `fetch()` pipeline from the browser to an Azure OpenAI deployment. The architecture is set up to capture the `data-nl-name` from the UI buttons and pass it to a strict system prompt. 
+  * *UI Preparation:* Currently wireframing a seamless, backdrop-blurred modal with a pulsing loading state ("Consulting the chef...") to handle anticipated API latency while maintaining strong HCI principles.
 
 * **Robustness & Error Handling:**
   * Secured the entire Azure OpenAI API call within strict `try/catch` blocks. If the Azure endpoint times out or fails, the application does not crash. Instead, the UI catches the error and gracefully displays a fallback message ("The chef is currently unavailable. Please try again later."), guaranteeing our 5/5 score for zero application errors.
