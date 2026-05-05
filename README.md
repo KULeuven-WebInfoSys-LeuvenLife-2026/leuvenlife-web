@@ -44,7 +44,7 @@ To fulfill the "Dynamic Data" and "Creativity" requirements of the rubric, I arc
 
 * **3D Interactive Cultural Map (MapTiler & MapLibre GL JS):**
   * *Architecture:* Integrated the MapTiler SDK (v4.0.1) via CDN to generate an interactive 3D rotating globe (`projection: 'globe'`). This serves as a secondary, highly creative view of our Food Encyclopedia.
-  * *HCI & Visual Design:* Implemented the `DATAVIZ.PASTEL` map style to create a stunning, high-contrast aesthetic against our dark forest green UI. Programmed custom DOM elements to replace default map markers with animated, glowing gold pins. Synchronized the map's popup UI to perfectly mirror the CSS styling of our main menu cards.
+  * *HCI & Visual Design:* Implemented the `MapStyle.WINTER` map style to create a stunning, high-contrast aesthetic against our dark forest green UI. Programmed custom DOM elements to replace default map markers with animated, glowing gold pins. Synchronized the map's popup UI to perfectly mirror the CSS styling of our main menu cards.
   * *Algorithmic Geocoding & Debugging:* Since the Alma API lacks GPS data, I engineered a "Cultural Geocoder" dictionary in Vanilla JS that cross-references dish names (e.g., "Fajita", "Stoofvlees") and assigns them latitude/longitude coordinates (Mexico, Belgium, etc.). *Debugging Insight:* I mathematically constrained the randomization offsets for clustered pins to `0.4` degrees (~44km) to ensure pins rendered accurately on landmasses rather than spilling into the ocean.
 
 * **Azure OpenAI Integration (Dynamic Data):**
