@@ -7,6 +7,8 @@ LeuvenLife is a centralized web application designed as a digital onboarding gui
 
 🚀 **Live Demo2:** [View the Homepage Prototype Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index-demo2.html)
 
+🚀 **Live Demo3 (map):** [View the Homepage Prototype Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/map.html)
+
 ## 👥 Team Members
 * YIN Renlong
 * Guo Lingzhi
@@ -35,6 +37,23 @@ Based on our mentor meeting, our team is focusing heavily on **User Experience (
 *A chronological log to track project milestones, team contributions, and design thinking.*
 
 
+
+**[5 May 2026] - Interactive 3D Globe & Azure OpenAI Integration (YIN Renlong)**
+
+To fulfill the "Dynamic Data" and "Creativity" requirements of the rubric, I architected a dedicated "Taste The World" module (`map.html`) and integrated a live Large Language Model (LLM) to act as a cultural culinary historian for international students.
+
+* **3D Interactive Cultural Map (MapTiler & MapLibre GL JS):**
+  * *Architecture:* Integrated the MapTiler SDK (v4.0.1) via CDN to generate an interactive 3D rotating globe (`projection: 'globe'`). This serves as a secondary, highly creative view of our Food Encyclopedia.
+  * *HCI & Visual Design:* Implemented the `DATAVIZ.PASTEL` map style to create a stunning, high-contrast aesthetic against our dark forest green UI. Programmed custom DOM elements to replace default map markers with animated, glowing gold pins. Synchronized the map's popup UI to perfectly mirror the CSS styling of our main menu cards.
+  * *Algorithmic Geocoding & Debugging:* Since the Alma API lacks GPS data, I engineered a "Cultural Geocoder" dictionary in Vanilla JS that cross-references dish names (e.g., "Fajita", "Stoofvlees") and assigns them latitude/longitude coordinates (Mexico, Belgium, etc.). *Debugging Insight:* I mathematically constrained the randomization offsets for clustered pins to `0.4` degrees (~44km) to ensure pins rendered accurately on landmasses rather than spilling into the ocean.
+
+* **Azure OpenAI Integration (Dynamic Data):**
+  * *Serverless API Connection:* Built a direct `fetch()` pipeline from the browser to our Azure OpenAI deployment. 
+  * *Prompt Engineering:* Wrote a strict system prompt instructing the AI to act as a "culinary historian" and return exactly two elegant sentences of cultural context based on the native Dutch dish name (`data-nl-name`).
+  * *UI Implementation:* Designed a seamless, backdrop-blurred modal that triggers when a user clicks the "ASK AI ✦" button. It features a pulsing loading state ("Consulting the chef...") to respect HCI principles during API latency.
+
+* **Robustness & Error Handling:**
+  * Secured the entire Azure OpenAI API call within strict `try/catch` blocks. If the Azure endpoint times out or fails, the application does not crash. Instead, the UI catches the error and gracefully displays a fallback message ("The chef is currently unavailable. Please try again later."), guaranteeing our 5/5 score for zero application errors.
 
 **[30 April 2026] - Core Architecture, Data Engineering & Front-End UI/UX (YIN Renlong)**
 
