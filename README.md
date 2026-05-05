@@ -25,12 +25,23 @@ This is a Serverless Single Page Application (SPA) built with HTML5, Vanilla Jav
 
 ---
 
-## 🎯 Project Strategy & Mentor Feedback
-Following our mentor meeting, our team recognized the risk of "Scope Overload." To achieve a perfect score in **Robustness** and **Design**, we made the following strategic decisions:
+## 🎯 Project Strategy & Mentor Feedback (May 5, 2026)
 
-1. **Focused Scope:** We abandoned the Housing and Transport modules to focus entirely on the Alma Food experience. This allowed us to build a much deeper, more creative application.
-2. **Decoupled Architecture:** To prevent the app from breaking if the Alma servers go offline during grading, we engineered a Python pipeline to download the data and images locally. The SPA loads instantly from our GitHub CDN.
-3. **API Orchestration:** By narrowing our scope, we freed up development time to creatively combine multiple complex web services: MapTiler (3D Globe), DeepL (Translations), and Azure OpenAI (Cultural Dish Explanations).
+Following a highly constructive mentor feedback session with our TA, our team recognized the need to balance advanced technical architecture with strict, user-centric HCI (Human-Computer Interaction) principles. To ensure we achieve a perfect score across **Robustness**, **Design**, and **Teamwork**, we made the following strategic pivots:
+
+### 1. Applying "Occam's Razor" to UI/UX Design
+
+- **Feedback:** While our initial design was aesthetically luxurious, it risked creating "Cognitive Load" and user misunderstanding. Generic fine-dining images and pseudo-buttons (e.g., decorative "Discover" text) were misleading for a university cafeteria application.
+- **Action:** We applied Occam's Razor—eliminating purely decorative elements that did not serve a functional purpose. We removed the confusing decorative images and focused entirely on the actual Alma data. Every button, including our category filters (Warm Dishes, Soups) and dietary tags, is now strictly functional, drastically improving the application's usability for students with specific dietary or religious requirements.
+
+### 2. Meaningful Data Orchestration & Filtering
+
+- **Feedback:** Displaying 78 menu items simultaneously without robust categorization renders the data useless to the end-user. Furthermore, the 3D Map needed a clearer bidirectional purpose rather than just being a visual novelty.
+- **Action:** We shifted our focus from simply *fetching* data to *orchestrating* it. We are implementing robust filtering logic to allow students to sort by location (Alma 1 vs. Alma 2), Price, and Dietary Preferences. We also realigned the 3D Map to act as a macro-indexer, ensuring that the geographical visualization provides immediate, actionable context to the menu items.
+
+### 3. Focused Scope & Decoupled Architecture
+
+- **Strategy:** We abandoned the Housing and Transport modules to focus entirely on perfecting the Alma Food experience. To prevent the app from breaking if the Alma servers go offline during grading, we engineered a pipeline to download the data locally. The SPA now loads instantly and securely, freeing up our resources to creatively combine complex web services like MapTiler (3D Globe) and Azure OpenAI (Cultural Dish Explanations).
 
 ## 📝 Development & Changelog
 
