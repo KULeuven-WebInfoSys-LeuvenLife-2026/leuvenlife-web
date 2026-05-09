@@ -25,14 +25,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -116,14 +116,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -193,14 +193,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -277,14 +277,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -347,7 +347,7 @@
       "id": 292933,
       "meal": "Andalousische tomatensoep (G)",
       "mealEn": "Andalusian tomato soup",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "31/03/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -368,7 +368,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -453,14 +453,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -544,7 +544,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -628,7 +628,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -713,14 +713,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -783,7 +783,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -875,14 +875,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -952,7 +952,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -1029,7 +1029,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -1107,14 +1107,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -1191,14 +1191,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -1298,14 +1298,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -1397,14 +1397,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -1476,7 +1476,7 @@
       "id": 297031,
       "meal": "Koolvis tempura met bladspinazie, room en puree",
       "mealEn": "Cod tempura with spinach, cream, and mashed potatoes",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "22/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -1497,14 +1497,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -1553,7 +1553,7 @@
       "id": 295581,
       "meal": "Cordon bleu gebakken bloemkool champignonsaus aardappelen",
       "mealEn": "Cordon bleu with baked cauliflower, mushroom sauce and potatoes",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "01/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -1574,14 +1574,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -1679,7 +1679,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -1764,7 +1764,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -1842,14 +1842,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -1949,14 +1949,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2062,14 +2062,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2147,14 +2147,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2254,14 +2254,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2352,14 +2352,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2407,14 +2407,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2491,14 +2491,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2547,7 +2547,7 @@
       "id": 295983,
       "meal": "Italiaanse kipfilet met broccolimix",
       "mealEn": "Italian chicken breast with broccoli",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "24/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -2568,14 +2568,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2660,14 +2660,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2760,7 +2760,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -2830,14 +2830,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2900,14 +2900,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -2986,14 +2986,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -3100,14 +3100,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -3206,14 +3206,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -3306,14 +3306,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -3390,14 +3390,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -3474,7 +3474,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -3552,7 +3552,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -3623,14 +3623,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -3721,14 +3721,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -3821,7 +3821,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -3870,7 +3870,7 @@
       "id": 296516,
       "meal": "Patatas Nachos met kip en chimichurrydressing",
       "mealEn": "Patatas nachos with chicken and chimichurri dressing",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "28/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -3891,14 +3891,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -3982,14 +3982,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4073,14 +4073,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4172,14 +4172,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4237,7 +4237,7 @@
       "id": 291848,
       "meal": "Poke bowl met falafel",
       "mealEn": "Poke bowl with falafel",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "01/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -4258,14 +4258,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4335,7 +4335,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -4392,7 +4392,7 @@
       "id": 296719,
       "meal": "Provencaalse kipburger met trostomaatjes en krieltjes",
       "mealEn": "Provencal chicken burger with mini tomatoes and baby potatoes",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "20/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -4413,14 +4413,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4476,7 +4476,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -4540,7 +4540,7 @@
       "id": 297794,
       "meal": "Quornburger met broccoli en pasta in tomatensaus",
       "mealEn": "Quorn burger with broccoli and pasta in tomato sauce",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "30/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -4561,14 +4561,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4624,14 +4624,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4716,14 +4716,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4814,14 +4814,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4870,7 +4870,7 @@
       "id": 291852,
       "meal": "Spaghetti Aglio Olio",
       "mealEn": "Spaghetti Aglio Olio",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "01/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -4891,14 +4891,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 7357,
               "title": "Maaltijd II",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -4940,7 +4940,7 @@
       "id": 291854,
       "meal": "Spaghetti Aglio Olio spekreepjes",
       "mealEn": "Spaghetti Aglio Olio with bacon strips",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "01/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -4961,14 +4961,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 7357,
               "title": "Maaltijd II",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5010,7 +5010,7 @@
       "id": 296299,
       "meal": "Spaghetti Caponata Veggy",
       "mealEn": "Spaghetti Caponata Veggy",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "21/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -5031,14 +5031,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 7357,
               "title": "Maaltijd II",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5080,7 +5080,7 @@
       "id": 296301,
       "meal": "Spaghetti Caponata met varkensreepjes",
       "mealEn": "Spaghetti Caponata with pork strips",
-      "image": "assets/images/alma.png",
+      "image": "assets/images/almalogo.png",
       "servingDate": "21/04/2026",
       "defaultPortion": true,
       "altPortion": false,
@@ -5101,14 +5101,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 7357,
               "title": "Maaltijd II",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5192,14 +5192,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5292,14 +5292,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 7357,
               "title": "Maaltijd II",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5369,14 +5369,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 7357,
               "title": "Maaltijd II",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5446,14 +5446,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5544,14 +5544,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5621,14 +5621,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5712,14 +5712,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5796,14 +5796,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -5887,7 +5887,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -5950,14 +5950,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -6020,14 +6020,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -6113,7 +6113,7 @@
         {
           "id": 1848,
           "title": "Soep",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": []
@@ -6184,14 +6184,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -6298,14 +6298,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
@@ -6405,14 +6405,14 @@
         {
           "id": 13800,
           "title": "Warm buffet",
-          "image": "assets/images/alma.png",
+          "image": "assets/images/almalogo.png",
           "level": 1,
           "sortOrder": null,
           "subcategories": [
             {
               "id": 1847,
               "title": "Schotel",
-              "image": "assets/images/alma.png",
+              "image": "assets/images/almalogo.png",
               "level": 2,
               "sortOrder": null
             }
