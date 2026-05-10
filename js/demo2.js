@@ -1,17 +1,17 @@
 const FALLBACK_IMG = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' alignment-baseline='middle' font-family='sans-serif' fill='%239baea6'%3EIMAGE UNAVAILABLE%3C/text%3E%3C/svg%3E";
 
-// --- A large array of varied, high-quality food/luxury imagery ---
+// --- A large array of varied, high-quality food imagery ---
 const presetPhotos = [
-    "https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800&auto=format&fit=crop", // Cheesecake
-    "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop", // Pasta aesthetic
-    "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop", // Cake slice
-    "https://images.unsplash.com/photo-1542826438-bd32f43d626f?q=80&w=800&auto=format&fit=crop", // Bakery prep
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop", // Rustic food spread
-    "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=800&auto=format&fit=crop", // Elegant table
-    "https://images.unsplash.com/photo-1605807646983-377bc5a76493?q=80&w=800&auto=format&fit=crop", // Sweet treats
-    "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop", // Artisanal bread
-    "https://images.unsplash.com/photo-1484723091791-c0810d8c11aa?q=80&w=800&auto=format&fit=crop", // Dark chocolate
-    "https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=800&auto=format&fit=crop"  // Croissant
+    "./assets/images/Image1.png", // Barbecue
+    "./assets/images/Image2.png", // Croissant
+    "./assets/images/Image3.png", // Box
+    "./assets/images/Image8.png", // Canteen
+    "./assets/images/Image4.png", // Meet
+    "./assets/images/Image5.png", // Soup
+    "./assets/images/Image6.png", // Chips
+    "./assets/images/Image9.png", // Alma
+    "./assets/images/Image7.png", // Salad
+    "./assets/images/Image10.png",  // People
 ];
 
 // --- The Promo Content Data ---
