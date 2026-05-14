@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeuvenLife | About Alma</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#13211d',
+              text: '#e8deca',
+              accent: '#c9ab77',
+              border: '#33423d',
+              muted: '#9baea6'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Jost"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: #13211d;
+      color: #e8deca;
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #13211d; }
+    ::-webkit-scrollbar-thumb { background: #33423d; }
+    ::-webkit-scrollbar-thumb:hover { background: #c9ab77; }
+
+    #alma-map {
+      width: 100%;
+      height: 460px;
+    }
+
+    .leaflet-container {
+      background: #24342f;
+    }
+
+    .alma-marker {
+      width: 20px;
+      height: 20px;
+      background: #c9ab77;
+      border: 3px solid #13211d;
+      border-radius: 50%;
+      box-shadow: 0 0 18px rgba(201, 171, 119, 0.8);
+    }
+
+    .leaflet-popup-content-wrapper {
+      background: #13211d;
+      color: #e8deca;
+      border: 1px solid #c9ab77;
+      border-radius: 2px;
+      font-family: Jost, sans-serif;
+    }
+
+    .leaflet-popup-tip {
+      background: #13211d;
+    }
+
+    .leaflet-popup-content a {
+      color: #c9ab77;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased min-h-screen flex flex-col">
+
+<!-- Navbar -->
+<nav class="border-b border-brand-border py-6 px-6 md:px-10 w-full">
+  <div class="grid grid-cols-[1fr_auto_1fr] items-center">
+
+    <!-- Left: Logo -->
+    <a href="index-demo2_popup.html"
+       class="justify-self-start font-serif text-2xl md:text-3xl tracking-widest uppercase hover:text-brand-accent transition-colors duration-300 whitespace-nowrap">
+      LEUVENLIFE
+    </a>
+
+    <!-- Center: Navigation -->
+    <div class="justify-self-center flex items-center gap-8 md:gap-12 font-sans text-[10px] md:text-[12px] uppercase tracking-[0.22em]">
+      <a href="index-demo2_popup.html"
+         class="text-brand-muted hover:text-brand-text border-b border-transparent hover:border-brand-muted transition-colors duration-300 pb-1">
+        Home
+      </a>
+
+      <a href="about-alma.html"
+         class="text-brand-accent border-b border-brand-accent pb-1">
+        About
+      </a>
+
+      <a href="map.html"
+         class="text-brand-muted hover:text-brand-text border-b border-transparent hover:border-brand-muted transition-colors duration-300 pb-1 whitespace-nowrap">
+        Dish Map
+      </a>
+    </div>
+
+    <!-- Right: reserved for future language switcher -->
+    <div class="justify-self-end w-[120px] md:w-[170px]"></div>
+
+  </div>
+</nav>
+
+<!-- Hero Intro -->
+<section class="border-b border-brand-border px-6 py-20 md:py-24 text-center">
+  <p class="font-sans text-brand-accent text-[12px] md:text-[14px] tracking-[0.35em] uppercase mb-6">
+    Leuven Campus Dining
+  </p>
+
+  <h1 class="font-serif italic text-4xl md:text-5xl text-brand-accent mb-6">
+    About Alma
+  </h1>
+
+  <p class="font-sans font-light text-brand-muted text-lg md:text-2xl leading-relaxed max-w-6xl mx-auto">
+    Alma operates <span class="text-brand-text">9 restaurants in Leuven</span>.
+    This page introduces Alma’s campus dining network, general opening patterns,
+    location information, and the purpose of our LeuvenLife food project.
+  </p>
+</section>
+
+<!-- Filter Bar: same structure as homepage, without right-side items -->
+<section class="border-b border-brand-border py-8 w-full px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+
+  <div class="font-sans text-brand-muted text-sm tracking-wider uppercase text-center md:text-left">
+    Alma restaurants in Leuven
+  </div>
+
+</section>
+
+<main class="w-full flex-grow">
+
+  <!-- About Alma Main Text -->
+  <section class="px-6 md:px-12 py-14 border-b border-brand-border">
+    <div class="max-w-5xl mx-auto">
+
+      <h2 class="font-serif italic text-4xl md:text-5xl text-brand-accent mb-6">
+        Campus Dining at KU Leuven
+      </h2>
+
+      <p class="font-sans text-brand-muted font-light leading-relaxed text-lg mb-6">
+        Alma is the main student dining network in Leuven, serving hot meals, sandwiches, snacks, and campus-friendly lunch options across different KU Leuven locations.
+        The opening hours below are general references based on the visible weekly schedule. Because hours may vary from week to week, please click each restaurant name to confirm the latest information on the official Alma website.
+      </p>
+
+      <div class="bg-[#22302c] border border-brand-border p-6 md:p-8">
+        <h3 class="font-sans text-sm uppercase tracking-[0.2em] text-brand-text mb-3">
+          Closing days in 2026
+        </h3>
+
+        <p class="font-sans text-sm text-brand-muted leading-relaxed">
+          January 1–4; April 6; May 1; May 14; May 25; July 21; November 2; November 11; December 25.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Locations + Map -->
+  <section id="alma-locations" class="px-6 md:px-12 py-16 border-b border-brand-border">
+    <div class="max-w-7xl mx-auto">
+
+      <h2 class="font-sans text-xl md:text-2xl tracking-[0.3em] uppercase text-brand-text mb-12 text-center">
+        Alma Locations
+      </h2>
+
+      <!-- Leuven City Centre -->
+      <div class="mb-16">
+        <h3 class="font-serif italic text-3xl md:text-4xl text-brand-accent mb-8">
+          Leuven City Centre
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[1px] bg-brand-border">
+          <article class="bg-brand-bg p-7 min-h-[300px]">
+            <a href="https://www.alma.be/nl/restaurants/alma-1" target="_blank" class="font-sans text-sm tracking-[0.2em] uppercase text-brand-text border-b border-brand-accent pb-1">
+              Alma 1
+            </a>
+            <p class="text-brand-muted text-sm mt-6 leading-relaxed">
+              Tiensestraat 115<br>3000 Leuven
+            </p>
+            <p class="text-brand-muted text-sm mt-4 leading-relaxed">
+              <span class="text-brand-text">Hot meals:</span> generally around 11:00–14:30 and/or 17:00–20:00.<br>
+              <span class="text-brand-text">Note:</span> Snack & sandwich provided.
+            </p>
+          </article>
+
+          <article class="bg-brand-bg p-7 min-h-[300px]">
+            <a href="https://www.alma.be/nl/restaurants/alma-2" target="_blank" class="font-sans text-sm tracking-[0.2em] uppercase text-brand-text border-b border-brand-accent pb-1">
+              Alma 2
+            </a>
+            <p class="text-brand-muted text-sm mt-6 leading-relaxed">
+              E. Van Evenstraat 2<br>3000 Leuven
+            </p>
+            <p class="text-brand-muted text-sm mt-4 leading-relaxed">
+              <span class="text-brand-text">Hot meals:</span> generally around 11:00–14:00 and/or 17:30–19:30.<br>
+              <span class="text-brand-text">Note:</span> Snack & sandwich provided.
+            </p>
+          </article>
+
+          <article class="bg-brand-bg p-7 min-h-[300px]">
+            <a href="https://www.alma.be/nl/restaurants/groep-t" target="_blank" class="font-sans text-sm tracking-[0.2em] uppercase text-brand-text border-b border-brand-accent pb-1">
+              Group T
+            </a>
+            <p class="text-brand-muted text-sm mt-6 leading-relaxed">
+              Andreas Vesaliusstraat 13<br>3000 Leuven
+            </p>
+            <p class="text-brand-muted text-sm mt-4 leading-relaxed">
+              <span class="text-brand-text">Snack & sandwiches:</span> generally around 08:00–14:00.
+            </p>
+          </article>
+
+          <article class="bg-brand-bg p-7 min-h-[300px]">
+            <a href="https://www.alma.be/nl/restaurants/t-academisch-kwartier" target="_blank" class="font-sans text-sm tracking-[0.2em] uppercase text-brand-text border-b border-brand-accent pb-1">
+              The Academic Quarter
+            </a>
+            <p class="text-brand-muted text-sm mt-6 leading-relaxed">
+              Tiensestraat 41<br>3000 Leuven
+            </p>
+            <p class="text-brand-muted text-sm mt-4 leading-relaxed">
+              <span class="text-brand-text">Snack & sandwiches:</span> generally around 10:00–14:00.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Campus Arenberg -->
+      <div class="mb-16">
+        <h3 class="font-serif italic text-3xl md:text-4xl text-brand-accent mb-8">
+          Campus Arenberg
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[1px] bg-brand-border">
+          <article class="bg-brand-bg p-7 min-h-[300px]">
+            <a href="https://www.alma.be/nl/restaurants/de-moete" target="_blank" class="font-sans text-sm tracking-[0.2em] uppercase text-brand-text border-b border-brand-accent pb-1">
+              The Must
+            </a>
+            <p class="text-brand-muted text-sm mt-6 leading-relaxed">
+              Celestijnenlaan 200 P<br>3001 Heverlee
+            </p>
+            <p class="text-brand-muted text-sm mt-4 leading-relaxed">
+              <span class="text-brand-text">Snack & sandwiches:</span> generally around 10:00–14:00.
+            </p>
+          </article>
+
+          <article class="bg-brand-bg p-7 min-h-[300px]">
+            <a href="https://www.alma.be/nl/restaurants/alma-3" target="_blank" class="font-sans text-sm tracking-[0.2em] uppercase text-brand-text border-b border-brand-accent pb-1">
+              Alma 3
+            </a>
+            <p class="text-brand-muted text-sm mt-6 leading-relaxed">
+              Steengroevenlaan 3<br>3001 Heverlee
+            </p>
+            <p class="text-brand-muted text-sm mt-4 leading-relaxed">
+              <span class="text-brand-text">Hot meals:</span> generally around 11:30–14:00 and/or 17:30–19:30.<br>
+              <span class="text-brand-text">Note:</span> Snack & sandwich provided.
+            </p>
+          </article>
+
+          <article class="bg-brand-bg p-7 min-h-[300px]">
+            <a href="https://www.alma.be/nl/restaurants/esat2" target="_blank" class="font-sans text-sm tracking-[0.2em] uppercase text-brand-text border-b border-brand-accent pb-1">
+              ESAT2
+            </a>
+            <p class="text-brand-muted text-sm mt-6 leading-relaxed">
+              Arenberg Castle Park 10<br>3001 Heverlee
+            </p>
+            <p class="text-brand-muted text-sm mt-4 leading-relaxed">
+              <span class="text-brand-text">Snack & sandwiches:</span> generally around 10:00–14:00.
+            </p>
+          </article>
+
+          <article class="bg-brand-bg p-7 min-h-[300px]">
+            <a href="https://www.alma.be/nl/restaurants/alma-quadrivium" target="_blank" class="font-sans text-sm tracking-[0.2em] uppercase text-brand-text border-b border-brand-accent pb-1">
+              Alma Quadrivium
+            </a>
+            <p class="text-brand-muted text-sm mt-6 leading-relaxed">
+              Celestijnenlaan 200 H<br>3001 Heverlee
+            </p>
+            <p class="text-brand-muted text-sm mt-4 leading-relaxed">
+              <span class="text-brand-text">Snack & sandwiches:</span> generally around 08:00–16:00, with shorter service on some days.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Campus Gasthuisberg + Map -->
+      <div id="alma-map-section">
+        <h3 class="font-serif italic text-3xl md:text-4xl text-brand-accent mb-8">
+          Campus Gasthuisberg
+        </h3>
+
+        <div class="grid grid-cols-1 xl:grid-cols-[420px_1fr] gap-[1px] bg-brand-border">
+          <article class="bg-brand-bg p-7 min-h-[360px]">
+            <a href="https://www.alma.be/nl/restaurants/alma-gasthuisberg" target="_blank" class="font-sans text-sm tracking-[0.2em] uppercase text-brand-text border-b border-brand-accent pb-1">
+              Alma Gasthuisberg
+            </a>
+            <p class="text-brand-muted text-sm mt-6 leading-relaxed">
+              Herestraat 49, ALO Tower<br>3000 Leuven
+            </p>
+            <p class="text-brand-muted text-sm mt-4 leading-relaxed">
+              <span class="text-brand-text">Hot meals:</span> generally around 11:30–14:00.<br>
+              <span class="text-brand-text">Note:</span> Snack & sandwich provided, often around 10:00–16:00.
+            </p>
+          </article>
+
+          <div class="bg-[#31413c] min-h-[360px]">
+            <div id="alma-map"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about-us" class="border-b border-brand-border px-6 py-20 md:py-24 text-center">
+    <p class="font-sans text-brand-accent text-[12px] md:text-[14px] tracking-[0.35em] uppercase mb-6">
+      Project Background
+    </p>
+
+    <h2 class="font-serif italic text-4xl md:text-5xl text-brand-accent mb-6">
+      About Us
+    </h2>
+
+    <p class="font-sans font-light text-brand-muted text-lg md:text-2xl leading-relaxed max-w-6xl mx-auto">
+      U Leuven Web Information Systems [B-KUL-G0Y11A] - Group 4 (2026).
+      LeuvenLife is a centralized web application designed as a digital onboarding guide for international students arriving at KU Leuven.
+      While initially conceptualized to cover multiple pillars of student life, we strategically pivoted our scope to deliver a highly robust,
+      deeply interactive experience focused entirely on campus dining. Today, LeuvenLife serves as the ultimate Alma Culinary Encyclopedia,
+      utilizing live APIs, AI cultural analysis, and interactive mapping to introduce international freshmen to Belgian campus food.
+    </p>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="py-12 text-center px-6">
+  <p class="font-sans text-[10px] text-brand-muted uppercase tracking-[0.3em]">
+    © 2026 KU Leuven WIS Project
+  </p>
+</footer>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  const almaLocations = [
+    {
+      name: "Alma 1",
+      campus: "Leuven City Centre",
+      address: "Tiensestraat 115, 3000 Leuven",
+      url: "https://www.alma.be/nl/restaurants/alma-1",
+      coords: [50.87837, 4.70755]
+    },
+    {
+      name: "Alma 2",
+      campus: "Leuven City Centre",
+      address: "E. Van Evenstraat 2, 3000 Leuven",
+      url: "https://www.alma.be/nl/restaurants/alma-2",
+      coords: [50.87715, 4.70070]
+    },
+    {
+      name: "Group T",
+      campus: "Leuven City Centre",
+      address: "Andreas Vesaliusstraat 13, 3000 Leuven",
+      url: "https://www.alma.be/nl/restaurants/groep-t",
+      coords: [50.87925, 4.71170]
+    },
+    {
+      name: "The Academic Quarter",
+      campus: "Leuven City Centre",
+      address: "Tiensestraat 41, 3000 Leuven",
+      url: "https://www.alma.be/nl/restaurants/t-academisch-kwartier",
+      coords: [50.87865, 4.70440]
+    },
+    {
+      name: "The Must",
+      campus: "Campus Arenberg",
+      address: "Celestijnenlaan 200 P, 3001 Heverlee",
+      url: "https://www.alma.be/nl/restaurants/de-moete",
+      coords: [50.86360, 4.68480]
+    },
+    {
+      name: "Alma 3",
+      campus: "Campus Arenberg",
+      address: "Steengroevenlaan 3, 3001 Heverlee",
+      url: "https://www.alma.be/nl/restaurants/alma-3",
+      coords: [50.86160, 4.68080]
+    },
+    {
+      name: "ESAT2",
+      campus: "Campus Arenberg",
+      address: "Arenberg Castle Park 10, 3001 Heverlee",
+      url: "https://www.alma.be/nl/restaurants/esat2",
+      coords: [50.86470, 4.68220]
+    },
+    {
+      name: "Alma Quadrivium",
+      campus: "Campus Arenberg",
+      address: "Celestijnenlaan 200 H, 3001 Heverlee",
+      url: "https://www.alma.be/nl/restaurants/alma-quadrivium",
+      coords: [50.86430, 4.68580]
+    },
+    {
+      name: "Alma Gasthuisberg",
+      campus: "Campus Gasthuisberg",
+      address: "Herestraat 49, ALO Tower, 3000 Leuven",
+      url: "https://www.alma.be/nl/restaurants/alma-gasthuisberg",
+      coords: [50.87970, 4.67260]
+    }
+  ];
+
+  const map = L.map("alma-map", {
+    scrollWheelZoom: false
+  });
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  const goldIcon = L.divIcon({
+    className: "",
+    html: '<div class="alma-marker"></div>',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -10]
+  });
+
+  const bounds = [];
+
+  almaLocations.forEach(location => {
+    const marker = L.marker(location.coords, { icon: goldIcon }).addTo(map);
+
+    marker.bindPopup(`
+        <strong>${location.name}</strong><br>
+        <span>${location.campus}</span><br>
+        <span>${location.address}</span><br>
+        <a href="${location.url}" target="_blank">Official Alma page</a>
+      `);
+
+    bounds.push(location.coords);
+  });
+
+  map.fitBounds(bounds, {
+    padding: [35, 35]
+  });
+
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 300);
+</script>
+
+</body>
+</html>
