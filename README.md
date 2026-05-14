@@ -132,3 +132,11 @@ As the core architect for the Food module, I engineered the end-to-end data pipe
     * *Refinements:* To improve clickability and visual hierarchy, I removed numerical prefixes from the buttons, increased the font size, and implemented full-height borders (`border-l`) that stretch across the entire screen, ensuring the UI remains clean and structural across both desktop and mobile devices.
 * **Deployment:** Added the live GitHub Pages URL to the README for easy access.
 
+**[14 May 2026] - Demo 3 Homepage & About Alma Page (Hou Yilin)**
+
+* **Homepage Refinement:** Created `index-demo3.html` as an improved demo version of the Alma food encyclopedia homepage.
+* **Navigation Update:** Reorganized the main navigation into `HOME | ABOUT | DISH MAP` in the central area of page top, while reserving right-side space for a future multilingual language switcher.
+* **About Alma Page:** Added `about-alma.html` to introduce Alma’s Leuven campus dining network, including restaurant information, opening patterns, closing days, and an embedded Leuven location map.
+* **Category-Based Menu Browsing:** Converted decorative image cards into meaningful category entry points, allowing users to browse dishes by categories such as soups, Tex-Mex, Italian / pasta / pizza, vegetarian / vegan, poultry, seafood, Belgian comfort food, and burgers / casual bites.
+* **Interaction Logic:** Updated the dish-card rendering logic in `js/demo3.js`, including alphabetical category results and a “Back to Menu” return card.
+* **Assets:** Added new category images for Italian / Pasta / Pizza, Poultry, and Seafood.
