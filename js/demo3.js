@@ -6,7 +6,7 @@ const FALLBACK_IMG = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/sv
 
 // These cards are scattered among the dish cards.
 // The first 8 are functional category filters.
-// Dessert is kept as a future content placeholder.
+// Dessert is an informational note about Alma dessert options.
 // About Alma / About Us have been removed because they are now in the top navbar.
 const SCATTER_CARDS = [
     {
@@ -69,7 +69,7 @@ const SCATTER_CARDS = [
         id: "dessert",
         type: "info",
         title: "Dessert",
-        subtitle: "A future section for sweet campus treats",
+        subtitle: "Sweet campus treats from cakes to waffles",
         image: "./assets/images/Image2.png"
     }
 ];
@@ -192,7 +192,7 @@ function renderVisualCard(card) {
                 </h2>
 
                 <p class="font-sans text-[11px] tracking-[0.2em] uppercase text-white/80 border-b border-white/50 inline-block pb-1">
-                    ${isCategory ? "Explore" : "Coming Soon"}
+                    ${isCategory ? "Explore" : (card.id === "dessert" ? "Sweet Note" : "Info")}
                 </p>
 
                 <p class="font-sans text-xs text-white/75 mt-4 leading-relaxed max-w-[90%]">
@@ -435,7 +435,7 @@ document.addEventListener('click', (e) => {
     });
 });
 
-// Info cards: placeholder behavior for future content
+// Info cards: Dessert uses the same luxury modal style as dish explanations
 document.addEventListener('click', (e) => {
     const infoCard = e.target.closest('.info-card');
 
@@ -444,7 +444,7 @@ document.addEventListener('click', (e) => {
     const infoId = infoCard.getAttribute('data-info');
 
     if (infoId === "dessert") {
-        alert("Dessert section coming soon.");
+        openDessertNote();
     }
 });
 
@@ -475,15 +475,44 @@ document.addEventListener('click', (e) => {
     }
 });
 
-async function startAILesson(dish) {
+function openDessertNote() {
     const modal = document.getElementById('ai-modal');
+    const modalTitle = modal.querySelector('h3');
     const titleEl = document.getElementById('ai-dish-name');
     const chatEl = document.getElementById('ai-chat-history');
     const inputEl = document.getElementById('ai-user-input');
+    const inputArea = inputEl.closest('div');
 
+    modalTitle.innerText = "Alma Dessert Note";
+    titleEl.innerText = "Sweet campus treats";
+
+    chatEl.innerHTML = `
+        <div class="text-brand-text mb-4 leading-relaxed">
+            Students can find treats such as Brazilian cake, classic carrot cake, fruit tartlet with shortcrust pastry, and fresh Liège waffle, with prices generally ranging from around €1 to €5.
+        </div>
+
+        <div class="text-brand-accent italic mt-6 leading-relaxed border-l-2 border-brand-accent pl-4">
+            Feel free to enjoy them on site!
+        </div>
+    `;
+
+    inputArea.classList.add('hidden');
+    modal.classList.remove('hidden');
+}
+
+async function startAILesson(dish) {
+    const modal = document.getElementById('ai-modal');
+    const modalTitle = modal.querySelector('h3');
+    const titleEl = document.getElementById('ai-dish-name');
+    const chatEl = document.getElementById('ai-chat-history');
+    const inputEl = document.getElementById('ai-user-input');
+    const inputArea = inputEl.closest('div');
+
+    modalTitle.innerText = "Culinary Historian";
     titleEl.innerText = dish.mealEn || dish.meal;
     chatEl.innerHTML = '<div class="animate-pulse text-brand-muted italic">Consulting the culinary historian... ✦</div>';
     inputEl.value = '';
+    inputArea.classList.remove('hidden');
 
     modal.classList.remove('hidden');
 
