@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeuvenLife | Taste The World</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- MapTiler SDK (Official v4.0.1 for 3D Globe) -->
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v4.0.1/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v4.0.1/maptiler-sdk.css" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#1a2421',
+                            text: '#d8cbb8',
+                            accent: '#c4a678',
+                            border: '#33423d',
+                            muted: '#9baea6'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Jost"', 'sans-serif'],
+                        script: ['"Great Vibes"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: #1a2421;
+            color: #d8cbb8;
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #1a2421; }
+        ::-webkit-scrollbar-thumb { background: #33423d; }
+        ::-webkit-scrollbar-thumb:hover { background: #c4a678; }
+
+        /* MapLibre custom popup overrides */
+        .maplibregl-popup-content {
+            background-color: #1a2421 !important;
+            padding: 0 !important;
+            border: 1px solid #33423d;
+            border-radius: 4px;
+        }
+
+        .maplibregl-popup-tip {
+            border-top-color: #1a2421 !important;
+            border-bottom-color: #1a2421 !important;
+        }
+
+        /* Country selector */
+        .origin-selector-wrap {
+            margin-top: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .origin-selector-label {
+            font-family: "Jost", sans-serif;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.28em;
+            color: #9baea6;
+        }
+
+        #origin-select {
+            min-width: 230px;
+            background: transparent;
+            color: #d8cbb8;
+            border: 1px solid #33423d;
+            padding: 10px 14px;
+            font-family: "Jost", sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            outline: none;
+            cursor: pointer;
+        }
+
+        #origin-select:hover,
+        #origin-select:focus {
+            border-color: #c4a678;
+            color: #c4a678;
+        }
+
+        #origin-select option {
+            background: #1a2421;
+            color: #d8cbb8;
+        }
+
+        /* Sidebar dish list */
+        #origin-dish-list::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        #origin-dish-list::-webkit-scrollbar-track {
+            background: #1a2421;
+        }
+
+        #origin-dish-list::-webkit-scrollbar-thumb {
+            background: #33423d;
+        }
+
+        #origin-dish-list::-webkit-scrollbar-thumb:hover {
+            background: #c4a678;
+        }
+
+        .origin-dish-btn {
+            background: transparent;
+        }
+
+        .origin-dish-btn:hover span:first-child {
+            color: #c4a678;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased min-h-screen flex flex-col">
+
+<!-- Navbar -->
+<nav class="border-b border-brand-border py-6 px-6 md:px-12 flex justify-between items-center w-full relative z-20">
+    <div class="font-serif text-2xl tracking-widest uppercase">LEUVENLIFE</div>
+
+    <div class="flex space-x-6">
+        <!-- Link back to the main menu -->
+        <a href="index-demo3.html" class="font-sans text-[11px] uppercase tracking-[0.2em] text-brand-muted hover:text-brand-text transition-colors duration-300">
+            ⊞ Menu
+        </a>
+    </div>
+</nav>
+
+<!-- Minimalist Map Header -->
+<header class="py-12 text-center px-6 relative border-b border-brand-border bg-brand-bg">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="font-sans text-[10px] md:text-xs uppercase tracking-[0.4em] text-brand-accent mb-4">
+            Global Culinary Origins
+        </h2>
+
+        <h1 class="font-serif text-4xl md:text-5xl mb-4 font-light italic tracking-wide">
+            Taste The World
+        </h1>
+
+        <p class="font-sans font-light text-brand-muted text-sm max-w-xl mx-auto leading-relaxed">
+            Explore the cultural roots of the dishes served at Alma. Select a country to zoom into its culinary region, then choose a dish from the list or click a golden pin to view its card.
+        </p>
+
+        <!-- Country Zoom Selection -->
+        <div class="origin-selector-wrap">
+            <label for="origin-select" class="origin-selector-label">
+                Origin View
+            </label>
+
+            <select id="origin-select">
+                <option value="world">World / All Origins</option>
+                <option value="belgium">Belgium</option>
+                <option value="france">France</option>
+                <option value="spain">Spain</option>
+                <option value="uk">United Kingdom</option>
+                <option value="italy">Italy</option>
+                <option value="hungary">Hungary</option>
+                <option value="sweden">Sweden</option>
+                <option value="usa">USA</option>
+                <option value="netherlands">Netherlands</option>
+                <option value="switzerland">Switzerland</option>
+                <option value="germany">Germany</option>
+                <option value="japan">Japan</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="ireland">Ireland</option>
+                <option value="wales">Wales</option>
+                <option value="mexico">Mexico</option>
+                <option value="india">India</option>
+                <option value="greece">Greece</option>
+                <option value="china">China</option>
+                <option value="general">General / Mixed</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+<!-- Sidebar + Map Container -->
+<main class="w-full flex-grow border-b border-brand-border h-[65vh] grid grid-cols-1 lg:grid-cols-[360px_1fr]">
+
+    <!-- Left Sidebar -->
+    <aside id="origin-sidebar" class="bg-brand-bg border-r border-brand-border overflow-hidden flex flex-col">
+
+        <div class="p-6 border-b border-brand-border">
+            <p class="font-sans text-[9px] uppercase tracking-[0.3em] text-brand-muted mb-2">
+                Selected Origin
+            </p>
+
+            <h2 id="sidebar-title" class="font-serif text-2xl italic text-brand-accent mb-2">
+                All Origins
+            </h2>
+
+            <p id="sidebar-count" class="font-sans text-[10px] uppercase tracking-[0.25em] text-brand-muted">
+                Loading dishes...
+            </p>
+        </div>
+
+        <div id="origin-dish-list" class="flex-1 overflow-y-auto p-4 space-y-2">
+            <!-- JS will inject dish names here -->
+        </div>
+
+    </aside>
+
+    <!-- Right Map -->
+    <section class="relative w-full h-full">
+        <div id="map-container" class="w-full h-full"></div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="py-12 text-center mt-auto w-full px-6 bg-brand-bg">
+    <p class="font-sans text-[10px] text-brand-muted uppercase tracking-[0.3em]">
+        © 2026 KU Leuven WIS Project
+    </p>
+</footer>
+
+<!-- Demo4 Map JS -->
+<script src="js/map-demo4.js"></script>
+
+<!-- AI Explanation Modal (Hidden by default) -->
+<div id="ai-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md hidden transition-opacity duration-300">
+    <div class="bg-brand-bg border border-brand-accent p-8 md:p-12 rounded-sm shadow-2xl max-w-lg w-full mx-4 relative flex flex-col max-h-[85vh]">
+
+        <!-- Close Button -->
+        <button id="close-ai-modal" class="absolute top-4 right-6 text-brand-muted hover:text-brand-accent transition-colors text-3xl font-light">
+            &times;
+        </button>
+
+        <!-- Header -->
+        <div class="flex-shrink-0">
+            <h3 class="font-serif text-3xl text-brand-accent mb-2 italic">
+                Culinary Historian
+            </h3>
+
+            <h4 id="ai-dish-name" class="font-sans text-[11px] tracking-[0.2em] uppercase text-brand-text mb-6 border-b border-brand-border pb-4">
+                Loading Dish...
+            </h4>
+        </div>
+
+        <!-- Chat History Area -->
+        <div id="ai-chat-history" class="flex-grow font-sans text-sm text-brand-text leading-relaxed font-light overflow-y-auto mb-4 pr-4 space-y-6 custom-scrollbar">
+            <!-- Chat messages will be injected here -->
+        </div>
+
+        <!-- Interactive Input Area -->
+        <div class="flex-shrink-0 flex items-center gap-4 border-t border-brand-border pt-4 mt-2">
+            <input type="text"
+                   id="ai-user-input"
+                   placeholder="Ask about ingredients, allergies, taste..."
+                   autocomplete="off"
+                   class="flex-grow bg-transparent border-b border-brand-muted text-brand-text focus:outline-none focus:border-brand-accent pb-1 text-xs md:text-sm placeholder-brand-border transition-colors">
+
+            <button id="ai-send-btn" class="font-sans text-[10px] tracking-[0.2em] uppercase text-brand-bg bg-brand-accent px-4 py-2 hover:bg-white transition-colors duration-300">
+                Ask ✦
+            </button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
