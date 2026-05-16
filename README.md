@@ -140,3 +140,22 @@ As the core architect for the Food module, I engineered the end-to-end data pipe
 * **Category-Based Menu Browsing:** Converted decorative image cards into meaningful category entry points, allowing users to browse dishes by categories such as soups, Tex-Mex, Italian / pasta / pizza, vegetarian / vegan, poultry, seafood, Belgian comfort food, and burgers / casual bites.
 * **Interaction Logic:** Updated the dish-card rendering logic in `js/demo3.js`, including alphabetical category results and a “Back to Menu” return card.
 * **Assets:** Added new category images for Italian / Pasta / Pizza, Poultry, and Seafood.
+
+* **[16 May 2026] - Demo 4 Interactive Origin Map & Advanced Filtering (Hou Yilin)**
+
+* **Demo 4 Expansion:** Created `index-demo4.html` and `map-demo4.html` as the next-stage interactive prototype.
+* **Homepage Filtering Upgrade:** Added a new category dropdown filter to the homepage interface, allowing users to directly browse menu items by culinary categories while preserving the original editorial filter-bar layout.
+* **Interactive Culinary Origin Map:** Developed an upgraded geographic “Taste The World” ——
+  * Added country-based zoom selection for Belgium, Italy, Mexico, India, USA, Greece, and other represented culinary origins.
+  * Implemented automatic map fly-to behavior when selecting a country.
+* **Sidebar Dish Navigation:** Designed and implemented a synchronized sidebar system displaying all dishes belonging to the currently selected country in alphabetical order.
+  * Clicking a dish name automatically zooms to the corresponding marker and opens its popup card.
+  * Added scrollable vertical navigation to support countries containing many dishes.
+* **Marker & Popup Optimization:** Refined map marker rendering logic in `js/map-demo4.js`.
+  * Removed empty or invalid markers that did not correspond to actual dishes.
+  * Added softer glow-style marker styling for improved visual consistency.
+  * Fixed marker displacement issues during zoom interactions.
+* **Multi-Origin Classification Logic:** Expanded the country classification system to support dishes with multiple culinary origins (e.g., Belgian/French overlaps, mixed/global dishes, Chinese-inspired spring rolls).
+* **Navigation Integration:** Updated homepage navigation so the `DISH MAP` entry now directly links to the new Demo 4 interactive map experience.
+* **Deployment & Version Control:** Deployed Demo 4 to the shared GitHub repository and maintained separate versioned architecture for Demo 3 and Demo 4 pages.
+
