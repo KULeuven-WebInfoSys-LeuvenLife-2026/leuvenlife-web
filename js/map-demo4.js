@@ -8,6 +8,7 @@ let encyclopediaData = [];
 // Store markers and mapped dishes for sidebar interaction
 let mapMarkersByDishId = {};
 let mappedDishItems = [];
+let activePopup = null;
 
 // ===============================
 // ORIGIN LOCATIONS
@@ -444,6 +445,12 @@ async function initCulturalMap() {
                     .setHTML(popupHTML);
 
                 popup.on('open', () => {
+                    if (activePopup && activePopup !== popup) {
+                        activePopup.remove();
+                    }
+
+                    activePopup = popup;
+
                     const content = popup.getElement().querySelector('.maplibregl-popup-content');
                     const tip = popup.getElement().querySelector('.maplibregl-popup-tip');
 
@@ -622,6 +629,12 @@ function setupOriginZoomSelector() {
 
     originSelect.addEventListener("change", function () {
         const selectedOrigin = this.value;
+
+        if (activePopup) {
+            activePopup.remove();
+            activePopup = null;
+        }
+
         const view = ORIGIN_VIEWS[selectedOrigin];
         const map = window.map || window.almaMap || window.leuvenLifeMap;
 
@@ -668,7 +681,17 @@ function setupSidebarDishClick() {
         });
 
         setTimeout(() => {
-            marker.togglePopup();
+            if (activePopup) {
+                activePopup.remove();
+                activePopup = null;
+            }
+
+            const popup = marker.getPopup();
+
+            popup.setLngLat(item.lngLat);
+            popup.addTo(map);
+
+            activePopup = popup;
         }, 900);
     });
 }
