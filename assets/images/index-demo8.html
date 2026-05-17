@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>LeuvenLife | A Taste of Alma</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#1a2d1f',
+              text: '#d8cbb8',
+              accent: '#c4a678',
+              border: '#33423d',
+              muted: '#9baea6'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Jost"', 'sans-serif'],
+            script: ['"Great Vibes"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: #1a2d1f;
+      color: #d8cbb8;
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #1a2d1f; }
+    ::-webkit-scrollbar-thumb { background: #33423d; }
+    ::-webkit-scrollbar-thumb:hover { background: #c4a678; }
+
+    .hidden { display: none !important; }
+
+
+    /* Bigger dish detail text: vegan, contains, allergy and meta labels */
+    #menu-grid p,
+    #menu-grid span,
+    #menu-grid li,
+    #menu-grid .text-[10px],
+    #menu-grid .text-xs {
+      font-size: 0.82rem !important;
+      line-height: 1.55 !important;
+    }
+
+    #menu-grid .tracking-[0.2em],
+    #menu-grid .tracking-[0.15em] {
+      letter-spacing: 0.14em !important;
+    }
+
+    #lucky-dish-meta,
+    #lucky-dish-location {
+      font-size: 0.86rem !important;
+      line-height: 1.6 !important;
+    }
+
+
+    /* 1.5x larger meta info text */
+    #menu-grid p,
+    #menu-grid span,
+    #menu-grid li,
+    #menu-grid .text-[10px],
+    #menu-grid .text-xs,
+    #menu-grid .text-sm {
+      font-size: 1.15rem !important;
+      line-height: 1.7 !important;
+    }
+
+    /* Ask AI button enlarged */
+    #ai-send-btn {
+      font-size: 0.95rem !important;
+      padding: 0.8rem 1.2rem !important;
+      letter-spacing: 0.18em !important;
+    }
+
+    /* AI modal input text enlarged */
+    #ai-user-input {
+      font-size: 1rem !important;
+    }
+
+    /* AI placeholder readability */
+    #ai-user-input::placeholder {
+      font-size: 0.95rem !important;
+    }
+
+
+
+    /* Active state for category filter buttons */
+    .filter-btn.is-active {
+      color: #c4a678 !important;
+      border-bottom: 1px solid #c4a678 !important;
+    }
+
+    .filter-btn:not(.is-active) {
+      border-bottom: 1px solid transparent;
+    }
+
+
+
+    /* Make dish names gold while preserving original typography */
+    #menu-grid h1,
+    #menu-grid h2,
+    #menu-grid h3,
+    #menu-grid h4,
+    #menu-grid .dish-name {
+      color: #c4a678 !important;
+    }
+
+  </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col">
+<!-- Navbar -->
+<nav class="border-b border-brand-border py-6 px-6 md:px-10 w-full relative z-20">
+  <!-- Left: Logo -->
+  <a class="absolute left-6 md:left-10 top-1/2 -translate-y-1/2 font-serif text-2xl md:text-3xl tracking-widest uppercase hover:text-brand-accent transition-colors duration-300" href="index-demo4.html">
+    LEUVENLIFE
+  </a>
+  <!-- Center: Navigation -->
+  <div class="flex justify-center items-center gap-8 md:gap-12 font-sans text-[10px] md:text-[12px] uppercase tracking-[0.22em] text-brand-muted">
+    <a class="text-brand-accent border-b border-brand-accent pb-1" href="index-demo4.html">
+      Home
+    </a>
+    <a class="hover:text-brand-text border-b border-transparent hover:border-brand-muted transition-colors duration-300 pb-1" href="about-alma.html">
+      About
+    </a>
+    <a class="hover:text-brand-text border-b border-transparent hover:border-brand-muted transition-colors duration-300 pb-1 whitespace-nowrap" href="map-demo4.html">
+      Dish Map
+    </a>
+  </div>
+  <!-- Right: reserved for future language switcher -->
+  <div class="absolute right-6 md:right-10 top-1/2 -translate-y-1/2 w-[120px] md:w-[170px]"></div>
+</nav>
+<!-- Split Image Hero Section -->
+<header class="relative w-full h-[40vh] md:h-[65vh] flex flex-col md:flex-row overflow-hidden">
+  <div class="w-full md:w-1/2 h-1/2 md:h-full">
+    <img alt="Alma Interior" class="w-full h-full object-cover" src="./assets/images/alma-interior.png"/>
+  </div>
+  <div class="w-full md:w-1/2 h-1/2 md:h-full">
+    <img alt="Alma Collage" class="w-full h-full object-cover" src="./assets/images/alma-collage.png"/>
+  </div>
+  <div class="absolute inset-0 bg-black/40"></div>
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+    <div class="border border-white/60 rounded-full px-6 py-1 mb-6 backdrop-blur-sm">
+      <span class="font-sans text-[25px] tracking-[0.3em] text-white/90">2026/27</span>
+    </div>
+    <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl uppercase tracking-widest drop-shadow-lg">
+      A Taste of Alma
+    </h1>
+  </div>
+</header>
+<!-- Intro Text Area -->
+<section class="py-16 text-center border-b border-brand-border px-6">
+  <h2 class="font-sans text-xl md:text-2xl tracking-[0.3em] uppercase text-brand-text mb-4">
+    Alma Menu
+  </h2>
+  <p class="font-sans font-light text-brand-muted text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+    Discover the culinary offerings across our campuses. From traditional comfort food to vibrant vegan bowls, explore the encyclopedia of Belgian student life.
+  </p>
+</section>
+<!-- Filter Bar -->
+<section class="border-b border-brand-border py-8 w-full px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+  <div class="font-sans text-brand-muted text-sm tracking-wider uppercase text-center md:text-left" id="stats-display">
+    Loading database...
+  </div>
+  <!-- Category Filters -->
+  <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 font-sans text-xs uppercase tracking-[0.2em]">
+    <button class="filter-btn text-brand-accent border-b border-brand-accent pb-1 is-active" data-filter="all">
+      All Items
+    </button>
+    <button class="filter-btn text-brand-muted hover:text-brand-text transition-colors pb-1" data-filter="warm">
+      Warm Dishes
+    </button>
+    <button class="filter-btn text-brand-muted hover:text-brand-text transition-colors pb-1" data-filter="soup">
+      Soups
+    </button>
+    <select class="bg-transparent text-brand-muted border-b border-brand-border hover:text-brand-text hover:border-brand-muted focus:outline-none focus:text-brand-accent focus:border-brand-accent pb-1 uppercase tracking-[0.2em] cursor-pointer" id="category-select">
+      <option value="">Categories</option>
+      <option value="soup">Soups</option>
+      <option value="mexican">Tex-Mex</option>
+      <option value="italian">Italian / Pasta / Pizza</option>
+      <option value="vegetarian">Vegetarian / Vegan</option>
+      <option value="poultry">Poultry</option>
+      <option value="seafood">Seafood</option>
+      <option value="comfort">Belgian Comfort / Meat Classics</option>
+      <option value="street">Burgers / Casual Bites</option>
+      <option value="dessert">Dessert</option>
+    </select>
+    <button class="text-brand-muted hover:text-brand-text transition-colors pb-1" id="favorites-btn">♡ Favorites</button><button class="hidden text-brand-accent border-b border-brand-accent pb-1 uppercase tracking-[0.2em] text-xs" id="back-to-menu-btn">← Back to Menu</button><button class="text-brand-muted hover:text-brand-text transition-colors pb-1" id="lucky-btn">I Feel Lucky</button></div>
+</section>
+<!-- Menu Grid -->
+<main class="w-full flex-grow">
+  <div class="text-center font-serif text-2xl italic text-brand-accent animate-pulse py-32" id="loader">
+    Curating the menu...
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[1px] bg-brand-border hidden border-b border-brand-border" id="menu-grid">
+    <!-- JavaScript will inject cards here -->
+  </div>
+</main>
+<!-- Footer -->
+<footer class="py-12 text-center mt-auto w-full px-6 bg-brand-bg">
+  <p class="font-sans text-[10px] text-brand-muted uppercase tracking-[0.3em]">
+    © 2026 KU Leuven WIS Project
+  </p>
+</footer>
+<!-- Main JS -->
+<script src="js/demo4.js"></script>
+<!-- AI Explanation Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md hidden transition-opacity duration-300" id="ai-modal">
+  <div class="bg-brand-bg border border-brand-accent p-8 md:p-12 rounded-sm shadow-2xl max-w-lg w-full mx-4 relative flex flex-col max-h-[85vh]">
+    <!-- Close Button -->
+    <button class="absolute top-4 right-6 text-brand-muted hover:text-brand-accent transition-colors text-3xl font-light" id="close-ai-modal">
+      ×
+    </button>
+    <!-- Header -->
+    <div class="flex-shrink-0">
+      <h3 class="font-serif text-3xl text-brand-accent mb-2 italic">
+        Culinary Historian
+      </h3>
+      <h4 class="font-sans text-[11px] tracking-[0.2em] uppercase text-brand-text mb-6 border-b border-brand-border pb-4" id="ai-dish-name">
+        Loading Dish...
+      </h4>
+    </div>
+    <!-- Chat History Area -->
+    <div class="flex-grow font-sans text-sm text-brand-text leading-relaxed font-light overflow-y-auto mb-4 pr-4 space-y-6 custom-scrollbar" id="ai-chat-history">
+      <!-- Chat messages will be injected here -->
+    </div>
+    <!-- Interactive Input Area -->
+    <div class="flex-shrink-0 flex items-center gap-4 border-t border-brand-border pt-4 mt-2">
+      <input autocomplete="off" class="flex-grow bg-transparent border-b border-brand-muted text-brand-text focus:outline-none focus:border-brand-accent pb-1 text-xs md:text-sm placeholder-brand-border transition-colors" id="ai-user-input" placeholder="Ask about ingredients, allergies, taste..." type="text"/>
+      <button class="font-sans text-[10px] tracking-[0.2em] uppercase text-brand-bg bg-brand-accent px-4 py-2 hover:bg-white transition-colors duration-300" id="ai-send-btn">
+        Ask ✦
+      </button>
+    </div>
+  </div>
+</div>
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 px-4" id="lucky-modal">
+  <div class="relative w-full max-w-xl bg-brand-bg border border-brand-muted/30 p-8 shadow-2xl">
+    <button class="absolute top-4 right-4 text-brand-muted hover:text-brand-text text-2xl" id="close-lucky-modal">
+      ×
+    </button>
+    <p class="font-sans text-[10px] tracking-[0.35em] uppercase text-brand-muted mb-4">
+      I Feel Lucky
+    </p>
+    <div class="flex flex-col md:flex-row gap-6 items-center">
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img alt="Lucky dish" class="max-h-56 object-contain drop-shadow-2xl" id="lucky-dish-image" src=""/>
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2 class="font-sans text-xl tracking-[0.18em] uppercase text-brand-text mb-4" id="lucky-dish-name">
+          Dish Name
+        </h2>
+        <p class="font-sans text-sm tracking-[0.15em] text-brand-accent mb-4" id="lucky-dish-price">
+          €0.00
+        </p>
+        <p class="font-sans text-xs text-brand-muted mb-3" id="lucky-dish-location">
+          Location
+        </p>
+        <p class="font-sans text-xs text-brand-muted leading-relaxed" id="lucky-dish-meta">
+          Diet and allergy information
+        </p>
+        <button class="mt-6 font-sans text-[10px] tracking-[0.2em] uppercase text-brand-muted border-b border-brand-muted hover:text-brand-text hover:border-brand-text transition-all duration-300 pb-1" id="try-another-dish">
+          Try another
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const favorites = JSON.parse(localStorage.getItem('almaFavorites') || '[]');
+    let favoritesOnly = false;
+
+    function saveFavorites() {
+      localStorage.setItem('almaFavorites', JSON.stringify(favorites));
+    }
+
+    function getCards() {
+      return document.querySelectorAll('#menu-grid > *');
+    }
+
+    function injectFavoriteIcons() {
+      getCards().forEach((card, index) => {
+
+        if (card.querySelector('.favorite-toggle')) return;
+
+        const dishName =
+                card.querySelector('h3,h2,.dish-name')?.innerText?.trim()
+                || `dish-${index}`;
+
+        card.dataset.dishName = dishName;
+
+        card.style.position = 'relative';
+
+        const btn = document.createElement('button');
+        btn.className = 'favorite-toggle absolute top-4 right-4 text-xl z-10';
+        btn.innerHTML = favorites.includes(dishName) ? '♥' : '♡';
+        btn.style.color = favorites.includes(dishName)
+                ? '#c4a678'
+                : '#d8cbb8';
+
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+
+          const idx = favorites.indexOf(dishName);
+
+          if (idx > -1) {
+            favorites.splice(idx, 1);
+            btn.innerHTML = '♡';
+            btn.style.color = '#d8cbb8';
+          } else {
+            favorites.push(dishName);
+            btn.innerHTML = '♥';
+            btn.style.color = '#c4a678';
+          }
+
+          saveFavorites();
+
+          if (favoritesOnly) {
+            filterFavorites();
+          }
+        });
+
+        card.appendChild(btn);
+      });
+    }
+
+    function filterFavorites() {
+      getCards().forEach(card => {
+        const name = card.dataset.dishName;
+        if (!favoritesOnly || favorites.includes(name)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    const favoritesBtn = document.getElementById('favorites-btn');
+    const backBtn = document.getElementById('back-to-menu-btn');
+
+    function updateFavoritesUI() {
+      favoritesBtn.style.color = favoritesOnly ? '#c4a678' : '';
+
+      if (favoritesOnly) {
+        backBtn.classList.remove('hidden');
+      } else {
+        backBtn.classList.add('hidden');
+      }
+    }
+
+    if (favoritesBtn) {
+      favoritesBtn.addEventListener('click', () => {
+        favoritesOnly = true;
+
+        filterFavorites();
+        updateFavoritesUI();
+      });
+    }
+
+    if (backBtn) {
+      backBtn.addEventListener('click', () => {
+        favoritesOnly = false;
+
+        filterFavorites();
+        updateFavoritesUI();
+      });
+    }
+
+    // Lucky feature
+    const luckyBtn = document.getElementById('lucky-btn');
+    const luckyModal = document.getElementById('lucky-modal');
+
+    function showRandomDish() {
+      const visibleCards = [...getCards()].filter(
+              c => c.style.display !== 'none'
+      );
+
+      if (!visibleCards.length) return;
+
+      const randomCard =
+              visibleCards[Math.floor(Math.random() * visibleCards.length)];
+
+      const title =
+              randomCard.querySelector('h3,h2,.dish-name')?.innerText
+              || 'Mystery Dish';
+
+      const image =
+              randomCard.querySelector('img')?.src || '';
+
+      const metaText =
+              randomCard.innerText.slice(0, 180);
+
+      // Try extracting a euro price from the card text
+      const cardText = randomCard.innerText;
+
+      const priceMatch =
+              cardText.match(/€\s?\d+(?:[.,]\d{1,2})?/) ||
+              cardText.match(/\d+(?:[.,]\d{1,2})?\s?€/);
+
+      const priceText = priceMatch
+              ? priceMatch[0]
+              : 'Price unavailable';
+
+      document.getElementById('lucky-dish-name').innerText = title;
+      document.getElementById('lucky-dish-image').src = image;
+      document.getElementById('lucky-dish-meta').innerText = metaText;
+      document.getElementById('lucky-dish-price').innerText = priceText;
+
+      luckyModal.classList.remove('hidden');
+      luckyModal.classList.add('flex');
+    }
+
+    if (luckyBtn) {
+      luckyBtn.addEventListener('click', showRandomDish);
+    }
+
+    document.getElementById('try-another-dish')
+            ?.addEventListener('click', showRandomDish);
+
+    document.getElementById('close-lucky-modal')
+            ?.addEventListener('click', () => {
+              luckyModal.classList.add('hidden');
+              luckyModal.classList.remove('flex');
+            });
+
+    // Wait for menu cards to load
+    const observer = new MutationObserver(() => {
+      injectFavoriteIcons();
+    });
+
+    const menuGrid = document.getElementById('menu-grid');
+
+    if (menuGrid) {
+      observer.observe(menuGrid, {
+        childList: true,
+        subtree: true
+      });
+
+      injectFavoriteIcons();
+    }
+  });
+</script><script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+
+    function setActiveFilterButton(activeButton) {
+      filterButtons.forEach(btn => {
+        btn.classList.remove('is-active');
+        btn.classList.remove('text-brand-accent', 'border-b', 'border-brand-accent');
+        btn.classList.add('text-brand-muted');
+      });
+
+      activeButton.classList.add('is-active');
+      activeButton.classList.remove('text-brand-muted');
+      activeButton.classList.add('text-brand-accent', 'border-b', 'border-brand-accent');
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        setActiveFilterButton(btn);
+      });
+    });
+
+    const categorySelect = document.getElementById('category-select');
+    if (categorySelect) {
+      categorySelect.addEventListener('change', () => {
+        filterButtons.forEach(btn => {
+          btn.classList.remove('is-active');
+          btn.classList.remove('text-brand-accent', 'border-b', 'border-brand-accent');
+          btn.classList.add('text-brand-muted');
+        });
+      });
+    }
+  });
+</script></body>
+</html>
