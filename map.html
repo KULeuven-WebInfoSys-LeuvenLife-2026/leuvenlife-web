@@ -23,7 +23,7 @@
                 extend: {
                     colors: {
                         brand: {
-                            bg: '#1a2421',
+                            bg: '#1a2d1f',
                             text: '#d8cbb8',
                             accent: '#c4a678',
                             border: '#33423d',
@@ -44,7 +44,7 @@
         html { scroll-behavior: smooth; }
 
         body {
-            background-color: #1a2421;
+            background-color: #1a2d1f;
             color: #d8cbb8;
         }
 
@@ -55,7 +55,7 @@
 
         /* MapLibre custom popup overrides */
         .maplibregl-popup-content {
-            background-color: #1a2421 !important;
+            background-color: #1a2d1f !important;
             padding: 0 !important;
             border: 1px solid #33423d;
             border-radius: 4px;
@@ -86,7 +86,7 @@
 
         #origin-select {
             min-width: 430px;
-            background: rgba(26, 36, 33, 0.95);
+            background: #1a2d1f;
             color: #d8cbb8;
             border: 1.5px solid #c4a678;
             padding: 16px 22px;
@@ -140,17 +140,89 @@
 
 <body class="font-sans antialiased min-h-screen flex flex-col">
 
-<!-- Navbar -->
-<nav class="border-b border-brand-border py-6 px-6 md:px-12 flex justify-between items-center w-full relative z-20">
-    <div class="font-serif text-2xl tracking-widest uppercase">LEUVENLIFE</div>
+<!-- Universal Responsive Navbar (Architectural Block Design) -->
+<nav class="border-b border-brand-border px-6 md:px-12 w-full relative z-50 bg-brand-bg flex items-center justify-between h-[90px]">
+  
+  <!-- DESKTOP LOGO (Left Aligned) -->
+  <a href="index.html" class="hidden lg:block font-serif text-[2rem] tracking-[0.15em] uppercase text-brand-text hover:text-brand-accent transition-colors duration-500">
+    LEUVENLIFE
+  </a>
 
-    <div class="flex space-x-6">
-        <!-- Link back to the main menu -->
-        <a href="index.html" class="font-sans text-[11px] uppercase tracking-[0.2em] text-brand-muted hover:text-brand-text transition-colors duration-300">
-            ⊞ Menu
-        </a>
-    </div>
+  <!-- MOBILE HAMBURGER BUTTON (Left Aligned) -->
+  <button id="mobile-menu-btn" class="lg:hidden text-brand-text flex items-center gap-2 focus:outline-none z-50 hover:text-brand-accent transition-colors">
+    <span class="text-[10px] font-sans tracking-[0.2em] uppercase mt-1" id="mobile-menu-text">Menu</span> 
+    <span id="mobile-menu-icon" class="text-2xl">≡</span>
+  </button>
+
+  <!-- MOBILE LOGO (Absolute Centered) -->
+  <a href="index.html" class="lg:hidden absolute left-1/2 -translate-x-1/2 font-serif text-[2rem] tracking-[0.15em] uppercase text-brand-text z-40">
+    LEUVENLIFE
+  </a>
+
+  <!-- DESKTOP NAVIGATION (Full-Height Architectural Blocks) -->
+  <div class="hidden lg:flex justify-end items-stretch h-full font-sans text-[11px] uppercase tracking-[0.25em] text-brand-muted">
+    
+    <!-- Hover Link (Fades to Highlight + Animated Bottom Line) -->
+    <a class="relative flex items-center px-10 h-full hover:text-brand-accent hover:bg-[#1e3223] transition-colors duration-500 group" href="index.html">
+      <span>Home</span>
+      <!-- Animated bottom line (expands from center on hover) -->
+      <div class="absolute bottom-0 left-0 w-full h-[2px] bg-brand-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+    </a>
+    
+    <!-- Hover Link (Fades to Highlight + Animated Bottom Line) -->
+    <a class="relative flex items-center px-10 h-full hover:text-brand-accent hover:bg-[#1e3223] transition-colors duration-500 group" href="about.html">
+      <span>About</span>
+      <!-- Animated bottom line (expands from center on hover) -->
+      <div class="absolute bottom-0 left-0 w-full h-[2px] bg-brand-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+    </a>
+
+    <!-- Active Link (Highlighted Background + Permanent Bottom Line) -->
+    <a class="relative flex items-center px-10 h-full text-brand-accent bg-[#1e3223] transition-colors duration-500 whitespace-nowrap" href="map.html">
+      <span>Dish Map</span>
+      <!-- Static bottom line for active page -->
+      <div class="absolute bottom-0 left-0 w-full h-[2px] bg-brand-accent"></div>
+    </a>
+    
+  </div>
 </nav>
+
+<!-- Mobile Full-Screen Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-[#17261a]/95 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-10 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden">
+  <a class="font-serif text-3xl tracking-[0.2em] uppercase text-brand-text hover:text-brand-accent transition-colors" href="index.html">Home</a>
+  <a class="font-serif text-3xl tracking-[0.2em] uppercase text-brand-text hover:text-brand-accent transition-colors" href="about.html">About</a>
+  <!-- Mobile Active Link -->
+  <a class="font-serif text-3xl tracking-[0.2em] uppercase text-brand-accent transition-colors" href="map.html">Dish Map</a>
+</div>
+
+<!-- Mobile Menu JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const menuText = document.getElementById('mobile-menu-text');
+    const menuIcon = document.getElementById('mobile-menu-icon');
+    let isOpen = false;
+
+    if(btn) {
+      btn.addEventListener('click', () => {
+        isOpen = !isOpen;
+        if (isOpen) {
+          menu.classList.remove('opacity-0', 'pointer-events-none');
+          menu.classList.add('opacity-100', 'pointer-events-auto');
+          menuText.innerText = 'Close';
+          menuIcon.innerText = '✕';
+          document.body.style.overflow = 'hidden'; 
+        } else {
+          menu.classList.remove('opacity-100', 'pointer-events-auto');
+          menu.classList.add('opacity-0', 'pointer-events-none');
+          menuText.innerText = 'Menu';
+          menuIcon.innerText = '≡';
+          document.body.style.overflow = ''; 
+        }
+      });
+    }
+  });
+</script>
 
 <!-- Minimalist Map Header -->
 <header class="py-12 text-center px-6 relative border-b border-brand-border bg-brand-bg">
