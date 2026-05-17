@@ -5,8 +5,6 @@ LeuvenLife is a centralized web application designed as a digital onboarding gui
 
 ✨ **Live Demo (Luxury Editorial UI):** [View Prototype Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index.html)
 
-🌍 **Live Demo (Interactive 3D Map):** [Explore 'Taste The World' Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/map.html)
-
 ## 👥 Team Members
 * YIN Renlong
 * Guo Lingzhi
