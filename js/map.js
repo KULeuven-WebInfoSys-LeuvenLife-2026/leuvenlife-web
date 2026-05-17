@@ -357,7 +357,7 @@ async function initCulturalMap() {
         container: 'map-container',
         style: maptilersdk.MapStyle.WINTER,
         center: [10.0, 45.0],
-        zoom: 3,
+        zoom: 2.5,
         projection: 'globe',
         attributionControl: false,
         geolocateControl: false,
