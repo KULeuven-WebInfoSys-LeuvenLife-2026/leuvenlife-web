@@ -191,12 +191,12 @@ function buildSectionedItems(items) {
     return sectionedItems;
 }
 // --- Dynamic Interleaved Rendering ---
-function renderGrid(items) {
+function renderGrid(items, useSections = true) {
     const grid = document.getElementById('menu-grid');
     const loader = document.getElementById('loader');
-    grid.innerHTML = ''; 
+    grid.innerHTML = '';
 
-    items = buildSectionedItems(items);
+    items = useSections ? buildSectionedItems(items) : items;
 
     let foodIndex = 0;
     let promoCount = 0;
@@ -378,7 +378,9 @@ function applyFilters() {
         return matchesType && matchesLocation;
     });
 
-    renderGrid(filteredArray);
+    const useSections = activeLocationFilter === "all";
+
+    renderGrid(filteredArray, useSections);
 
     let label = "Items";
 
@@ -633,109 +635,111 @@ if (document.readyState === "loading") {
     });
 }
 // --- Lucky Dish Modal Feature ---
-function getRandomDish() {
-    if (!encyclopediaData || encyclopediaData.length === 0) {
-        return null;
+    function getRandomDish() {
+        if (!encyclopediaData || encyclopediaData.length === 0) {
+            return null;
+        }
+
+        const randomIndex = Math.floor(Math.random() * encyclopediaData.length);
+        return encyclopediaData[randomIndex];
     }
 
-    const randomIndex = Math.floor(Math.random() * encyclopediaData.length);
-    return encyclopediaData[randomIndex];
-}
+    function openLuckyModal(dish) {
+        const modal = document.getElementById("lucky-modal");
+        const image = document.getElementById("lucky-dish-image");
+        const name = document.getElementById("lucky-dish-name");
+        const price = document.getElementById("lucky-dish-price");
+        const location = document.getElementById("lucky-dish-location");
+        const meta = document.getElementById("lucky-dish-meta");
 
-function openLuckyModal(dish) {
-    const modal = document.getElementById("lucky-modal");
-    const image = document.getElementById("lucky-dish-image");
-    const name = document.getElementById("lucky-dish-name");
-    const price = document.getElementById("lucky-dish-price");
-    const location = document.getElementById("lucky-dish-location");
-    const meta = document.getElementById("lucky-dish-meta");
+        if (!modal || !dish) return;
 
-    if (!modal || !dish) return;
+        const imageSrc = dish.image ? dish.image : FALLBACK_IMG;
 
-    const imageSrc = dish.image ? dish.image : FALLBACK_IMG;
+        const priceText =
+            dish.defaultPrice !== null && dish.defaultPrice !== undefined
+                ? `€${dish.defaultPrice.toFixed(2)}`
+                : "Price unavailable";
 
-    const priceText =
-        dish.defaultPrice !== null && dish.defaultPrice !== undefined
-            ? `€${dish.defaultPrice.toFixed(2)}`
-            : "Price unavailable";
+        const diets =
+            dish.diets && dish.diets.length > 0
+                ? dish.diets.map(d => d.titleEn || d.title).join(", ")
+                : "Standard preparation";
 
-    const diets = dish.diets && dish.diets.length > 0
-        ? dish.diets.map(d => d.titleEn || d.title).join(", ")
-        : "Standard preparation";
+        const allergies =
+            dish.allergies && dish.allergies.length > 0
+                ? dish.allergies.map(a => a.titleEn || a.title).join(", ")
+                : "No allergy information";
 
-    const allergies = dish.allergies && dish.allergies.length > 0
-        ? dish.allergies.map(a => a.titleEn || a.title).join(", ")
-        : "No allergy information";
+        image.src = imageSrc;
+        image.onerror = function () {
+            image.src = FALLBACK_IMG;
+        };
 
-    image.src = imageSrc;
-    image.onerror = () => {
-        image.src = FALLBACK_IMG;
-    };
+        name.textContent = dish.mealEn || dish.meal || "Unknown Dish";
+        price.textContent = priceText;
+        location.textContent = dish.location
+            ? `Available at: ${dish.location}`
+            : "Location unavailable";
 
-    name.textContent = dish.mealEn || dish.meal || "Unknown Dish";
-    price.textContent = priceText;
-    location.textContent = dish.location
-        ? `Available at: ${dish.location}`
-        : "Location unavailable";
-
-    meta.innerHTML = `
+        meta.innerHTML = `
         <strong>Diet:</strong> ${diets}<br>
         <strong>Contains:</strong> ${allergies}
     `;
 
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-}
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+    }
 
-function closeLuckyModal() {
-    const modal = document.getElementById("lucky-modal");
+    function closeLuckyModal() {
+        const modal = document.getElementById("lucky-modal");
 
-    if (!modal) return;
+        if (!modal) return;
 
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
-}
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+    }
 
-function setupLuckyPicker() {
-    const luckyBtn = document.getElementById("lucky-btn");
-    const closeBtn = document.getElementById("close-lucky-modal");
-    const modal = document.getElementById("lucky-modal");
-    const tryAnotherBtn = document.getElementById("try-another-dish");
+    function setupLuckyPicker() {
+        const luckyBtn = document.getElementById("lucky-btn");
+        const closeBtn = document.getElementById("close-lucky-modal");
+        const modal = document.getElementById("lucky-modal");
+        const tryAnotherBtn = document.getElementById("try-another-dish");
 
-    function showRandomDish() {
-        const dish = getRandomDish();
+        function showRandomDish() {
+            const dish = getRandomDish();
 
-        if (!dish) {
-            alert("The menu data is still loading. Please try again in a moment.");
-            return;
+            if (!dish) {
+                alert("The menu data is still loading. Please try again in a moment.");
+                return;
+            }
+
+            openLuckyModal(dish);
         }
 
-        openLuckyModal(dish);
+        if (luckyBtn) {
+            luckyBtn.addEventListener("click", showRandomDish);
+        }
+
+        if (tryAnotherBtn) {
+            tryAnotherBtn.addEventListener("click", showRandomDish);
+        }
+
+        if (closeBtn) {
+            closeBtn.addEventListener("click", closeLuckyModal);
+        }
+
+        if (modal) {
+            modal.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    closeLuckyModal();
+                }
+            });
+        }
     }
 
-    if (luckyBtn) {
-        luckyBtn.addEventListener("click", showRandomDish);
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", setupLuckyPicker);
+    } else {
+        setupLuckyPicker();
     }
-
-    if (tryAnotherBtn) {
-        tryAnotherBtn.addEventListener("click", showRandomDish);
-    }
-
-    if (closeBtn) {
-        closeBtn.addEventListener("click", closeLuckyModal);
-    }
-
-    if (modal) {
-        modal.addEventListener("click", event => {
-            if (event.target === modal) {
-                closeLuckyModal();
-            }
-        });
-    }
-}
-
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", setupLuckyPicker);
-} else {
-    setupLuckyPicker();
-}
