@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
@@ -52,7 +51,6 @@
 
     .hidden { display: none !important; }
 
-
     /* Bigger dish detail text: vegan, contains, allergy and meta labels */
     #menu-grid p,
     #menu-grid span,
@@ -73,7 +71,6 @@
       font-size: 0.86rem !important;
       line-height: 1.6 !important;
     }
-
 
     /* 1.5x larger meta info text */
     #menu-grid p,
@@ -103,8 +100,6 @@
       font-size: 0.95rem !important;
     }
 
-
-
     /* Active state for category filter buttons */
     .filter-btn.is-active {
       color: #c4a678 !important;
@@ -115,8 +110,6 @@
       border-bottom: 1px solid transparent;
     }
 
-
-
     /* Make dish names gold while preserving original typography */
     #menu-grid h1,
     #menu-grid h2,
@@ -125,31 +118,31 @@
     #menu-grid .dish-name {
       color: #c4a678 !important;
     }
-
   </style>
 </head>
 <body class="font-sans antialiased min-h-screen flex flex-col">
 <!-- Navbar -->
 <nav class="border-b border-brand-border py-6 px-6 md:px-10 w-full relative z-20">
   <!-- Left: Logo -->
-  <a class="absolute left-6 md:left-10 top-1/2 -translate-y-1/2 font-serif text-2xl md:text-3xl tracking-widest uppercase hover:text-brand-accent transition-colors duration-300" href="index-demo4.html">
+  <a class="absolute left-6 md:left-10 top-1/2 -translate-y-1/2 font-serif text-2xl md:text-3xl tracking-widest uppercase hover:text-brand-accent transition-colors duration-300" href="index.html">
     LEUVENLIFE
   </a>
   <!-- Center: Navigation -->
   <div class="flex justify-center items-center gap-8 md:gap-12 font-sans text-[10px] md:text-[12px] uppercase tracking-[0.22em] text-brand-muted">
-    <a class="text-brand-accent border-b border-brand-accent pb-1" href="index-demo4.html">
+    <a class="text-brand-accent border-b border-brand-accent pb-1" href="index.html">
       Home
     </a>
-    <a class="hover:text-brand-text border-b border-transparent hover:border-brand-muted transition-colors duration-300 pb-1" href="about-alma.html">
+    <a class="hover:text-brand-text border-b border-transparent hover:border-brand-muted transition-colors duration-300 pb-1" href="about.html">
       About
     </a>
-    <a class="hover:text-brand-text border-b border-transparent hover:border-brand-muted transition-colors duration-300 pb-1 whitespace-nowrap" href="map-demo4.html">
+    <a class="hover:text-brand-text border-b border-transparent hover:border-brand-muted transition-colors duration-300 pb-1 whitespace-nowrap" href="map.html">
       Dish Map
     </a>
   </div>
   <!-- Right: reserved for future language switcher -->
   <div class="absolute right-6 md:right-10 top-1/2 -translate-y-1/2 w-[120px] md:w-[170px]"></div>
 </nav>
+
 <!-- Split Image Hero Section -->
 <header class="relative w-full h-[40vh] md:h-[65vh] flex flex-col md:flex-row overflow-hidden">
   <div class="w-full md:w-1/2 h-1/2 md:h-full">
@@ -168,6 +161,7 @@
     </h1>
   </div>
 </header>
+
 <!-- Intro Text Area -->
 <section class="py-16 text-center border-b border-brand-border px-6">
   <h2 class="font-sans text-xl md:text-2xl tracking-[0.3em] uppercase text-brand-text mb-4">
@@ -177,36 +171,78 @@
     Discover the culinary offerings across our campuses. From traditional comfort food to vibrant vegan bowls, explore the encyclopedia of Belgian student life.
   </p>
 </section>
-<!-- Filter Bar -->
-<section class="border-b border-brand-border py-8 w-full px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
-  <div class="font-sans text-brand-muted text-sm tracking-wider uppercase text-center md:text-left" id="stats-display">
+
+<!-- NEW LUXURY Filter Bar -->
+<section class="border-b border-brand-border py-8 w-full px-6 md:px-12 flex flex-col xl:flex-row justify-between items-center gap-6 relative z-30">
+  <div class="font-sans text-brand-muted text-[11px] tracking-[0.2em] uppercase text-center xl:text-left whitespace-nowrap" id="stats-display">
     Loading database...
   </div>
-  <!-- Category Filters -->
-  <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 font-sans text-xs uppercase tracking-[0.2em]">
-    <button class="filter-btn text-brand-accent border-b border-brand-accent pb-1 is-active" data-filter="all">
-      All Items
-    </button>
-    <button class="filter-btn text-brand-muted hover:text-brand-text transition-colors pb-1" data-filter="warm">
-      Warm Dishes
-    </button>
-    <button class="filter-btn text-brand-muted hover:text-brand-text transition-colors pb-1" data-filter="soup">
-      Soups
-    </button>
-    <select class="bg-transparent text-brand-muted border-b border-brand-border hover:text-brand-text hover:border-brand-muted focus:outline-none focus:text-brand-accent focus:border-brand-accent pb-1 uppercase tracking-[0.2em] cursor-pointer" id="category-select">
-      <option value="">Categories</option>
-      <option value="soup">Soups</option>
-      <option value="mexican">Tex-Mex</option>
-      <option value="italian">Italian / Pasta / Pizza</option>
-      <option value="vegetarian">Vegetarian / Vegan</option>
-      <option value="poultry">Poultry</option>
-      <option value="seafood">Seafood</option>
-      <option value="comfort">Belgian Comfort / Meat Classics</option>
-      <option value="street">Burgers / Casual Bites</option>
-      <option value="dessert">Dessert</option>
-    </select>
-    <button class="text-brand-muted hover:text-brand-text transition-colors pb-1" id="favorites-btn">♡ Favorites</button><button class="hidden text-brand-accent border-b border-brand-accent pb-1 uppercase tracking-[0.2em] text-xs" id="back-to-menu-btn">← Back to Menu</button><button class="text-brand-muted hover:text-brand-text transition-colors pb-1" id="lucky-btn">I Feel Lucky</button></div>
+  
+  <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 font-sans text-xs uppercase tracking-[0.2em]">
+    
+    <!-- Quick Filters -->
+    <div class="flex gap-6 pr-6 xl:border-r border-brand-border">
+      <button class="filter-btn text-brand-accent border-b border-brand-accent pb-1 is-active transition-colors" data-filter="all">All Items</button>
+      <button class="filter-btn text-brand-muted border-b border-transparent hover:text-brand-text hover:border-brand-muted pb-1 transition-colors" data-filter="warm">Warm Dishes</button>
+      <button class="filter-btn text-brand-muted border-b border-transparent hover:text-brand-text hover:border-brand-muted pb-1 transition-colors" data-filter="soup">Soups</button>
+    </div>
+
+    <!-- Luxury Custom Dropdown: Categories -->
+    <div class="relative inline-block text-left custom-dropdown" id="category-dropdown-container">
+      <button class="flex items-center gap-2 text-brand-muted border-b border-brand-border hover:text-brand-text hover:border-brand-muted pb-1 transition-colors dropdown-toggle">
+        <span id="category-dropdown-label">Categories</span> 
+        <span class="text-[8px]">▼</span>
+      </button>
+      
+      <!-- Dropdown Menu -->
+      <div class="absolute left-1/2 -translate-x-1/2 mt-4 w-56 bg-[#17261a] border border-brand-border shadow-2xl hidden opacity-0 transition-opacity duration-300 dropdown-menu z-50">
+        <div class="py-2 flex flex-col text-[10px] text-brand-muted">
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="">All Categories</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="mexican">Tex-Mex</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="italian">Italian / Pasta</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="vegetarian">Vegetarian / Vegan</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="poultry">Poultry</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="seafood">Seafood</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="comfort">Belgian Comfort</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="street">Burgers / Bites</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="dessert">Dessert</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luxury Custom Dropdown: Location -->
+    <div class="relative inline-block text-left custom-dropdown" id="location-dropdown-container">
+      <button class="flex items-center gap-2 text-brand-muted border-b border-brand-border hover:text-brand-text hover:border-brand-muted pb-1 transition-colors dropdown-toggle">
+        <span id="location-dropdown-label">All Locations</span> 
+        <span class="text-[8px]">▼</span>
+      </button>
+      
+      <!-- Dropdown Menu -->
+      <div class="absolute left-1/2 -translate-x-1/2 mt-4 w-48 bg-[#17261a] border border-brand-border shadow-2xl hidden opacity-0 transition-opacity duration-300 dropdown-menu z-50">
+        <div class="py-2 flex flex-col text-[10px] text-brand-muted">
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="">All Locations</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="Alma 1">Alma 1</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="Alma 2">Alma 2</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="Alma 3">Alma 3</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="Alma Gasthuisberg">Gasthuisberg</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="Groep T">Groep T</a>
+          <a href="#" class="px-6 py-3 hover:text-brand-accent hover:bg-[#1f3325] transition-colors dropdown-item" data-value="'t Academische kwartier">Academische Kwartier</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex gap-6 pl-6 xl:border-l border-brand-border">
+      <button class="text-brand-muted hover:text-brand-accent transition-colors pb-1 flex items-center gap-1" id="favorites-btn">
+        ♡ Favorites
+      </button>
+      <button class="text-brand-muted hover:text-brand-accent transition-colors pb-1" id="lucky-btn">I Feel Lucky</button>
+      <button class="hidden text-brand-accent border-b border-brand-accent pb-1" id="back-to-menu-btn">← Back</button>
+    </div>
+
+  </div>
 </section>
+
 <!-- Menu Grid -->
 <main class="w-full flex-grow">
   <div class="text-center font-serif text-2xl italic text-brand-accent animate-pulse py-32" id="loader">
@@ -216,14 +252,17 @@
     <!-- JavaScript will inject cards here -->
   </div>
 </main>
+
 <!-- Footer -->
 <footer class="py-12 text-center mt-auto w-full px-6 bg-brand-bg">
   <p class="font-sans text-[10px] text-brand-muted uppercase tracking-[0.3em]">
     © 2026 KU Leuven WIS Project
   </p>
 </footer>
+
 <!-- Main JS -->
-<script src="js/demo4.js"></script>
+<script src="js/menu.js"></script>
+
 <!-- AI Explanation Modal -->
 <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md hidden transition-opacity duration-300" id="ai-modal">
   <div class="bg-brand-bg border border-brand-accent p-8 md:p-12 rounded-sm shadow-2xl max-w-lg w-full mx-4 relative flex flex-col max-h-[85vh]">
@@ -253,6 +292,7 @@
     </div>
   </div>
 </div>
+
 <div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 px-4" id="lucky-modal">
   <div class="relative w-full max-w-xl bg-brand-bg border border-brand-muted/30 p-8 shadow-2xl">
     <button class="absolute top-4 right-4 text-brand-muted hover:text-brand-text text-2xl" id="close-lucky-modal">
@@ -285,7 +325,9 @@
     </div>
   </div>
 </div>
+
 <script>
+  // Favorites and Lucky Feature Script
   document.addEventListener('DOMContentLoaded', () => {
 
     const favorites = JSON.parse(localStorage.getItem('almaFavorites') || '[]');
@@ -460,38 +502,6 @@
       injectFavoriteIcons();
     }
   });
-</script><script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-
-    function setActiveFilterButton(activeButton) {
-      filterButtons.forEach(btn => {
-        btn.classList.remove('is-active');
-        btn.classList.remove('text-brand-accent', 'border-b', 'border-brand-accent');
-        btn.classList.add('text-brand-muted');
-      });
-
-      activeButton.classList.add('is-active');
-      activeButton.classList.remove('text-brand-muted');
-      activeButton.classList.add('text-brand-accent', 'border-b', 'border-brand-accent');
-    }
-
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        setActiveFilterButton(btn);
-      });
-    });
-
-    const categorySelect = document.getElementById('category-select');
-    if (categorySelect) {
-      categorySelect.addEventListener('change', () => {
-        filterButtons.forEach(btn => {
-          btn.classList.remove('is-active');
-          btn.classList.remove('text-brand-accent', 'border-b', 'border-brand-accent');
-          btn.classList.add('text-brand-muted');
-        });
-      });
-    }
-  });
-</script></body>
+</script>
+</body>
 </html>

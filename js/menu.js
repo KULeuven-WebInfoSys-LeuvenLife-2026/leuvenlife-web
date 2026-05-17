@@ -85,8 +85,14 @@ const CATEGORY_RULES = {
     street: ["burger", "pita", "pizza", "burrito", "taco", "nachos", "kapsalon", "patatas"]
 };
 
+// Global State
 let encyclopediaData = [];
 let currentChatHistory = [];
+
+// Filter State Variables
+let activeTopFilter = "all"; 
+let activeCategoryDropdown = ""; 
+let activeLocation = ""; 
 
 // ===============================
 // PAGE INIT
@@ -95,7 +101,7 @@ let currentChatHistory = [];
 document.addEventListener("DOMContentLoaded", async () => {
     await fetchAndRenderData();
     setupFilters();
-    setupCategoryDropdown();
+    setupCustomDropdowns(); // <-- Use the new function for new menu style here!
 });
 
 async function fetchAndRenderData() {
@@ -107,15 +113,71 @@ async function fetchAndRenderData() {
 
         encyclopediaData = json.data || [];
 
-        const sortedData = sortByEnglishName(encyclopediaData);
-
-        renderGrid(sortedData, true);
-        updateStats(sortedData.length, "Items");
+        applyAllFilters(); // Initial render using master filter
 
     } catch (error) {
         console.error("Error loading encyclopedia:", error);
         loader.innerHTML = "Unable to connect to the culinary database.";
     }
+}
+
+// ===============================
+// MASTER FILTER FUNCTION
+// ===============================
+
+function applyAllFilters() {
+    let filteredArray = encyclopediaData;
+
+    // 1. Location Filter
+    if (activeLocation !== "") {
+        filteredArray = filteredArray.filter(item => item.location === activeLocation);
+    }
+
+    // 2. Top Button Filters (Warm / Soup)
+    if (activeTopFilter === 'warm') {
+        filteredArray = filteredArray.filter(item => {
+            const catTitles = item.categories ? item.categories.map(c => c.title).join(" ") : "";
+            return !catTitles.includes("Soep") && !(item.mealEn && item.mealEn.toLowerCase().includes("soup"));
+        });
+    } else if (activeTopFilter === 'soup') {
+        filteredArray = filteredArray.filter(item => {
+            const catTitles = item.categories ? item.categories.map(c => c.title).join(" ") : "";
+            return catTitles.includes("Soep") || (item.mealEn && item.mealEn.toLowerCase().includes("soup"));
+        });
+    }
+
+    // 3. Category Dropdown Filter
+    if (activeCategoryDropdown !== "" && activeCategoryDropdown !== "dessert") {
+        const keywords = CATEGORY_RULES[activeCategoryDropdown] || [];
+        filteredArray = filteredArray.filter(item => {
+            const text = getDishSearchText(item);
+            return keywords.some(keyword => text.includes(keyword.toLowerCase()));
+        });
+    }
+
+    // Sort and Render
+    const sortedArray = sortByEnglishName(filteredArray);
+    
+    // Only show scattered visual cards if NO specific category is chosen
+    const showVisuals = (activeCategoryDropdown === ""); 
+    
+    renderGrid(sortedArray, showVisuals);
+    
+    // Update Stats text dynamically based on all filters
+    let label = "Items";
+    if (activeCategoryDropdown !== "") {
+        label = SCATTER_CARDS.find(card => card.id === activeCategoryDropdown)?.title || "Items";
+    } else if (activeTopFilter === 'warm') {
+        label = "Warm dishes";
+    } else if (activeTopFilter === 'soup') {
+        label = "Soups";
+    }
+    
+    if (activeLocation !== "") {
+        label += ` at ${activeLocation}`;
+    }
+    
+    updateStats(sortedArray.length, label);
 }
 
 // ===============================
@@ -147,15 +209,6 @@ function getDishSearchText(item) {
         ${dietText}
         ${allergyText}
     `.toLowerCase();
-}
-
-function filterByCategory(categoryId) {
-    const keywords = CATEGORY_RULES[categoryId] || [];
-
-    return encyclopediaData.filter(item => {
-        const text = getDishSearchText(item);
-        return keywords.some(keyword => text.includes(keyword.toLowerCase()));
-    });
 }
 
 function sortByEnglishName(items) {
@@ -294,8 +347,6 @@ function renderGrid(items, showVisualCards = true) {
     grid.innerHTML = '';
 
     // Category result mode:
-    // Show selected category dish cards first.
-    // Back to Menu is placed at the very end.
     if (!showVisualCards) {
         items.forEach(item => {
             grid.innerHTML += renderDishCard(item);
@@ -308,8 +359,7 @@ function renderGrid(items, showVisualCards = true) {
         return;
     }
 
-    // Main menu mode:
-    // Scatter category/info cards among all dish cards.
+    // Main menu mode (with scatter cards)
     const totalItems = items.length;
     const scatterCards = [...SCATTER_CARDS];
 
@@ -330,8 +380,6 @@ function renderGrid(items, showVisualCards = true) {
         }
     });
 
-    // If any scatter cards remain, place them at the end.
-    // About Alma / About Us are no longer rendered here.
     if (scatterCards.length > 0) {
         scatterCards.forEach(card => {
             grid.innerHTML += renderVisualCard(card);
@@ -345,7 +393,6 @@ function renderGrid(items, showVisualCards = true) {
 function renderDessertOnly() {
     const grid = document.getElementById("menu-grid");
     const loader = document.getElementById("loader");
-
     const dessertCard = SCATTER_CARDS.find(card => card.id === "dessert");
 
     grid.innerHTML = "";
@@ -366,7 +413,7 @@ function renderDessertOnly() {
 }
 
 // ===============================
-// TOP FILTER BUTTONS
+// UI FILTER LISTENERS
 // ===============================
 
 function setupFilters() {
@@ -374,136 +421,159 @@ function setupFilters() {
 
     filterBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
+            // Visual Update
             filterBtns.forEach(b => {
-                b.classList.remove('text-brand-accent', 'border-brand-accent');
+                b.classList.remove('text-brand-accent', 'border-brand-accent', 'is-active');
                 b.classList.add('text-brand-muted', 'border-transparent');
             });
 
             e.target.classList.remove('text-brand-muted', 'border-transparent');
-            e.target.classList.add('text-brand-accent', 'border-brand-accent');
+            e.target.classList.add('text-brand-accent', 'border-brand-accent', 'is-active');
 
-            const filterType = e.target.getAttribute('data-filter');
-
+            // Reset category dropdown visually to keep state clear
             const categorySelect = document.getElementById("category-select");
             if (categorySelect) categorySelect.value = "";
+            activeCategoryDropdown = "";
 
-            let filteredArray = [];
+            // Update State & Filter
+            activeTopFilter = e.target.getAttribute('data-filter');
+            applyAllFilters();
+        });
+    });
+}
 
-            if (filterType === 'all') {
-                filteredArray = encyclopediaData;
-            } else if (filterType === 'warm') {
-                filteredArray = encyclopediaData.filter(item => {
-                    const catTitles = item.categories ? item.categories.map(c => c.title).join(" ") : "";
-                    return !catTitles.includes("Soep") && !(item.mealEn && item.mealEn.toLowerCase().includes("soup"));
-                });
-            } else if (filterType === 'soup') {
-                filteredArray = encyclopediaData.filter(item => {
-                    const catTitles = item.categories ? item.categories.map(c => c.title).join(" ") : "";
-                    return catTitles.includes("Soep") || (item.mealEn && item.mealEn.toLowerCase().includes("soup"));
-                });
+
+// Replace the old setup functions with this one:
+function setupCustomDropdowns() {
+    const dropdownContainers = document.querySelectorAll('.custom-dropdown');
+
+    // 1. Toggle Open/Close on click
+    dropdownContainers.forEach(container => {
+        const toggleBtn = container.querySelector('.dropdown-toggle');
+        const menu = container.querySelector('.dropdown-menu');
+
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            
+            // Close other open dropdowns first
+            document.querySelectorAll('.dropdown-menu').forEach(otherMenu => {
+                if (otherMenu !== menu) {
+                    otherMenu.classList.add('hidden');
+                    otherMenu.classList.remove('opacity-100');
+                    otherMenu.classList.add('opacity-0');
+                }
+            });
+
+            // Toggle current dropdown
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                // Small timeout to allow display:block to apply before animating opacity
+                setTimeout(() => {
+                    menu.classList.remove('opacity-0');
+                    menu.classList.add('opacity-100');
+                }, 10);
+            } else {
+                menu.classList.remove('opacity-100');
+                menu.classList.add('opacity-0');
+                setTimeout(() => menu.classList.add('hidden'), 300);
             }
+        });
 
-            const sortedArray = sortByEnglishName(filteredArray);
+        // 2. Handle Item Click
+        const items = container.querySelectorAll('.dropdown-item');
+        const label = container.querySelector('span[id$="-label"]');
 
-            renderGrid(sortedArray, true);
+        items.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const value = item.getAttribute('data-value');
+                const text = item.innerText;
 
-            let label = "Items";
-            if (filterType === 'warm') label = "Warm dishes";
-            if (filterType === 'soup') label = "Soups";
+                // Update the button text
+                label.innerText = text;
 
-            updateStats(sortedArray.length, label);
+                // Determine which dropdown this is and update State
+                if (container.id === 'category-dropdown-container') {
+                    activeCategoryDropdown = value;
+                    
+                    // Reset top filter buttons visually
+                    activeTopFilter = "all";
+                    const filterBtns = document.querySelectorAll(".filter-btn");
+                    filterBtns.forEach(btn => {
+                        btn.classList.remove("text-brand-accent", "border-brand-accent", "is-active");
+                        btn.classList.add("text-brand-muted", "border-transparent");
+                        if (btn.getAttribute("data-filter") === "all") {
+                            btn.classList.remove("text-brand-muted", "border-transparent");
+                            btn.classList.add("text-brand-accent", "border-brand-accent", "is-active");
+                        }
+                    });
+
+                    if (activeCategoryDropdown === "dessert") {
+                        renderDessertOnly();
+                        updateStats(1, "Dessert note");
+                    } else {
+                        applyAllFilters();
+                    }
+                    
+                } else if (container.id === 'location-dropdown-container') {
+                    activeLocation = value;
+                    applyAllFilters();
+                }
+
+                // Close menu
+                menu.classList.remove('opacity-100');
+                menu.classList.add('opacity-0');
+                setTimeout(() => menu.classList.add('hidden'), 300);
+
+                window.scrollTo({
+                    top: document.getElementById("menu-grid").offsetTop - 80,
+                    behavior: "smooth"
+                });
+            });
         });
     });
-}
 
-function setupCategoryDropdown() {
-    const categorySelect = document.getElementById("category-select");
-
-    if (!categorySelect) return;
-
-    categorySelect.addEventListener("change", (e) => {
-        const selectedCategory = e.target.value;
-
-        // Reset top filter button visual state
-        const filterBtns = document.querySelectorAll(".filter-btn");
-        filterBtns.forEach(btn => {
-            btn.classList.remove("text-brand-accent", "border-brand-accent");
-            btn.classList.add("text-brand-muted", "border-transparent");
-        });
-
-        if (!selectedCategory) {
-            const sortedData = sortByEnglishName(encyclopediaData);
-            renderGrid(sortedData, true);
-            updateStats(sortedData.length, "Items");
-            activateAllItemsButton();
-            return;
-        }
-
-        if (selectedCategory === "dessert") {
-            renderDessertOnly();
-            updateStats(1, "Dessert note");
-            return;
-        }
-
-        const filteredItems = sortByEnglishName(filterByCategory(selectedCategory));
-        renderGrid(filteredItems, false);
-
-        const label = SCATTER_CARDS.find(card => card.id === selectedCategory)?.title || "Items";
-        updateStats(filteredItems.length, label);
-
-        window.scrollTo({
-            top: document.getElementById("menu-grid").offsetTop - 80,
-            behavior: "smooth"
-        });
-    });
-}
-
-function activateAllItemsButton() {
-    const filterBtns = document.querySelectorAll(".filter-btn");
-
-    filterBtns.forEach(btn => {
-        btn.classList.remove("text-brand-accent", "border-brand-accent");
-        btn.classList.add("text-brand-muted", "border-transparent");
-
-        if (btn.getAttribute("data-filter") === "all") {
-            btn.classList.remove("text-brand-muted", "border-transparent");
-            btn.classList.add("text-brand-accent", "border-brand-accent");
+    // 3. Close when clicking anywhere else on the page
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.custom-dropdown')) {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.classList.remove('opacity-100');
+                menu.classList.add('opacity-0');
+                setTimeout(() => menu.classList.add('hidden'), 300);
+            });
         }
     });
 }
+
 
 function updateStats(count, label) {
     document.getElementById('stats-display').innerHTML = `Viewing <span class="text-brand-text">${count}</span> ${label}`;
 }
 
 // ===============================
-// CATEGORY CARD CLICK LOGIC
+// CATEGORY & BACK CARD LOGIC
 // ===============================
 
 document.addEventListener('click', (e) => {
     const categoryCard = e.target.closest('.category-card');
-
     if (!categoryCard) return;
 
     const categoryId = categoryCard.getAttribute('data-category');
+    activeCategoryDropdown = categoryId;
 
-    const filteredItems = sortByEnglishName(filterByCategory(categoryId));
-
-    // Category mode:
-    // Only selected category dishes + Back to Menu at the end.
-    renderGrid(filteredItems, false);
-
-    const label = SCATTER_CARDS.find(card => card.id === categoryId)?.title || "Items";
-    updateStats(filteredItems.length, label);
-
+    // Sync HTML Select visual
     const categorySelect = document.getElementById("category-select");
     if (categorySelect) categorySelect.value = categoryId;
 
+    // Reset Top Buttons
+    activeTopFilter = "all";
     const filterBtns = document.querySelectorAll(".filter-btn");
     filterBtns.forEach(btn => {
-        btn.classList.remove("text-brand-accent", "border-brand-accent");
+        btn.classList.remove("text-brand-accent", "border-brand-accent", "is-active");
         btn.classList.add("text-brand-muted", "border-transparent");
     });
+
+    applyAllFilters();
 
     window.scrollTo({
         top: document.getElementById('menu-grid').offsetTop - 80,
@@ -514,18 +584,26 @@ document.addEventListener('click', (e) => {
 // Back to full menu
 document.addEventListener('click', (e) => {
     const backCard = e.target.closest('.back-card');
-
     if (!backCard) return;
 
-    const sortedData = sortByEnglishName(encyclopediaData);
-
-    renderGrid(sortedData, true);
-    updateStats(sortedData.length, "Items");
-
+    // Reset everything
+    activeCategoryDropdown = "";
+    activeTopFilter = "all";
+    
     const categorySelect = document.getElementById("category-select");
     if (categorySelect) categorySelect.value = "";
 
-    activateAllItemsButton();
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    filterBtns.forEach(btn => {
+        btn.classList.remove("text-brand-accent", "border-brand-accent", "is-active");
+        btn.classList.add("text-brand-muted", "border-transparent");
+        if (btn.getAttribute("data-filter") === "all") {
+            btn.classList.remove("text-brand-muted", "border-transparent");
+            btn.classList.add("text-brand-accent", "border-brand-accent", "is-active");
+        }
+    });
+
+    applyAllFilters();
 
     window.scrollTo({
         top: document.getElementById('menu-grid').offsetTop - 80,
@@ -533,14 +611,11 @@ document.addEventListener('click', (e) => {
     });
 });
 
-// Info cards: Dessert uses the same luxury modal style as dish explanations
 document.addEventListener('click', (e) => {
     const infoCard = e.target.closest('.info-card');
-
     if (!infoCard) return;
 
     const infoId = infoCard.getAttribute('data-info');
-
     if (infoId === "dessert") {
         openDessertNote();
     }
@@ -550,11 +625,12 @@ document.addEventListener('click', (e) => {
 // OPENAI CULTURAL HISTORIAN
 // ==========================================
 
-// Click anywhere inside a food card to open the same AI modal
 document.addEventListener('click', (e) => {
     const card = e.target.closest('.menu-card');
-
     if (!card) return;
+
+    // Ignore clicks if they clicked on the favorite toggle button directly
+    if (e.target.closest('.favorite-toggle')) return;
 
     const dishId = parseInt(card.getAttribute('data-id'));
     const dish = encyclopediaData.find(d => d.id === dishId);
@@ -564,10 +640,10 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Modal close controls
 document.addEventListener('click', (e) => {
     const modal = document.getElementById('ai-modal');
-
+    if (!modal) return;
+    
     if (e.target.id === 'close-ai-modal' || e.target === modal) {
         modal.classList.add('hidden');
     }
@@ -633,13 +709,10 @@ async function startAILesson(dish) {
 
     try {
         const aiResponse = await fetchOpenAI(currentChatHistory);
-
         currentChatHistory.push({ role: "assistant", content: aiResponse });
-
         chatEl.innerHTML = `<div class="text-brand-text mb-4 leading-relaxed">${aiResponse}</div>`;
-
     } catch (error) {
-        chatEl.innerHTML = `<span class="text-red-400">The historian is resting. Please try again.</span>`;
+        chatEl.innerHTML = `<span class="text-red-400">The historian is resting. Please try again later.</span>`;
     }
 }
 
@@ -677,13 +750,11 @@ async function handleUserFollowUp() {
     currentChatHistory.push({ role: "user", content: text });
 
     const loadingId = 'loading-' + Date.now();
-
     chatEl.innerHTML += `<div id="${loadingId}" class="animate-pulse text-brand-muted italic mt-2">Thinking... ✦</div>`;
     chatEl.scrollTop = chatEl.scrollHeight;
 
     try {
         const aiResponse = await fetchOpenAI(currentChatHistory);
-
         currentChatHistory.push({ role: "assistant", content: aiResponse });
 
         const loadingEl = document.getElementById(loadingId);
@@ -694,13 +765,10 @@ async function handleUserFollowUp() {
                 ${aiResponse}
             </div>
         `;
-
         chatEl.scrollTop = chatEl.scrollHeight;
-
     } catch (error) {
         const loadingEl = document.getElementById(loadingId);
         if (loadingEl) loadingEl.remove();
-
         chatEl.innerHTML += `<div class="text-red-400 mt-2">Sorry, connection lost.</div>`;
     }
 }
@@ -724,7 +792,6 @@ async function fetchOpenAI(messagesArray) {
     if (!response.ok) throw new Error("API Error");
 
     const data = await response.json();
-
     if (data.error) throw new Error(data.error);
 
     return data.choices[0].message.content;
