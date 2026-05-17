@@ -155,6 +155,7 @@ As the core architect for the Food module, I engineered the end-to-end data pipe
   * Removed empty or invalid markers that did not correspond to actual dishes.
   * Added softer glow-style marker styling for improved visual consistency.
   * Fixed marker displacement issues during zoom interactions.
+  * Later refined the function by allowing for closing the previous dish card when clicking a new one.
 * **Multi-Origin Classification Logic:** Expanded the country classification system to support dishes with multiple culinary origins (e.g., Belgian/French overlaps, mixed/global dishes, Chinese-inspired spring rolls).
 * **Navigation Integration:** Updated homepage navigation so the `DISH MAP` entry now directly links to the new Demo 4 interactive map experience.
 * **Deployment & Version Control:** Deployed Demo 4 to the shared GitHub repository and maintained separate versioned architecture for Demo 3 and Demo 4 pages.
