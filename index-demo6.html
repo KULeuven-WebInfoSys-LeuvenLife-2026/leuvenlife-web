@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeuvenLife | A Taste of Alma</title>
+    
+    <!-- Google Fonts: Added 'Great Vibes' for the luxury cursive typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#1a2421',       /* Deep Forest Green */
+                            text: '#d8cbb8',     /* Pale Gold/Beige */
+                            accent: '#c4a678',   /* Stronger Gold */
+                            border: '#33423d',   /* Seamless grid lines */
+                            muted: '#9baea6'     /* Muted green descriptions */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Jost"', 'sans-serif'],
+                        script: ['"Great Vibes"', 'cursive'] /* The new elegant script font */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background-color: #1a2421; color: #d8cbb8; }
+        
+        /* Elegant custom scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #1a2421; }
+        ::-webkit-scrollbar-thumb { background: #33423d; }
+        ::-webkit-scrollbar-thumb:hover { background: #c4a678; }
+
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col">
+
+            <!-- Navbar (Responsive) -->
+                <nav class="border-b border-brand-border py-6 px-4 md:px-12 flex justify-between items-center w-full relative z-20 gap-4">
+                    
+                    <!-- Logo -->
+                    <div class="font-serif text-xl md:text-2xl tracking-widest uppercase shrink-0">
+                        LEUVENLIFE
+                    </div>
+                    
+                    <!-- Link to Map -->
+                    <a href="map.html" class="flex items-center justify-end gap-2 font-sans text-[9px] md:text-[11px] uppercase tracking-[0.2em] text-brand-muted hover:text-brand-text border-b border-transparent transition-colors duration-300 pb-1 whitespace-nowrap">
+                        <span class="text-xs -mt-[2px]">🌍</span> 
+                        <span>Taste The World</span>
+                    </a>
+
+                </nav>
+
+    <!-- Split Image Hero Section -->
+    <header class="relative w-full h-[40vh] md:h-[65vh] flex flex-col md:flex-row overflow-hidden">
+        <div class="w-full md:w-1/2 h-1/2 md:h-full">
+            <img src="./assets/images/alma-interior.png" 
+                 alt="Alma Interior" 
+                 class="w-full h-full object-cover">
+        </div>
+        <div class="w-full md:w-1/2 h-1/2 md:h-full">
+            <img src="./assets/images/alma-collage.png"
+                 alt="Alma Collage"
+                 class="w-full h-full object-cover">
+        </div>
+        
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+            <div class="border border-white/60 rounded-full px-6 py-1 mb-6 backdrop-blur-sm">
+                <span class="font-sans text-[10px] tracking-[0.3em] text-white/90">20 / 26</span>
+            </div>
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl uppercase tracking-widest drop-shadow-lg">
+                A Taste of Alma
+            </h1>
+        </div>
+    </header>
+
+    <!-- Intro Text Area -->
+    <section class="py-16 text-center border-b border-brand-border px-6">
+        <h2 class="font-sans text-xl md:text-2xl tracking-[0.3em] uppercase text-brand-text mb-4">
+            Alma Menu
+        </h2>
+        <p class="font-sans font-light text-brand-muted text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+            Discover the culinary offerings across our campuses. From traditional comfort food to vibrant vegan bowls, explore the encyclopedia of Belgian student life.
+        </p>
+    </section>
+
+    <!-- Filter Bar (Edge to Edge) -->
+    <section class="border-b border-brand-border py-8 w-full px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div id="stats-display" class="font-sans text-brand-muted text-sm tracking-wider uppercase text-center md:text-left">
+            Loading database...
+        </div>
+        
+        <!-- Category Filters -->
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 font-sans text-xs uppercase tracking-[0.2em]">
+            <button class="filter-btn text-brand-accent border-b border-brand-accent pb-1" data-filter="all">All Items</button>
+            <button class="filter-btn text-brand-muted hover:text-brand-text transition-colors pb-1" data-filter="warm">Warm Dishes</button>
+            <button class="filter-btn text-brand-muted hover:text-brand-text transition-colors pb-1" data-filter="soup">Soups</button>
+            <select id="location-filter" class="bg-transparent text-brand-muted border-b border-brand-muted pb-1 outline-none uppercase tracking-[0.2em]">
+                <option value="all">All Locations</option>
+            </select>
+
+            <button id="favorites-btn" class="text-brand-muted hover:text-brand-text transition-colors pb-1">
+                ♡ Favorites
+            </button>
+
+            <button id="lucky-btn" class="text-brand-muted hover:text-brand-text transition-colors pb-1">
+                I Feel Lucky
+            </button>
+
+    <!-- Edge-to-Edge Seamless Grid -->
+    <main class="w-full flex-grow">
+        <div id="loader" class="text-center font-serif text-2xl italic text-brand-accent animate-pulse py-32">
+            Curating the menu...
+        </div>
+        
+        <!-- 1px gap creates the seamless border lines -->
+        <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[1px] bg-brand-border hidden border-b border-brand-border">
+            <!-- JavaScript will inject cards here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 text-center mt-auto w-full px-6 bg-brand-bg">
+        <p class="font-sans text-[10px] text-brand-muted uppercase tracking-[0.3em]">© 2026 KU Leuven WIS Project</p>
+    </footer>
+
+    <script src="js/demo6.js"></script>
+
+    <!-- AI Explanation Modal (Hidden by default) -->
+    <div id="ai-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-md hidden transition-opacity duration-300">
+        <div class="bg-brand-bg border border-brand-accent p-8 md:p-12 rounded-sm shadow-2xl max-w-lg w-full mx-4 relative flex flex-col max-h-[85vh]">
+            <!-- Close Button -->
+            <button id="close-ai-modal" class="absolute top-4 right-6 text-brand-muted hover:text-brand-accent transition-colors text-3xl font-light">&times;</button>
+            
+            <!-- Header -->
+            <div class="flex-shrink-0">
+                <h3 class="font-serif text-3xl text-brand-accent mb-2 italic">Culinary Historian</h3>
+                <h4 id="ai-dish-name" class="font-sans text-[11px] tracking-[0.2em] uppercase text-brand-text mb-6 border-b border-brand-border pb-4">Loading Dish...</h4>
+            </div>
+            
+            <!-- Chat History Area (Scrollable) -->
+            <div id="ai-chat-history" class="flex-grow font-sans text-sm text-brand-text leading-relaxed font-light overflow-y-auto mb-4 pr-4 space-y-6 custom-scrollbar">
+                <!-- Chat messages will be injected here -->
+            </div>
+
+            <!-- Interactive Input Area -->
+            <div class="flex-shrink-0 flex items-center gap-4 border-t border-brand-border pt-4 mt-2">
+                <input type="text" id="ai-user-input" placeholder="Ask about ingredients, allergies, taste..." autocomplete="off" class="flex-grow bg-transparent border-b border-brand-muted text-brand-text focus:outline-none focus:border-brand-accent pb-1 text-xs md:text-sm placeholder-brand-border transition-colors">
+                <button id="ai-send-btn" class="font-sans text-[10px] tracking-[0.2em] uppercase text-brand-bg bg-brand-accent px-4 py-2 hover:bg-white transition-colors duration-300">
+                    Ask ✦
+                </button>
+            </div>
+        </div>
+    </div>
+
+            <!-- Lucky Dish Modal -->
+            <div id="lucky-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 px-4">
+                <div class="relative w-full max-w-xl bg-brand-bg border border-brand-muted/30 p-8 shadow-2xl">
+                    <button id="close-lucky-modal" class="absolute top-4 right-4 text-brand-muted hover:text-brand-text text-2xl">
+                        ×
+                    </button>
+
+                    <p class="font-sans text-[10px] tracking-[0.35em] uppercase text-brand-muted mb-4">
+                        I Feel Lucky
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-full md:w-1/2 flex justify-center">
+                            <img id="lucky-dish-image"
+                                 src=""
+                                 alt="Lucky dish"
+                                 class="max-h-56 object-contain drop-shadow-2xl">
+                        </div>
+
+                        <div class="w-full md:w-1/2">
+                            <h2 id="lucky-dish-name" class="font-sans text-xl tracking-[0.18em] uppercase text-brand-text mb-4">
+                                Dish Name
+                            </h2>
+
+                            <p id="lucky-dish-price" class="font-sans text-sm tracking-[0.15em] text-brand-accent mb-4">
+                                €0.00
+                            </p>
+
+                            <p id="lucky-dish-location" class="font-sans text-xs text-brand-muted mb-3">
+                                Location
+                            </p>
+
+                            <p id="lucky-dish-meta" class="font-sans text-xs text-brand-muted leading-relaxed">
+                                Diet and allergy information
+                            </p>
+
+                            <button id="try-another-dish" class="mt-6 font-sans text-[10px] tracking-[0.2em] uppercase text-brand-muted border-b border-brand-muted hover:text-brand-text hover:border-brand-text transition-all duration-300 pb-1">
+                                Try another
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
