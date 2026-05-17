@@ -502,35 +502,50 @@
 
       if (!visibleCards.length) return;
 
-      const randomCard =
-              visibleCards[Math.floor(Math.random() * visibleCards.length)];
+      const randomCard = visibleCards[Math.floor(Math.random() * visibleCards.length)];
 
-      const title =
-              randomCard.querySelector('h3,h2,.dish-name')?.innerText
-              || 'Mystery Dish';
+      // SMART FIX: Get the exact dish ID, then find it in the database
+      const dishId = parseInt(randomCard.getAttribute('data-id'));
+      const dish = encyclopediaData.find(d => d.id === dishId);
 
-      const image =
-              randomCard.querySelector('img')?.src || '';
+      // If for some reason we can't find it, fallback to defaults
+      if (!dish) return;
 
-      const metaText =
-              randomCard.innerText.slice(0, 180);
+      // 1. Get Title & Image
+      const title = dish.mealEn || dish.meal || 'Mystery Dish';
+      const image = dish.image || '';
 
-      // Try extracting a euro price from the card text
-      const cardText = randomCard.innerText;
-
-      const priceMatch =
-              cardText.match(/€\s?\d+(?:[.,]\d{1,2})?/) ||
-              cardText.match(/\d+(?:[.,]\d{1,2})?\s?€/);
-
-      const priceText = priceMatch
-              ? priceMatch[0]
+      // 2. Get the REAL Price
+      const priceText = dish.defaultPrice !== null && dish.defaultPrice !== undefined 
+              ? `€${dish.defaultPrice.toFixed(2)}` 
               : 'Price unavailable';
 
+      // 3. Get the REAL Location!
+      const locationText = dish.location ? `Served at: ${dish.location}` : 'Location unknown';
+
+      // 4. Get the REAL Diet & Allergy info (No messy heart icons or AI buttons!)
+      const diets = dish.diets && dish.diets.length > 0 ? dish.diets.map(d => d.titleEn).join(', ') : '';
+      const allergies = dish.allergies && dish.allergies.length > 0 ? dish.allergies.map(a => a.titleEn).join(', ') : '';
+      
+      let metaText = diets;
+      if (allergies) {
+          metaText += metaText ? `\nContains: ${allergies}` : `Contains: ${allergies}`;
+      }
+      if (!metaText) metaText = "Standard preparation";
+
+      // Inject the perfect data into the modal
       document.getElementById('lucky-dish-name').innerText = title;
       document.getElementById('lucky-dish-image').src = image;
-      document.getElementById('lucky-dish-meta').innerText = metaText;
       document.getElementById('lucky-dish-price').innerText = priceText;
+      document.getElementById('lucky-dish-meta').innerText = metaText;
+      
+      // Inject the location!
+      const locationEl = document.getElementById('lucky-dish-location');
+      if (locationEl) {
+          locationEl.innerText = locationText;
+      }
 
+      // Show modal
       luckyModal.classList.remove('hidden');
       luckyModal.classList.add('flex');
     }
