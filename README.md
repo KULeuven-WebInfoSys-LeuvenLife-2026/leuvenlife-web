@@ -3,7 +3,7 @@
 
 LeuvenLife is a centralized web application designed as a digital onboarding guide for international students arriving at KU Leuven. While initially conceptualized to cover multiple pillars of student life, we strategically pivoted our scope to deliver a highly robust, deeply interactive experience focused entirely on campus dining.  Today, LeuvenLife serves as the ultimate **Alma Culinary Encyclopedia**, utilizing live APIs, AI cultural analysis, and 3D mapping to introduce international freshmen to Belgian campus food.
 
-✨ **Live Demo (Luxury Editorial UI):** [View Prototype V2 Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index-demo2.html)
+✨ **Live Demo (Luxury Editorial UI):** [View Prototype Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/index.html)
 
 🌍 **Live Demo (Interactive 3D Map):** [Explore 'Taste The World' Here](https://kuleuven-webinfosys-leuvenlife-2026.github.io/leuvenlife-web/map.html)
 
@@ -15,7 +15,7 @@ LeuvenLife is a centralized web application designed as a digital onboarding gui
 
 ## 📂 Repository Architecture
 This is a Serverless Single Page Application (SPA) built with HTML5, Vanilla JavaScript, and Tailwind CSS.
-* 📄 `index-demo2.html` - The main luxury dashboard layout.
+* 📄 `index.html` - The main luxury dashboard layout.
 * 📄 `map.html` - The interactive 3D globe MapTiler integration.
 * 💾 `alma_encyclopedia_dish_soup.json` - Our custom-consolidated, flattened database of 75 unique meals.
 * 📁 `/assets/img/foods/` - Locally hosted image assets for zero-dependency loading and 100% uptime.
@@ -44,6 +44,67 @@ Following a highly constructive mentor feedback session with our TA, our team re
 ## 📝 Development & Changelog
 
 *A chronological log to track project milestones, team contributions, and design thinking.*
+
+
+
+
+
+**[17 May 2026] - Advanced State Filtering, Custom UI Components, Bug Resolution & Architectural Refactoring (YIN Renlong)**
+
+To elevate the user experience (UX) and transition the codebase from a prototyping phase to a production-ready standard, I overhauled the data-filtering algorithms, built custom UI components to match our luxury branding, resolved critical event-listener bugs, and executed a repository-wide architectural refactor.
+
+- **State-Driven Master Filter System:**
+  - *Algorithmic Challenge:* The previous filtering logic operated independently; selecting a dropdown category would completely overwrite the grid, ignoring any location or quick-filter constraints.
+  - *Centralized State Management:* I engineered a unified applyAllFilters() function acting as a single source of truth. I introduced global state variables (activeTopFilter, activeCategoryDropdown, activeLocation). The algorithm now performs a sequential, cascading .filter() across the encyclopediaData array. It calculates the mathematical intersection of the user's selected Location, Quick-Filter (Warm/Soup), and complex Keyword-Category, rendering only the dishes that satisfy all active parameters simultaneously.
+- **Custom UI Engineering (Luxury Dropdowns):**
+  - *HCI & Brand Cohesion:* Native HTML <select> elements rely on OS-level rendering engines, resulting in rigid, un-stylable gray boxes that broke the bespoke, elegant visual identity of our application.
+  - *Component Architecture:* I deprecated the native <select> tags and developed custom, stateful dropdown components using Tailwind CSS. These feature our specific dark-green background (#17261a), golden typography, and smooth CSS opacity transitions.
+  - *Event Handling & Usability:* Programmed custom JavaScript event listeners to manage the dropdown's micro-interactions. Implemented global document click-listeners to ensure the dropdown menus gracefully auto-close when a user clicks outside the component, mirroring enterprise-grade UI libraries. Furthermore, I decoupled "Warm Dishes" and "Soups" into "Quick Filter" pills outside the dropdown to reduce click-fatigue.
+- **Bug Resolution & Event Management (Ask AI & Favorites):**
+  - *Dynamic DOM Binding:* The "Ask AI" and "Favorites" features were failing in the latest demo because the DOM was being wiped and re-injected dynamically by JavaScript (grid.innerHTML = ''). I resolved this by stripping inline scripts and fully migrating to a **Global Event Delegation** pattern. Listeners are now attached to the global document and filter targets via e.target.closest(), ensuring 100% reliability regardless of how many times the grid is re-rendered.
+  - *Event Bubbling Collision:* Encountered a UX bug where clicking the "Favorite" heart overlay on a dish card would trigger the wrapper card's click listener, accidentally launching the AI Modal. I engineered a block using e.stopPropagation() and target-exclusion logic (if (e.target.closest('.favorite-toggle')) return;) to safely decouple the overlay action from the background card action.
+- **Architectural Refactoring & CLI Synchronization:**
+  - *Upstream Syncing:* Successfully synchronized local environments with the upstream remote repository via macOS CLI, resolving delta compressions and aligning feature branches without merge conflicts.
+  - *Routing Stabilization:* The project was utilizing "Copy-Paste Versioning" (e.g., index-demo8.html), causing severe routing instability. Utilizing terminal commands, I executed a full structural refactor. I migrated our production-ready files to standard web nomenclature (index.html, map.html, about.html) and isolated all legacy code into a dedicated archive/ directory. This permanently resolves 404 routing errors, ensures clean URLs, and properly leverages Git for version control.
+
+
+
+**[16 May 2026] - Demo 4 Interactive Origin Map & Advanced Filtering (Hou Yilin)**
+
+* **Demo 4 Expansion:** Created `index-demo4.html` and `map-demo4.html` as the next-stage interactive prototype.
+* **Homepage Filtering Upgrade:** Added a new category dropdown filter to the homepage interface, allowing users to directly browse menu items by culinary categories while preserving the original editorial filter-bar layout.
+* **Interactive Culinary Origin Map:** Developed an upgraded geographic “Taste The World” ——
+  * Added country-based zoom selection for Belgium, Italy, Mexico, India, USA, Greece, and other represented culinary origins.
+  * Implemented automatic map fly-to behavior when selecting a country.
+* **Sidebar Dish Navigation:** Designed and implemented a synchronized sidebar system displaying all dishes belonging to the currently selected country in alphabetical order.
+  * Clicking a dish name automatically zooms to the corresponding marker and opens its popup card.
+  * Added scrollable vertical navigation to support countries containing many dishes.
+* **Marker & Popup Optimization:** Refined map marker rendering logic in `js/map-demo4.js`.
+  * Removed empty or invalid markers that did not correspond to actual dishes.
+  * Added softer glow-style marker styling for improved visual consistency.
+  * Fixed marker displacement issues during zoom interactions.
+  * Later refined the function by allowing for closing the previous dish card when clicking a new one.
+* **Multi-Origin Classification Logic:** Expanded the country classification system to support dishes with multiple culinary origins (e.g., Belgian/French overlaps, mixed/global dishes, Chinese-inspired spring rolls).
+* **Navigation Integration:** Updated homepage navigation so the `DISH MAP` entry now directly links to the new Demo 4 interactive map experience.
+* **Deployment & Version Control:** Deployed Demo 4 to the shared GitHub repository and maintained separate versioned architecture for Demo 3 and Demo 4 pages.
+
+
+
+**[14 May 2026] - Demo 3 Homepage & About Alma Page (Hou Yilin)**
+
+* **Homepage Refinement:** Created `index-demo3.html` as an improved demo version of the Alma food encyclopedia homepage.
+
+* **Navigation Update:** Reorganized the main navigation into `HOME | ABOUT | DISH MAP` in the central area of page top, while reserving right-side space for a future multilingual language switcher.
+
+* **About Alma Page:** Added `about-alma.html` to introduce Alma’s Leuven campus dining network, including restaurant information, opening patterns, closing days, and an embedded Leuven location map.
+
+* **Category-Based Menu Browsing:** Converted decorative image cards into meaningful category entry points, allowing users to browse dishes by categories such as soups, Tex-Mex, Italian / pasta / pizza, vegetarian / vegan, poultry, seafood, Belgian comfort food, and burgers / casual bites.
+
+* **Interaction Logic:** Updated the dish-card rendering logic in `js/demo3.js`, including alphabetical category results and a “Back to Menu” return card.
+
+* **Assets:** Added new category images for Italian / Pasta / Pizza, Poultry, and Seafood.
+
+  
 
 **[5 May 2026] - Interactive AI Cultural Historian & Serverless Security (YIN Renlong)**
 
@@ -131,32 +192,4 @@ As the core architect for the Food module, I engineered the end-to-end data pipe
     * *Rationale:* This specific 4-column layout perfectly matches our project's "Three Pillar" concept. It visually separates **Food**, **Housing**, and **Transport** into equal, responsive columns. 
     * *Refinements:* To improve clickability and visual hierarchy, I removed numerical prefixes from the buttons, increased the font size, and implemented full-height borders (`border-l`) that stretch across the entire screen, ensuring the UI remains clean and structural across both desktop and mobile devices.
 * **Deployment:** Added the live GitHub Pages URL to the README for easy access.
-
-**[14 May 2026] - Demo 3 Homepage & About Alma Page (Hou Yilin)**
-
-* **Homepage Refinement:** Created `index-demo3.html` as an improved demo version of the Alma food encyclopedia homepage.
-* **Navigation Update:** Reorganized the main navigation into `HOME | ABOUT | DISH MAP` in the central area of page top, while reserving right-side space for a future multilingual language switcher.
-* **About Alma Page:** Added `about-alma.html` to introduce Alma’s Leuven campus dining network, including restaurant information, opening patterns, closing days, and an embedded Leuven location map.
-* **Category-Based Menu Browsing:** Converted decorative image cards into meaningful category entry points, allowing users to browse dishes by categories such as soups, Tex-Mex, Italian / pasta / pizza, vegetarian / vegan, poultry, seafood, Belgian comfort food, and burgers / casual bites.
-* **Interaction Logic:** Updated the dish-card rendering logic in `js/demo3.js`, including alphabetical category results and a “Back to Menu” return card.
-* **Assets:** Added new category images for Italian / Pasta / Pizza, Poultry, and Seafood.
-
-* **[16 May 2026] - Demo 4 Interactive Origin Map & Advanced Filtering (Hou Yilin)**
-
-* **Demo 4 Expansion:** Created `index-demo4.html` and `map-demo4.html` as the next-stage interactive prototype.
-* **Homepage Filtering Upgrade:** Added a new category dropdown filter to the homepage interface, allowing users to directly browse menu items by culinary categories while preserving the original editorial filter-bar layout.
-* **Interactive Culinary Origin Map:** Developed an upgraded geographic “Taste The World” ——
-  * Added country-based zoom selection for Belgium, Italy, Mexico, India, USA, Greece, and other represented culinary origins.
-  * Implemented automatic map fly-to behavior when selecting a country.
-* **Sidebar Dish Navigation:** Designed and implemented a synchronized sidebar system displaying all dishes belonging to the currently selected country in alphabetical order.
-  * Clicking a dish name automatically zooms to the corresponding marker and opens its popup card.
-  * Added scrollable vertical navigation to support countries containing many dishes.
-* **Marker & Popup Optimization:** Refined map marker rendering logic in `js/map-demo4.js`.
-  * Removed empty or invalid markers that did not correspond to actual dishes.
-  * Added softer glow-style marker styling for improved visual consistency.
-  * Fixed marker displacement issues during zoom interactions.
-  * Later refined the function by allowing for closing the previous dish card when clicking a new one.
-* **Multi-Origin Classification Logic:** Expanded the country classification system to support dishes with multiple culinary origins (e.g., Belgian/French overlaps, mixed/global dishes, Chinese-inspired spring rolls).
-* **Navigation Integration:** Updated homepage navigation so the `DISH MAP` entry now directly links to the new Demo 4 interactive map experience.
-* **Deployment & Version Control:** Deployed Demo 4 to the shared GitHub repository and maintained separate versioned architecture for Demo 3 and Demo 4 pages.
 
