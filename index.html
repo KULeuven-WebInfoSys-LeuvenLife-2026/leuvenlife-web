@@ -124,21 +124,21 @@
 <body class="font-sans antialiased min-h-screen flex flex-col">
 
 <!-- Universal Responsive Navbar (Architectural Block Design) -->
-<nav class="border-b border-brand-border px-6 md:px-12 w-full relative z-50 bg-brand-bg flex items-center justify-between h-[90px]">
+<nav class="border-b border-brand-border px-6 md:px-12 w-full relative z-50 bg-brand-bg flex flex-col lg:flex-row items-center justify-between lg:h-[90px] py-5 lg:py-0">
   
-  <!-- DESKTOP LOGO (Left Aligned) -->
-  <a href="index.html" class="hidden lg:block font-serif text-[2rem] tracking-[0.15em] uppercase text-brand-text hover:text-brand-accent transition-colors duration-500">
+  <!-- MOBILE LOGO (Top centered on mobile, with elegant separating line) -->
+  <a href="index.html" class="lg:hidden font-serif text-[2rem] tracking-[0.15em] uppercase text-brand-text text-center w-full border-b border-brand-text/20 pb-4">
     LEUVENLIFE
   </a>
 
-  <!-- MOBILE HAMBURGER BUTTON (Left Aligned) -->
-  <button id="mobile-menu-btn" class="lg:hidden text-brand-text flex items-center gap-2 focus:outline-none z-50 hover:text-brand-accent transition-colors">
+  <!-- MOBILE HAMBURGER BUTTON (Stacked below logo on mobile) -->
+  <button id="mobile-menu-btn" class="lg:hidden text-brand-text flex items-center justify-center gap-2 focus:outline-none z-50 hover:text-brand-accent transition-colors pt-4 w-full">
     <span class="text-[10px] font-sans tracking-[0.2em] uppercase mt-1" id="mobile-menu-text">Menu</span> 
     <span id="mobile-menu-icon" class="text-2xl">≡</span>
   </button>
 
-  <!-- MOBILE LOGO (Absolute Centered) -->
-  <a href="index.html" class="lg:hidden absolute left-1/2 -translate-x-1/2 font-serif text-[2rem] tracking-[0.15em] uppercase text-brand-text z-40">
+  <!-- DESKTOP LOGO (Left Aligned on Desktop) -->
+  <a href="index.html" class="hidden lg:block font-serif text-[2rem] tracking-[0.15em] uppercase text-brand-text hover:text-brand-accent transition-colors duration-500">
     LEUVENLIFE
   </a>
 
@@ -171,7 +171,7 @@
 
 <!-- Mobile Full-Screen Menu Overlay -->
 <div id="mobile-menu" class="fixed inset-0 bg-[#17261a]/95 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-10 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden">
-  <a class="font-serif text-3xl tracking-[0.2em] uppercase text-brand-text hover:text-brand-accent transition-colors" href="index.html">Home</a>
+  <a class="font-serif text-3xl tracking-[0.2em] uppercase text-brand-accent transition-colors" href="index.html">Home</a>
   <a class="font-serif text-3xl tracking-[0.2em] uppercase text-brand-text hover:text-brand-accent transition-colors" href="about.html">About</a>
   <a class="font-serif text-3xl tracking-[0.2em] uppercase text-brand-text hover:text-brand-accent transition-colors" href="map.html">Dish Map</a>
 </div>
@@ -189,14 +189,12 @@
       btn.addEventListener('click', () => {
         isOpen = !isOpen;
         if (isOpen) {
-          // Open menu
           menu.classList.remove('opacity-0', 'pointer-events-none');
           menu.classList.add('opacity-100', 'pointer-events-auto');
           menuText.innerText = 'Close';
           menuIcon.innerText = '✕';
           document.body.style.overflow = 'hidden'; 
         } else {
-          // Close menu
           menu.classList.remove('opacity-100', 'pointer-events-auto');
           menu.classList.add('opacity-0', 'pointer-events-none');
           menuText.innerText = 'Menu';
@@ -207,7 +205,6 @@
     }
   });
 </script>
-
 <!-- Split Image Hero Section -->
 <header class="relative w-full h-[40vh] md:h-[65vh] flex flex-col md:flex-row overflow-hidden">
   <div class="w-full md:w-1/2 h-1/2 md:h-full">
